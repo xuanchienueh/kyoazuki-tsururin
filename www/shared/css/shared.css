@@ -70,6 +70,15 @@ body.nav--opened #menu_toggle * {
   font-family: "Noto Serif JP", serif;
 }
 
+@font-face {
+  font-family: HannariMincho;
+  src: url(../font/HannariMincho-Regular.otf);
+  font-style: normal;
+}
+.fnt-hannari {
+  font-family: HannariMincho !important;
+}
+
 .txt-center {
   text-align: center;
 }
@@ -99,25 +108,24 @@ body.nav--opened #menu_toggle * {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #414141;
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "メイリオ", Meiryo, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   font-size: 4vw;
   letter-spacing: 0;
-  line-height: 3.2;
-  background: url("../img/shared/bg_red.jpg");
+  line-height: 1.6;
   position: relative;
-  border-radius: 100px;
   transition: ease 0.3s;
 }
-.btn-link:before {
-  content: "";
-  position: absolute;
-  background: url("../img/shared/arrow.png") no-repeat center/100% auto;
-  width: 9px;
-  height: 11px;
-  top: 50%;
-  right: 7%;
-  transform: translateY(-50%);
+.btn-link span {
+  width: 22%;
+  display: block;
+  margin-left: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .btn-link span {
+    width: auto;
+    margin-left: 42px;
+  }
 }
 .btn-link:hover {
   text-decoration: none;
@@ -126,11 +134,6 @@ body.nav--opened #menu_toggle * {
 @media only screen and (min-width: 768px) {
   .btn-link {
     font-size: 25px;
-  }
-  .btn-link:before {
-    width: 15px;
-    height: 18px;
-    right: 29px;
   }
 }
 
@@ -202,7 +205,7 @@ header #key .key-slide * {
 .fixed_reserve {
   position: fixed;
   right: 0;
-  top: 224px;
+  top: 318px;
   cursor: pointer;
   z-index: 10;
 }
@@ -211,17 +214,18 @@ header #key .key-slide * {
   display: block;
   letter-spacing: 0;
   font-size: 15px;
-  line-height: 2.3;
+  line-height: 1.5;
   position: relative;
   color: #382112;
   font-weight: 500;
-  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "メイリオ", Meiryo, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-family: HannariMincho !important;
 }
 
 .gnav a:hover,
 .gnav a.active {
   text-decoration: none;
-  color: #c43b03;
+  color: #b5003c;
+  background: #fff;
 }
 
 .gnav2 li {
@@ -235,8 +239,6 @@ header #key .key-slide * {
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "メイリオ", Meiryo, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   color: #382112;
   font-weight: 500;
-  background: #fff;
-  border: 1px solid #d7b185;
   letter-spacing: 0;
   line-height: 25px;
   padding: 0 14px;
@@ -295,19 +297,19 @@ i {
 hr {
   border: none;
   width: 100%;
-  background: url("../img/shared/line.jpg") repeat-x top center;
+  background: url("../img/index/hr_bg.jpg") repeat-x top center;
   height: 9px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 768px) {
   hr {
-    height: 5px;
+    height: 30px;
     background-size: auto 100%;
   }
 }
 
 .nav-fixed {
   position: fixed;
-  background: url("../img/shared/menu_bg.png");
+  background: url("../img/index/header_fix_bg.jpg");
   top: 0;
   left: 0;
   right: 0;
@@ -316,14 +318,21 @@ hr {
   line-height: 25px;
   padding-top: 8px;
   box-sizing: border-box;
+  display: none !important;
 }
 .nav-fixed .wrap {
-  padding: 12px 0 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .nav-fixed .tel {
   margin-left: 14px;
 }
-.nav-fixed .gnav {
+.nav-fixed .header-fix-top {
+  justify-content: space-between;
+}
+.nav-fixed .header-fix-top .gnav {
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -331,23 +340,35 @@ hr {
   justify-content: space-between;
   margin: 0 14px;
   line-height: 39px;
+  flex-direction: row-reverse;
+  width: 755px;
 }
-.nav-fixed .gnav a {
-  font-size: 17px;
+@media only screen and (min-width: 768px) {
+  .nav-fixed .header-fix-top .gnav li a {
+    font-size: 17px;
+    padding: 2px 12px;
+  }
 }
-.nav-fixed .gnav2 {
-  position: absolute;
-  top: 5px;
-  right: 15px;
+.nav-fixed .header-fix-top .gnav li.active {
+  background-color: #ffffff;
+}
+.nav-fixed .header-fix-top .gnav li.active a {
+  color: #b5003c;
+}
+.nav-fixed .header-fix-top .gnav2 {
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
 }
-.nav-fixed .gnav2 li {
+.nav-fixed .header-fix-top .gnav2 li {
   margin-bottom: 0;
   margin-left: 3px;
   width: auto;
+}
+
+.nav-fixed.fixed {
+  display: block !important;
 }
 
 #menu_toggle {
@@ -818,6 +839,16 @@ iframe {
   line-height: 0;
   text-align: center;
   margin-top: 10px;
+  position: absolute;
+  right: -50px;
+  bottom: 50px;
+  transform: rotate(90deg);
+}
+@media only screen and (min-width: 768px) {
+  .slick-dots {
+    right: -32px;
+    bottom: 42px;
+  }
 }
 
 .slick-dots li {
@@ -828,18 +859,17 @@ iframe {
 }
 
 .slick-dots li button {
-  border: none;
+  border: 1px solid #b5003c;
   position: relative;
   cursor: pointer;
   outline: none;
-  background: none;
   width: 29px;
   height: 5px;
-  background: #4f2b0f;
+  background: transparent;
 }
 
 .slick-dots .slick-active button {
-  background: #940c0c;
+  background: #b5003c;
 }
 
 @media only screen and (min-width: 768px) {
@@ -847,8 +877,8 @@ iframe {
     padding: 0 5px;
   }
   .slick-dots li button {
-    width: 58px;
-    height: 9px;
+    width: 41px;
+    height: 7px;
   }
 }
 .slick-arrow {

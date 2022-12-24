@@ -1,6 +1,7 @@
 @charset "UTF-8";
 // Scss Document
 @import "global";
+
 /*=============================================
  * body
  *=============================================*/
@@ -14,7 +15,7 @@ body {
 	min-height: inherit;
 	max-height: 100%;
 	background: url("../img/shared/bg_sp.jpg") repeat-y top center/100% auto;
-	border: 5px solid #b5003c;
+	border: 5px solid $main-color;
 }
 @media only screen and (min-width: 768px) {
 	body {
@@ -22,9 +23,10 @@ body {
 		line-height: 32px;
 		letter-spacing: 1.1px;
 		background: url("../img/shared/bg_pc.jpg") repeat top center;
-		border: 10px solid #b5003c;
+		border: 10px solid $main-color;
 	}
 }
+
 .nav--opened {
 	overflow-y: hidden;
 	-webkit-overflow-scrolling: touch;
@@ -65,6 +67,14 @@ body.nav--opened #menu_toggle * {
 .fnt-notosr {
 	font-family: "Noto Serif JP", serif;
 }
+@font-face {
+	font-family: HannariMincho;
+	src: url(../font/HannariMincho-Regular.otf);
+	font-style: normal;
+}
+.fnt-hannari {
+	font-family: HannariMincho !important;
+}
 // .wrap {
 // 	width: 100%;
 // 	@include pc {
@@ -98,24 +108,21 @@ body.nav--opened #menu_toggle * {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #fff;
+	color: #414141;
 	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "メイリオ", Meiryo, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 	font-size: 4vw;
 	letter-spacing: 0;
-	line-height: 3.2;
-	background: url("../img/shared/bg_red.jpg");
+	line-height: 1.6;
 	position: relative;
-	border-radius: 100px;
 	transition: ease 0.3s;
-	&:before {
-		content: "";
-		position: absolute;
-		background: url("../img/shared/arrow.png") no-repeat center / 100% auto;
-		width: 9px;
-		height: 11px;
-		top: 50%;
-		right: 7%;
-		transform: translateY(-50%);
+	span {
+		width: 22%;
+		display: block;
+		margin-left: 16px;
+		@include pc {
+			width: auto;
+			margin-left: 42px;
+		}
 	}
 	&:hover {
 		text-decoration: none;
@@ -123,11 +130,6 @@ body.nav--opened #menu_toggle * {
 	}
 	@include pc() {
 		font-size: 25px;
-		&:before {
-			width: 15px;
-			height: 18px;
-			right: 29px;
-		}
 	}
 }
 .bg-brown {
@@ -216,7 +218,7 @@ h1 {
 .fixed_reserve {
 	position: fixed;
 	right: 0;
-	top: 224px;
+	top: 318px;
 	cursor: pointer;
 	z-index: 10;
 }
@@ -224,16 +226,18 @@ h1 {
 	display: block;
 	letter-spacing: 0;
 	font-size: 15px;
-	line-height: 2.3;
+	line-height: 1.5;
 	position: relative;
 	color: #382112;
 	font-weight: 500;
-	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "メイリオ", Meiryo, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-family: HannariMincho !important;
+	// font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "メイリオ", Meiryo, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 .gnav a:hover,
 .gnav a.active {
 	text-decoration: none;
-	color: #c43b03;
+	color: $main-color;
+	background: #fff;
 }
 .gnav2 {
 	li {
@@ -246,8 +250,8 @@ h1 {
 			font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "メイリオ", Meiryo, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 			color: #382112;
 			font-weight: 500;
-			background: #fff;
-			border: 1px solid #d7b185;
+			// background: #fff;
+			// border: 1px solid #d7b185;
 			letter-spacing: 0;
 			line-height: 25px;
 			padding: 0 14px;
@@ -309,16 +313,16 @@ i {
 hr {
 	border: none;
 	width: 100%;
-	background: url("../img/shared/line.jpg") repeat-x top center;
+	background: url("../img/index/hr_bg.jpg") repeat-x top center;
 	height: 9px;
-	@include sp() {
-		height: 5px;
+	@include pc() {
+		height: 30px;
 		background-size: auto 100%;
 	}
 }
 .nav-fixed {
 	position: fixed;
-	background: url("../img/shared/menu_bg.png");
+	background: url("../img/index/header_fix_bg.jpg");
 	top: 0;
 	left: 0;
 	right: 0;
@@ -327,41 +331,61 @@ hr {
 	line-height: 25px;
 	padding-top: 8px;
 	box-sizing: border-box;
+	display: none !important;
 	.wrap {
-		padding: 12px 0 16px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
 	}
 
 	.tel {
 		margin-left: 14px;
 	}
-	.gnav {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
+	.header-fix-top {
 		justify-content: space-between;
-		margin: 0 14px;
-		line-height: 39px;
-		a {
-			font-size: 17px;
+		.gnav {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-between;
+			margin: 0 14px;
+			line-height: 39px;
+			flex-direction: row-reverse;
+			width: 755px;
+			li {
+				@include pc {
+					a {
+						font-size: 17px;
+						padding: 2px 12px;
+					}
+				}
+			}
+			li.active {
+				a {
+					color: $main-color;
+				}
+				background-color: #ffffff;
+			}
+		}
+		.gnav2 {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			li {
+				margin-bottom: 0;
+				margin-left: 3px;
+				width: auto;
+			}
 		}
 	}
-	.gnav2 {
-		position: absolute;
-		top: 5px;
-		right: 15px;
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		li {
-			margin-bottom: 0;
-			margin-left: 3px;
-			width: auto;
-		}
-	}
+}
+.nav-fixed.fixed {
+	display: block !important;
 }
 
 #menu_toggle {
@@ -809,6 +833,14 @@ iframe {
 	line-height: 0;
 	text-align: center;
 	margin-top: 10px;
+	position: absolute;
+	right: -50px;
+	bottom: 50px;
+	transform: rotate(90deg);
+	@include pc {
+		right: -32px;
+		bottom: 42px;
+	}
 }
 .slick-dots li {
 	display: inline-block;
@@ -817,24 +849,23 @@ iframe {
 	cursor: pointer;
 }
 .slick-dots li button {
-	border: none;
+	border: 1px solid $main-color;
 	position: relative;
 	cursor: pointer;
 	outline: none;
-	background: none;
 	width: 29px;
 	height: 5px;
-	background: #4f2b0f;
+	background: transparent;
 }
 .slick-dots .slick-active button {
-	background: #940c0c;
+	background: $main-color;
 }
 @media only screen and (min-width: 768px) {
 	.slick-dots li {
 		padding: 0 5px;
 		button {
-			width: 58px;
-			height: 9px;
+			width: 41px;
+			height: 7px;
 		}
 	}
 }

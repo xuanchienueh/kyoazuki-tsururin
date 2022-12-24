@@ -221,3 +221,245 @@ a:hover {
 		}
 	}
 }
+
+#sec1 {
+	padding: 8vw 0;
+	position: relative;
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		height: 30vw;
+		background: url(../img/index/set1_deco.jpg);
+		z-index: -1;
+	}
+	@include pc {
+		padding: 156px 0px 103px 0px;
+		&:after {
+			height: 235px;
+		}
+	}
+	.wrap {
+		.left {
+			align-items: flex-end;
+			@include pc {
+				display: block;
+				width: calc(100% - 434px);
+			}
+			h2 {
+				padding: 0 6% 0 0%;
+				width: 23%;
+				margin-left: 5%;
+				@include pc {
+					padding: 0px 0px 0px 203px;
+					margin: 0px 0px 59px 0px;
+					width: 100%;
+				}
+			}
+			.sec1-img {
+				width: 75%;
+				@include pc {
+					width: auto;
+					margin-left: -85px;
+				}
+			}
+		}
+		.right {
+			@include pc {
+				width: 434px;
+			}
+			.sec1-txt {
+				padding-bottom: 7vw;
+				@include pc {
+					padding-bottom: 33px;
+					text-align: left;
+				}
+			}
+			.p1 {
+				padding-top: 6vw;
+				position: relative;
+				margin: 8vw 0 0 0;
+				&:after {
+					content: "";
+					position: absolute;
+					width: 24%;
+					left: 50%;
+					transform: translateX(-50%);
+					top: 0;
+					height: 2px;
+					background-color: #b6003d;
+				}
+				@include pc {
+					padding-top: 39px;
+					margin: 131px 0px 0px 0px;
+					&:after {
+						width: 89px;
+						left: 0;
+						top: 4px;
+						transform: translateX(0%);
+					}
+				}
+			}
+			.p2 {
+			}
+			.p3 {
+				letter-spacing: 0.4px;
+				@include pc {
+					letter-spacing: normal;
+				}
+			}
+		}
+	}
+}
+
+#sec2 {
+	background: url(../img/index/set2_bg_sp.png) no-repeat top center/100% auto;
+	padding: 12vw 0 12vw;
+	position: relative;
+	@include pc {
+		padding: 118px 0px 78px 0px;
+		background: url(../img/index/set2_bg_top.png) no-repeat top center/100% auto, url(../img/index/sec2_bg_bottom.png) no-repeat bottom center;
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 145px;
+			background: url(../img/index/sec2_bg_deco.jpg) repeat-x top center;
+			z-index: -1;
+		}
+	}
+	.wrap {
+	}
+	h2 {
+		font-size: 6.4vw;
+		line-height: 1.8;
+		position: relative;
+		padding-top: 6vw;
+		margin-top: 6vw;
+		&:after {
+			content: "";
+			position: absolute;
+			width: 55px;
+			top: 0;
+			height: 2px;
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: $main-color;
+			z-index: 1;
+			@include pc {
+				width: 70px;
+			}
+		}
+		span {
+			color: $main-color;
+		}
+		@include pc {
+			font-size: 40px;
+			line-height: 69px;
+			letter-spacing: 3px;
+			padding-top: 26px;
+			margin-top: 30px;
+		}
+	}
+	.sec2-img {
+		margin: 6vw -4% 0 -4%;
+		@include pc {
+			margin: 45px auto 0px auto;
+			text-align: center;
+		}
+	}
+	.sec2-txt {
+		margin-bottom: 8vw;
+		@include pc {
+			margin: 0 auto 26px;
+			width: 575px;
+			text-align: center;
+		}
+	}
+}
+#sec3 {
+	padding: 20vw 0 12vw 0;
+	background: url(../img/index/sec3_bg_sp.png) no-repeat top center/110% auto;
+	@include pc {
+		padding: 108px 0px 120px 0px;
+		background: unset;
+	}
+	.sec3-slide {
+		width: 75%;
+		margin: 0 auto 0;
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			left: -13px;
+			width: 1px;
+			top: -14px;
+			height: 126px;
+			background: $main-color;
+		}
+		&::before {
+			position: absolute;
+			content: "";
+			top: -14px;
+			left: -13px;
+			height: 1px;
+			width: 126px;
+			background: $main-color;
+		}
+		@include pc {
+			width: 540px;
+			margin: 0px 0px 0px 38px;
+		}
+	}
+	.sec3-content {
+		margin-top: 7vw;
+		@include pc {
+			margin: 0px 0px 0px 54px;
+			padding: 92px 0 0 0;
+			width: 324px;
+		}
+		h2 {
+			@include pc {
+				margin-bottom: 39px;
+			}
+			.p1 {
+				@include pc {
+					font-size: 26px;
+					margin-bottom: 12px;
+					letter-spacing: 2.3px;
+				}
+			}
+			.p2 {
+				font-size: 5.5vw;
+				line-height: 1.5;
+				font-weight: 500;
+				@include pc {
+					font-size: 40px;
+					line-height: 55px;
+					letter-spacing: 3px;
+				}
+			}
+		}
+		.sec3-txt {
+			@include pc {
+				margin-bottom: 43px;
+			}
+		}
+		.sec3-btn {
+			margin: 12vw 0 6vw;
+			@include pc {
+				margin: 0px 3px 0px -12px;
+			}
+			.btn-link {
+				font-size: 5.5vw;
+				@include pc {
+					font-size: 25px;
+				}
+			}
+		}
+	}
+}
