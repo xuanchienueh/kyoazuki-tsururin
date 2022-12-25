@@ -243,7 +243,7 @@ header #key .key-slide * {
 
 @media only screen and (min-width: 768px) {
   main {
-    margin-top: 90px;
+    padding-top: 90px;
   }
 }
 /*=============================================
