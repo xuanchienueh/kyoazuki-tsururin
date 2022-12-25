@@ -386,8 +386,10 @@ i {
   width: 23px;
 }
 
-main#index .nav-fixed {
-  display: none;
+@media only screen and (min-width: 768px) {
+  main#index .nav-fixed {
+    display: none;
+  }
 }
 
 .nav-fixed {
@@ -451,6 +453,10 @@ main#index .nav-fixed {
 
 .nav-fixed.fixed {
   display: block !important;
+}
+
+.nav-fixed.fixed.pc {
+  display: none !important;
 }
 
 hr {
