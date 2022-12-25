@@ -386,6 +386,10 @@ i {
   width: 23px;
 }
 
+main#index .nav-fixed {
+  display: none;
+}
+
 .nav-fixed {
   position: fixed;
   background: url("../img/index/header_fix_bg.jpg");
@@ -397,7 +401,6 @@ i {
   line-height: 25px;
   padding-top: 8px;
   box-sizing: border-box;
-  display: none !important;
 }
 .nav-fixed .wrap {
   height: 100%;
