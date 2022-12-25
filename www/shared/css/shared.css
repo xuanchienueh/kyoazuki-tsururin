@@ -54,6 +54,11 @@ body.nav--opened #menu_toggle * {
 /*=============================================
  * fonts - DON'T EDIT
  *=============================================*/
+@font-face {
+  font-family: HannariMincho;
+  src: url(../font/HannariMincho-Regular.otf);
+  font-style: normal;
+}
 .fnt-mincho {
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "メイリオ", Meiryo, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
@@ -70,11 +75,6 @@ body.nav--opened #menu_toggle * {
   font-family: "Noto Serif JP", serif;
 }
 
-@font-face {
-  font-family: HannariMincho;
-  src: url(../font/HannariMincho-Regular.otf);
-  font-style: normal;
-}
 .fnt-hannari {
   font-family: HannariMincho !important;
 }
@@ -1104,9 +1104,10 @@ em {
     top: -50px;
   }
   .remodal .popup-ttl {
-    font-size: 31px;
+    font-size: 34px;
     line-height: 60px;
     margin-bottom: 30px;
+    color: #231815;
   }
   .remodal .popup-txt p + p {
     margin-top: 36px;
@@ -1117,13 +1118,17 @@ em {
     display: -o-flex;
     display: flex;
     margin-top: 60px;
-    padding-left: 160px;
+    justify-content: space-between;
+    padding: 0 96px;
   }
   .remodal .dis-flex-pc ul:nth-child(1) {
-    width: 310px;
+    width: 245px;
   }
   .remodal .dis-flex-pc ul:nth-child(2) {
-    width: 360px;
+    width: 192px;
+  }
+  .remodal .dis-flex-pc ul:nth-child(3) {
+    width: 297px;
   }
 }
 .img-bor {
