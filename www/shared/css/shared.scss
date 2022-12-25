@@ -287,7 +287,9 @@ i {
 }
 main#index {
 	.nav-fixed {
-		display: none;
+		@include pc {
+			display: none;
+		}
 	}
 }
 .nav-fixed {
@@ -355,6 +357,9 @@ main#index {
 }
 .nav-fixed.fixed {
 	display: block !important;
+}
+.nav-fixed.fixed.pc {
+	display: none !important;
 }
 hr {
 	border: none;
