@@ -52,9 +52,15 @@ body.nav--opened #menu_toggle * {
 	-ms-touch-action: auto !important;
 	touch-action: auto !important;
 }
+
 /*=============================================
  * fonts - DON'T EDIT
  *=============================================*/
+@font-face {
+	font-family: HannariMincho;
+	src: url(../font/HannariMincho-Regular.otf);
+	font-style: normal;
+}
 .fnt-mincho {
 	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "メイリオ", Meiryo, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
@@ -66,11 +72,6 @@ body.nav--opened #menu_toggle * {
 }
 .fnt-notosr {
 	font-family: "Noto Serif JP", serif;
-}
-@font-face {
-	font-family: HannariMincho;
-	src: url(../font/HannariMincho-Regular.otf);
-	font-style: normal;
 }
 .fnt-hannari {
 	font-family: HannariMincho !important;
@@ -312,7 +313,7 @@ a[href^="tel:"]:hover {
 }
 @media only screen and (min-width: 768px) {
 	main {
-		margin-top: 90px;
+		padding-top: 90px;
 	}
 }
 
@@ -356,22 +357,12 @@ i {
 		}
 	}
 }
-hr {
-	border: none;
-	width: 100%;
-	background: url("../img/index/hr_bg.jpg") repeat-x top center;
-	height: 9px;
-	@include pc() {
-		height: 30px;
-		background-size: auto 100%;
-	}
-}
 .nav-fixed {
 	position: fixed;
 	background: url("../img/index/header_fix_bg.jpg");
-	top: 0;
-	left: 0;
-	right: 0;
+	top: 0px;
+	left: 10px;
+	right: 10px;
 	z-index: 999;
 	height: 90px;
 	line-height: 25px;
@@ -433,27 +424,52 @@ hr {
 .nav-fixed.fixed {
 	display: block !important;
 }
-
+hr {
+	border: none;
+	width: 100%;
+	background: url("../img/index/hr_bg.jpg") repeat-x top center;
+	height: 9px;
+	@include pc() {
+		height: 30px;
+		background-size: auto 100%;
+	}
+}
 #menu_toggle {
 	opacity: 0;
 	visibility: hidden;
 	position: fixed;
-	width: 100%;
 	top: 0;
 	left: 0;
+	right: 0;
 	height: 100%;
 	overflow-y: auto;
 	z-index: 999;
-	padding: 60px 4% 150px;
-	background: url("../img/shared/menu_bg.png");
+	padding: 46px 4% 150px;
+	background: url(../img/shared/bg_menu_toggle.jpg);
+	border: 5px solid $main-color;
 	transition: all 0.5s ease 0s;
 	-moz-transition: all 0.5s ease 0s;
 	-webkit-transition: all 0.5s ease 0s;
+	.inner {
+		.logo {
+			width: 50%;
+			margin: 0 auto;
+		}
+	}
 	.gnav {
-		margin-left: 6%;
+		margin: 8vw 6% 0;
+		justify-content: space-between;
+		li a {
+			padding: 2vw 2.5%;
+			&.active {
+				color: $main-color;
+				background: url(../img/index/header_menu_bg.jpg);
+			}
+		}
 	}
 	.gnav2 {
-		padding-top: 20px;
+		justify-content: space-between;
+		margin: 14vw 20% 0;
 	}
 }
 .navOpen #menu_toggle {
@@ -467,17 +483,21 @@ hr {
 .hamburger {
 	z-index: 9999;
 	position: fixed;
-	top: 0;
+	top: 0px;
 	right: 0;
 	color: #fff;
-	background: #421200;
+	background: $main-color;
 	border-right: none;
 	width: 50px;
 	height: 50px;
+	p {
+		display: none;
+	}
 }
 .hamburger:after {
 	content: "menu";
 	font-size: 9px;
+	color: #fff;
 	letter-spacing: 0.15em;
 	position: absolute;
 	bottom: 3px;
@@ -521,6 +541,7 @@ hr {
 }
 .hamburger.is-active {
 	border-color: transparent;
+	top: 30px;
 }
 .hamburger.is-active:after {
 	content: "close";
@@ -528,7 +549,6 @@ hr {
 .hamburger.is-active span {
 	top: 16px;
 	width: 30px;
-	background: #fff;
 	transform: rotate(45deg);
 	transition-delay: 0.12s;
 	transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -541,7 +561,6 @@ hr {
 }
 .hamburger.is-active span:after {
 	bottom: 0;
-	background: #fff;
 	transform: rotate(-90deg);
 	transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -1116,9 +1135,10 @@ em {
 		top: -50px;
 	}
 	.remodal .popup-ttl {
-		font-size: 31px;
+		font-size: 34px;
 		line-height: 60px;
 		margin-bottom: 30px;
+		color: #231815;
 	}
 	.remodal .popup-txt p + p {
 		margin-top: 36px;
@@ -1130,13 +1150,17 @@ em {
 		display: -o-flex;
 		display: flex;
 		margin-top: 60px;
-		padding-left: 160px;
+		justify-content: space-between;
+		padding: 0 96px;
 	}
 	.remodal .dis-flex-pc ul:nth-child(1) {
-		width: 310px;
+		width: 245px;
 	}
 	.remodal .dis-flex-pc ul:nth-child(2) {
-		width: 360px;
+		width: 192px;
+	}
+	.remodal .dis-flex-pc ul:nth-child(3) {
+		width: 297px;
 	}
 }
 .img-bor {

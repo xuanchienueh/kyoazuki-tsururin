@@ -60,6 +60,7 @@ a:hover {
 #header {
   background: url(../img/index/header_bg_top_sp.png) no-repeat top center/100% auto, url(../img/index/header_deco_sp.png) no-repeat bottom center/100% auto;
   padding-bottom: 8vw;
+  padding-top: 1px;
   position: relative;
 }
 @media only screen and (min-width: 768px) {
@@ -76,13 +77,22 @@ a:hover {
     right: 0;
     z-index: -1;
   }
+  #header::before {
+    position: absolute;
+    content: "";
+    top: -90px;
+    background: url(../img/index/header_bg_top.png) no-repeat top center/100% auto;
+    left: 0;
+    right: 0;
+    height: 50%;
+  }
 }
 #header .wrap {
   position: relative;
 }
 @media only screen and (min-width: 768px) {
   #header .wrap {
-    padding-bottom: 94px;
+    padding-bottom: 3px;
   }
   #header .wrap:after {
     content: url(../img/index/header_deco.png);
@@ -94,7 +104,7 @@ a:hover {
 }
 #header .logo {
   width: 50%;
-  margin: 12vw auto 0;
+  margin: 7vw auto 0;
 }
 @media only screen and (min-width: 768px) {
   #header .logo {
@@ -103,7 +113,7 @@ a:hover {
   }
 }
 #header h1 {
-  font-size: 3vw;
+  font-size: 2.6vw;
   line-height: 1.5;
   color: #d2d2d2;
   padding: 8vw 0% 4vw;
@@ -451,6 +461,9 @@ a:hover {
     width: 324px;
   }
 }
+#sec3 .sec3-content h2 {
+  margin-bottom: 6vw;
+}
 @media only screen and (min-width: 768px) {
   #sec3 .sec3-content h2 {
     margin-bottom: 39px;
@@ -494,5 +507,15 @@ a:hover {
 @media only screen and (min-width: 768px) {
   #sec3 .sec3-content .sec3-btn .btn-link {
     font-size: 25px;
+  }
+}
+
+#sec4 .sec4-slide .slider-item img {
+  height: 130px;
+  width: auto;
+}
+@media only screen and (min-width: 768px) {
+  #sec4 .sec4-slide .slider-item img {
+    height: auto;
   }
 }/*# sourceMappingURL=index.css.map */

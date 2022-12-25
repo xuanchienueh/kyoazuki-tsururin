@@ -73,6 +73,7 @@ a:hover {
 #header {
 	background: url(../img/index/header_bg_top_sp.png) no-repeat top center/100% auto, url(../img/index/header_deco_sp.png) no-repeat bottom center/100% auto;
 	padding-bottom: 8vw;
+	padding-top: 1px;
 	position: relative;
 	@include pc {
 		padding: 0px 0px 0px 0px;
@@ -86,11 +87,20 @@ a:hover {
 			right: 0;
 			z-index: -1;
 		}
+		&::before {
+			position: absolute;
+			content: "";
+			top: -90px;
+			background: url(../img/index/header_bg_top.png) no-repeat top center/100% auto;
+			left: 0;
+			right: 0;
+			height: 50%;
+		}
 	}
 	.wrap {
 		position: relative;
 		@include pc {
-			padding-bottom: 94px;
+			padding-bottom: 3px;
 			&:after {
 				content: url(../img/index/header_deco.png);
 				position: absolute;
@@ -102,14 +112,14 @@ a:hover {
 	}
 	.logo {
 		width: 50%;
-		margin: 12vw auto 0;
+		margin: 7vw auto 0;
 		@include pc {
 			width: 100%;
 			margin: -4px 0px 0px 0px;
 		}
 	}
 	h1 {
-		font-size: 3vw;
+		font-size: 2.6vw;
 		line-height: 1.5;
 		color: #d2d2d2;
 		padding: 8vw 0% 4vw;
@@ -423,6 +433,7 @@ a:hover {
 			width: 324px;
 		}
 		h2 {
+			margin-bottom: 6vw;
 			@include pc {
 				margin-bottom: 39px;
 			}
@@ -459,6 +470,17 @@ a:hover {
 				@include pc {
 					font-size: 25px;
 				}
+			}
+		}
+	}
+}
+#sec4 {
+	.sec4-slide {
+		.slider-item img {
+			height: 130px;
+			width: auto;
+			@include pc {
+				height: auto;
 			}
 		}
 	}
