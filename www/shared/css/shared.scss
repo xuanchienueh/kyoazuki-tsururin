@@ -75,13 +75,7 @@ body.nav--opened #menu_toggle * {
 .fnt-hannari {
 	font-family: HannariMincho !important;
 }
-// .wrap {
-// 	width: 100%;
-// 	@include pc {
-// 		width: 1100px;
-// 		margin: 0 auto;
-// 	}
-// }
+
 .txt-center {
 	text-align: center;
 }
@@ -155,16 +149,81 @@ a[href^="tel:"]:hover {
 /*=============================================
  * header
  *=============================================*/
-header {
+#header {
+	background: url(../img/index/header_bg_top_sp.png) no-repeat top center/100% auto, url(../img/index/header_deco_sp.png) no-repeat bottom center/100% auto;
+	padding-bottom: 8vw;
 	position: relative;
+	@include pc {
+		padding: 0px 0px 0px 0px;
+		background: unset;
+		height: 100%;
+	}
+	.wrap {
+		position: relative;
+		@include pc {
+			padding-bottom: 94px;
+		}
+	}
+	.logo {
+		width: 50%;
+		margin: 12vw auto 0;
+		@include pc {
+			width: 100%;
+			margin: -4px 0px 0px 0px;
+		}
+	}
+	h1 {
+		font-size: 3vw;
+		line-height: 1.5;
+		color: #d2d2d2;
+		padding: 8vw 0% 4vw;
+		text-align: center;
+		@include pc {
+			font-size: 13px;
+			padding: 66px 0 0 0;
+			margin: 0 auto;
+		}
+	}
+	h2 {
+		width: 50%;
+		margin: 0 auto;
+		@include pc {
+			width: 100%;
+			margin: 0px 0px 0px 0px;
+			position: absolute;
+			left: -79px;
+			top: 414px;
+		}
+	}
+	.header-img {
+		width: 80%;
+		margin: -2vw auto 0;
+		@include pc {
+			width: auto;
+			margin: 243px 0 0 0;
+		}
+	}
+	.header-info {
+		@include pc {
+			justify-content: space-between;
+			position: absolute;
+			top: 112px;
+			left: 0;
+			right: 0;
+			.tel {
+			}
+			.social {
+				@include pc {
+					align-items: flex-end;
+				}
+				li {
+					margin-left: 17px;
+				}
+			}
+		}
+	}
 }
-// .logo {
-// 	position: absolute;
-// 	z-index: 2;
-// 	width: 52%;
-// 	top: 10vw;
-// 	left: 24%;
-// }
+
 .header-deco {
 	position: absolute;
 	z-index: 1;
@@ -172,20 +231,7 @@ header {
 	top: 0;
 	left: 0;
 }
-h1 {
-	// position: absolute;
-	// z-index: 2;
-	// text-align: center;
-	// bottom: 6vw;
-	// width: 100%;
-	// padding: 0 4%;
-	// box-sizing: border-box;
-	// font-size: 10px;
-	// left: 0;
-	// text-shadow: 0 0 5px #000000;
-	// color: #999999;
-	// z-index: 1;
-}
+
 @media only screen and (min-width: 768px) {
 	header {
 		height: 800px;
