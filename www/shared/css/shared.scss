@@ -158,6 +158,16 @@ a[href^="tel:"]:hover {
 		padding: 0px 0px 0px 0px;
 		background: unset;
 		height: 100%;
+
+		&::before {
+			position: absolute;
+			content: "";
+			top: -90px;
+			background: url(../img/index/header_bg_top.png) no-repeat top center/100% auto;
+			left: 0;
+			right: 0;
+			height: 50%;
+		}
 	}
 	.wrap {
 		position: relative;
