@@ -82,7 +82,7 @@ a:hover {
 }
 @media only screen and (min-width: 768px) {
   #header .wrap {
-    padding-bottom: 94px;
+    padding-bottom: 3px;
   }
   #header .wrap:after {
     content: url(../img/index/header_deco.png);
@@ -451,6 +451,9 @@ a:hover {
     width: 324px;
   }
 }
+#sec3 .sec3-content h2 {
+  margin-bottom: 6vw;
+}
 @media only screen and (min-width: 768px) {
   #sec3 .sec3-content h2 {
     margin-bottom: 39px;
@@ -494,5 +497,15 @@ a:hover {
 @media only screen and (min-width: 768px) {
   #sec3 .sec3-content .sec3-btn .btn-link {
     font-size: 25px;
+  }
+}
+
+#sec4 .sec4-slide .slider-item img {
+  height: 130px;
+  width: auto;
+}
+@media only screen and (min-width: 768px) {
+  #sec4 .sec4-slide .slider-item img {
+    height: auto;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -90,7 +90,7 @@ a:hover {
 	.wrap {
 		position: relative;
 		@include pc {
-			padding-bottom: 94px;
+			padding-bottom: 3px;
 			&:after {
 				content: url(../img/index/header_deco.png);
 				position: absolute;
@@ -423,6 +423,7 @@ a:hover {
 			width: 324px;
 		}
 		h2 {
+			margin-bottom: 6vw;
 			@include pc {
 				margin-bottom: 39px;
 			}
@@ -459,6 +460,17 @@ a:hover {
 				@include pc {
 					font-size: 25px;
 				}
+			}
+		}
+	}
+}
+#sec4 {
+	.sec4-slide {
+		.slider-item img {
+			height: 130px;
+			width: auto;
+			@include pc {
+				height: auto;
 			}
 		}
 	}
