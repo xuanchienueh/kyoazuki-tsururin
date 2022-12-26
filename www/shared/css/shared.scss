@@ -599,7 +599,102 @@ footer {
 	position: relative;
 	padding: 13vw 0 25vw;
 	// background: url("../img/shared/footer_bg_sp.jpg") no-repeat top center / 100% auto, url("../img/shared/bg2_sp.jpg") repeat-y top center / 100% auto;
-	color: #fff;
+	#info {
+		margin: 12vw 0;
+		color: #414141;
+		@include pc {
+			margin: 0px 0px 0px 0px;
+		}
+
+		@include pc {
+			margin: 0px 0px 0px 0px;
+			padding: 0px 0px 0px 0px;
+		}
+		.left {
+			padding-bottom: 12vw;
+			position: relative;
+			&:after {
+				position: absolute;
+				content: "";
+				left: 10%;
+				right: 10%;
+				bottom: 0;
+				height: 1px;
+				background: $main-color;
+			}
+			@include pc {
+				padding-bottom: 0;
+				&:after {
+					display: none;
+				}
+				width: 331px;
+			}
+
+			.logo {
+				width: 30%;
+				margin: 0 auto;
+				@include pc {
+					width: auto;
+				}
+			}
+			.social {
+				width: 50%;
+				margin: 14vw auto 0vw;
+				justify-content: space-around;
+				@include pc {
+					margin: 69px auto 0px auto;
+					width: 120px;
+				}
+			}
+		}
+		.right {
+			margin-top: 12vw;
+			@include pc {
+				margin-top: -24px;
+				padding-left: 50px;
+				width: calc(100% - 331px);
+				position: relative;
+				&:after {
+					position: absolute;
+					content: "";
+					left: 0;
+					top: 0;
+					width: 1px;
+					bottom: 0;
+					background: $main-color;
+				}
+			}
+			dl {
+				margin-bottom: 6vw;
+				@include pc {
+					margin: 0px 0px 25px 0px;
+				}
+				display: flex;
+				dt {
+					width: 100px;
+					padding-right: 2%;
+					@include pc {
+						width: 105px;
+						padding-right: 0;
+					}
+				}
+				dd {
+					width: calc(100% - 100px);
+					text-align: left;
+					@include pc {
+						width: calc(100% - 105px);
+						padding-left: 32px;
+					}
+					.info-tel {
+						width: 60%;
+						@include pc {
+							width: auto;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 .footer-logo {
 	margin: auto;
@@ -694,9 +789,8 @@ footer .cookie-link a:hover:before {
 		}
 	}
 	footer {
-		padding: 67px 0 90px;
+		padding: 179px 0 90px;
 		line-height: 32px;
-		font-size: 14px;
 		font-weight: 500;
 		background: url("../img/shared/footer_bg.jpg") no-repeat top center, url("../img/shared/bg2.jpg");
 		.dis-flex-pc {
@@ -739,7 +833,7 @@ footer .cookie-link a:hover:before {
 		}
 	}
 	.footer-bottom {
-		position: absolute;
+		// position: absolute;
 		bottom: 0;
 		left: 0;
 		width: 400px;
@@ -762,10 +856,15 @@ footer .cookie-link a:hover:before {
 		display: flex;
 		justify-content: center;
 		margin-bottom: 76px;
+		margin-top: 136px;
+		flex-direction: row-reverse;
+		align-items: center;
+		background: url(../img/shared/footer_nav_bg.jpg);
+		height: 62px;
 		li {
-			&:not(:first-child):before {
+			&:not(:last-child):before {
 				content: "|";
-				margin: 0 18px;
+				margin: 0 22px;
 			}
 		}
 	}

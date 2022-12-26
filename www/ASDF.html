@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ADD-WIDTH</title>
+	</head>
+	<body>
+		<div id="sec4">
+			<div class="sec4-slide">
+				<div class="slider-item">
+					<img src="./shared/img/index/slider_img1.jpg" width="380" height="250" alt="" />
+				</div>
+				<div class="slider-item">
+					<img src="./shared/img/index/slide_img2.jpg" width="380" height="250" alt="" />
+				</div>
+				<div class="slider-item">
+					<img src="./shared/img/index/slide_img3.jpg" width="380" height="250" alt="" />
+				</div>
+				<div class="slider-item">
+					<img src="./shared/img/index/slide_img4.jpg" width="380" height="250" alt="" />
+				</div>
+				<div class="slider-item">
+					<img src="./shared/img/index/slide_img5.jpg" width="380" height="250" alt="" />
+				</div>
+				<div class="slider-item">
+					<img src="./shared/img/index/slide_img6.jpg" width="380" height="250" alt="" />
+				</div>
+			</div>
+			<div class="wrap content">
+				<p class="sec4-img1 group1">
+					<span><img src="./shared/img/index/sec4_img1.jpg" alt="タレづけ" /></span>
+				</p>
+				<div class="group2">
+					<h2 class="txt-left">つるりんの人気商品 <br />こぼんちゃん</h2>
+					<p class="sec4-img2"><img src="./shared/img/index/sec4_img2.png" alt="こぼんちゃん" /></p>
+					<p class="sec4-txt">
+						京阿月名物、花よりだんご“こぼんちゃん”。自家製たれと香ばしい焦がしきな粉でお召し上がりいただくみたらし団子です。店頭の焼き場で丁寧に焼き上げ、出来立てをご提供しております。イートインはもちろん、お持ち帰りもできますので、ぜひご自宅でもご堪能ください。
+					</p>
+				</div>
+				<div class="group3">
+					<p class="sec4-img3"><img src="./shared/img/index/sec4_img3.png" alt="甘味" /></p>
+					<h3 class="txt-center">季節の甘味いろいろ</h3>
+					<div class="sec4-btn">
+						<a class="btn-link" href="sweets.html"
+							>甘味のご案内 <span><img src="./shared/img/shared/btn_arrow.png" alt="arrow" /></span
+						></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			window.onload = () => {
+				let img1 = document.getElementsByTagName("img");
+				for (let i = 0; i < img1.length; i++) {
+					img1[i].setAttribute("width", img1[i].width);
+					img1[i].setAttribute("height", img1[i].height);
+				}
+			};
+		</script>
+	</body>
+</html>
