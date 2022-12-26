@@ -649,7 +649,7 @@ a:hover {
   }
 }
 #sec4 .content .group3 {
-  background: url(../img/index/sec4_deco_sp.png) no-repeat top center/100% auto;
+  background: url(../img/index/sec4_deco_sp.png) no-repeat top center/100% 100%;
   position: relative;
   padding: 44vw 0 0 0;
 }
