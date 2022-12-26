@@ -51,9 +51,8 @@ a:hover {
 }
 
 @media only screen and (min-width: 768px) {
-  .wrap {
-    border-left: 1px solid red;
-    border-right: 1px solid red;
+  main#index {
+    padding-top: 47px;
   }
 }
 
@@ -81,7 +80,7 @@ a:hover {
     position: absolute;
     content: "";
     top: -90px;
-    background: url(../img/index/header_bg_top.png) no-repeat top center/100% auto;
+    background: url(../img/index/header_bg_top.png) no-repeat top center/150% 258px;
     left: 0;
     right: 0;
     height: 50%;
@@ -250,7 +249,7 @@ a:hover {
 }
 @media only screen and (min-width: 768px) {
   #sec1 {
-    padding: 156px 0px 103px 0px;
+    padding: 160px 0px 103px 0px;
   }
   #sec1:after {
     height: 235px;

@@ -64,10 +64,10 @@
 a:hover {
 	text-decoration: none;
 }
-.wrap {
+
+main#index {
 	@include pc {
-		border-left: 1px solid red;
-		border-right: 1px solid red;
+		padding-top: 47px;
 	}
 }
 #header {
@@ -91,7 +91,7 @@ a:hover {
 			position: absolute;
 			content: "";
 			top: -90px;
-			background: url(../img/index/header_bg_top.png) no-repeat top center/100% auto;
+			background: url(../img/index/header_bg_top.png) no-repeat top center/150% 258px;
 			left: 0;
 			right: 0;
 			height: 50%;
@@ -246,7 +246,7 @@ a:hover {
 		z-index: -1;
 	}
 	@include pc {
-		padding: 156px 0px 103px 0px;
+		padding: 160px 0px 103px 0px;
 		&:after {
 			height: 235px;
 		}

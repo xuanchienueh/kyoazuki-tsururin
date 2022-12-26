@@ -159,6 +159,13 @@ a[href^="tel:"]:hover {
   position: relative;
 }
 
+@media only screen and (min-width: 768px) {
+  .wrap {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+  }
+}
+
 /*=============================================
  * header
  *=============================================*/
@@ -169,18 +176,19 @@ a[href^="tel:"]:hover {
 }
 @media only screen and (min-width: 768px) {
   #header {
-    padding: 0px 0px 0px 0px;
+    padding: 55px 0px 0px 0px;
     background: unset;
     height: 100%;
+    margin-top: 40px;
   }
   #header::before {
     position: absolute;
     content: "";
-    top: -90px;
-    background: url(../img/index/header_bg_top.png) no-repeat top center/100% auto;
+    top: -30px;
+    background: url(../img/index/header_bg_top.png) no-repeat top center/150% 250px;
     left: 0;
     right: 0;
-    height: 50%;
+    height: 100%;
   }
 }
 #header .wrap {
@@ -395,7 +403,7 @@ i {
 .nav-fixed {
   position: fixed;
   background: url("../img/index/header_fix_bg.jpg");
-  top: 0px;
+  top: 10px;
   left: 10px;
   right: 10px;
   z-index: 999;
@@ -408,12 +416,12 @@ i {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 .nav-fixed .tel {
-  margin-left: 14px;
+  margin-left: 7px;
 }
 .nav-fixed .header-fix-top {
+  margin-top: 13px;
   justify-content: space-between;
 }
 .nav-fixed .header-fix-top .gnav {
@@ -422,7 +430,6 @@ i {
   display: -o-flex;
   display: flex;
   justify-content: space-between;
-  margin: 0 14px;
   line-height: 39px;
   flex-direction: row-reverse;
   width: 755px;
@@ -447,8 +454,11 @@ i {
 }
 .nav-fixed .header-fix-top .gnav2 li {
   margin-bottom: 0;
-  margin-left: 3px;
+  margin-left: 20px;
   width: auto;
+}
+.nav-fixed .header-fix-top .gnav2 li a {
+  padding: 0 0;
 }
 
 .nav-fixed.fixed {
