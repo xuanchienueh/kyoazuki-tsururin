@@ -702,8 +702,8 @@ footer #info .right {
     content: "";
     left: 0;
     top: 0;
+    bottom: -60px;
     width: 1px;
-    bottom: 0;
     background: #b5003c;
   }
 }
@@ -830,72 +830,26 @@ footer .cookie-link a:hover:before {
 }
 
 @media only screen and (min-width: 768px) {
-  .info {
-    margin-bottom: 0;
-  }
-  .info dl {
-    line-height: 25px;
-    margin-bottom: 25px;
-  }
-  .info dl:last-child {
-    margin-bottom: 0;
-  }
-  .info dl dt {
-    width: 163px;
-  }
-  .info dl dd {
-    width: calc(100% - 163px);
-  }
   footer {
-    padding: 179px 0 90px;
+    padding: 179px 0 0px;
     line-height: 32px;
     font-weight: 500;
-    background: url("../img/shared/footer_bg.jpg") no-repeat top center, url("../img/shared/bg2.jpg");
   }
   footer .dis-flex-pc {
     justify-content: space-between;
   }
-  footer .info {
-    width: 574px;
-  }
-  footer .info dl {
-    line-height: 22px;
-    margin-bottom: 22px;
-  }
-  .footer-left {
-    width: 400px;
-    text-align: center;
-    margin-top: 4px;
-  }
-  .footer-logo {
-    width: 263px;
-  }
-  .footer-tel {
-    font-size: 18px;
-    margin: 25px 0 5px;
-  }
-  .footer-tel p:nth-child(1) {
-    display: block;
-    letter-spacing: 1px;
-    margin-bottom: 5px;
-  }
-  .footer-tel p:nth-child(1) .dis-flex {
-    justify-content: center;
-  }
-  .footer-tel p:nth-child(1) span:nth-child(2) {
-    font-size: 32px;
-  }
-  .footer-tel p:nth-child(2) {
-    font-size: 15px;
-    line-height: 22px;
+  footer .bg-footer-bottom {
+    padding-bottom: 54px;
+    padding-top: 30px;
+    margin-top: 107px;
+    background: url(../img/shared/footer_bg.jpg);
   }
   .footer-bottom {
-    bottom: 0;
-    left: 0;
+    margin: 0 auto;
     width: 400px;
   }
   footer address {
-    margin-top: 17px;
+    margin-top: 37px;
     font-size: 14px;
   }
   footer .cookie-link {
@@ -909,8 +863,7 @@ footer .cookie-link a:hover:before {
     display: -o-flex;
     display: flex;
     justify-content: center;
-    margin-bottom: 76px;
-    margin-top: 136px;
+    margin-bottom: 29px;
     flex-direction: row-reverse;
     align-items: center;
     background: url(../img/shared/footer_nav_bg.jpg);

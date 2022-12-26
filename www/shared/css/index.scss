@@ -739,7 +739,7 @@ main#index {
 			border: 1px solid #fff;
 		}
 		@include pc {
-			width: 22%;
+			width: 23%;
 			margin-bottom: 0;
 		}
 		a {
@@ -762,7 +762,7 @@ main#index {
 	.sec5-img5 {
 		width: 100%;
 		@include pc {
-			width: calc(100% - 24% - (595 * 100% / 1500));
+			width: calc(100% - 25% - (595 * 100% / 1500));
 			img {
 				height: 100%;
 			}
