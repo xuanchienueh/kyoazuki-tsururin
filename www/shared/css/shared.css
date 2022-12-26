@@ -94,11 +94,17 @@ body.nav--opened #menu_toggle * {
 @media only screen and (min-width: 768px) {
   .flex-pc {
     display: flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
   }
 }
 
 .flex {
   display: flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
 }
 
 .btn-link {
@@ -170,8 +176,8 @@ a[href^="tel:"]:hover {
  * header
  *=============================================*/
 #header {
-  background: url(../img/index/header_bg_top_sp.png) no-repeat top center/100% auto, url(../img/index/header_deco_sp.png) no-repeat bottom center/100% auto;
-  padding-bottom: 8vw;
+  background: url(../img/index/header_bg_top_sp.png) no-repeat top center/100% auto;
+  padding-top: 1px;
   position: relative;
 }
 @media only screen and (min-width: 768px) {
@@ -201,7 +207,7 @@ a[href^="tel:"]:hover {
 }
 #header .logo {
   width: 50%;
-  margin: 12vw auto 0;
+  margin: 7vw auto 0;
 }
 @media only screen and (min-width: 768px) {
   #header .logo {
@@ -412,6 +418,15 @@ i {
   padding-top: 8px;
   box-sizing: border-box;
 }
+.nav-fixed:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: -10px;
+  height: 10px;
+  background: #b5003c;
+}
 .nav-fixed .wrap {
   height: 100%;
   display: flex;
@@ -492,8 +507,8 @@ hr {
   height: 100%;
   overflow-y: auto;
   z-index: 999;
-  padding: 46px 4% 150px;
-  background: url(../img/shared/bg_menu_toggle.jpg);
+  padding: 26px 4% 150px;
+  background: url(../img/index/header_bg_top_sp.png) no-repeat top center/100% 130px, url(../img/shared/bg_menu_toggle.jpg);
   border: 5px solid #b5003c;
   transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
@@ -628,7 +643,7 @@ hr {
  *=============================================*/
 footer {
   position: relative;
-  padding: 13vw 0 25vw;
+  padding: 13vw 0 12vw;
 }
 footer #info {
   margin: 12vw 0;
@@ -829,6 +844,11 @@ footer .cookie-link a:hover:before {
   display: none;
 }
 
+footer .bg-footer-bottom {
+  background: url(../img/shared/footer_bg.jpg);
+  padding: 5vw 0;
+}
+
 @media only screen and (min-width: 768px) {
   footer {
     padding: 179px 0 0px;
@@ -842,7 +862,6 @@ footer .cookie-link a:hover:before {
     padding-bottom: 54px;
     padding-top: 30px;
     margin-top: 107px;
-    background: url(../img/shared/footer_bg.jpg);
   }
   .footer-bottom {
     margin: 0 auto;
@@ -911,6 +930,7 @@ iframe {
   visibility: hidden;
   transition: 0.2s;
   z-index: 999;
+  background: #b5003c;
 }
 
 @media only screen and (max-width: 767px) {
@@ -919,6 +939,21 @@ iframe {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+  }
+  #ft_fixed:after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #fff;
+  }
+  #ft_fixed li {
+    width: 40%;
   }
 }
 @media only screen and (min-width: 768px) {

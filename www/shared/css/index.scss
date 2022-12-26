@@ -103,14 +103,6 @@ main#index {
 			}
 		}
 	}
-	.logo {
-		width: 50%;
-		margin: 7vw auto 0;
-		@include pc {
-			width: 100%;
-			margin: -4px 0px 0px 0px;
-		}
-	}
 	h1 {
 		font-size: 2.6vw;
 		line-height: 1.5;
@@ -480,8 +472,6 @@ main#index {
 		z-index: -4;
 	}
 	@include pc {
-		// background: url(../img/index/sec4_bg.png) no-repeat top center;
-		// background-size: auto 100%;
 		&::before {
 			position: absolute;
 			content: "";
@@ -524,17 +514,9 @@ main#index {
 			height: 100%;
 			z-index: -1;
 			background: url(../img/index/sec4_bg_sp.png) no-repeat top center/100% auto;
-			// @include pc {
-			// 	background: url(../img/index/sec4_bg.png) no-repeat top center/127% auto;
-			// 	top: 94px;
-			// 	left: -117px;
-			// 	right: auto;
-			// 	width: 118%;
-			// }
 		}
 		@include pc {
 			padding-top: 117px;
-			// background: url(../img/index/sec4_bg.png) no-repeat top center/cover;
 			&:after {
 				display: none;
 			}
@@ -687,12 +669,18 @@ main#index {
 	justify-content: space-between;
 	img {
 		width: 100%;
+		height: 100%;
 	}
 	.sec5-img1 {
-		width: 19.5%;
+		width: 32.5%;
+		margin-bottom: 5px;
+		@include pc {
+			width: 19.5%;
+			margin-bottom: 20px;
+		}
 	}
 	.sec5-img2 {
-		width: 49%;
+		width: 66%;
 		margin-bottom: 5px;
 		@include pc {
 			width: 38.6%;
@@ -700,7 +688,7 @@ main#index {
 		}
 	}
 	.sec5-img3 {
-		width: 49%;
+		width: 52.4%;
 		margin-bottom: 5px;
 		@include pc {
 			width: 39.7%;
@@ -722,7 +710,8 @@ main#index {
 		}
 	}
 	.sec5-btn {
-		width: 49%;
+		// width: calc(100% - 54.6%);
+		width: 46.67%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -741,6 +730,7 @@ main#index {
 		@include pc {
 			width: 23%;
 			margin-bottom: 0;
+			order: 1;
 		}
 		a {
 			color: #fff;
@@ -763,110 +753,10 @@ main#index {
 		width: 100%;
 		@include pc {
 			width: calc(100% - 25% - (595 * 100% / 1500));
+			order: 5;
 			img {
 				height: 100%;
 			}
 		}
 	}
-	// @include pc {
-	// 	margin: 144px 0px 0px 0px;
-	// 	img {
-	// 		width: 100%;
-	// 	}
-	// }
-	// .wrap {
-	// 	padding: 0;
-	// }
-	// .group1 {
-	// 	@include pc {
-	// 		justify-content: space-between;
-	// 		margin-bottom: 29px;
-	// 		p {
-	// 			// padding: 0 6px;
-	// 			&:nth-child(1) {
-	// 				// margin-left: -6px;
-	// 				width: 19.5%;
-	// 			}
-	// 			&:nth-child(2) {
-	// 				width: 38.6%;
-	// 			}
-	// 			&:nth-child(3) {
-	// 				width: 39.7%;
-	// 			}
-	// 		}
-	// 	}
-	// }
-	// .group2 {
-	// 	justify-content: center !important;
-	// 	@include pc {
-	// 		position: absolute;
-	// 		display: block;
-	// 		left: calc(617 * 100% / 1500);
-	// 		width: calc(100% - (617 * 100% / 1500) - (603 * 100% / 1500));
-	// 		height: 100%;
-	// 	}
-	// 	> p {
-	// 		width: 50%;
-	// 	}
-	// 	.sec5-btn {
-	// 		width: 50%;
-	// 		display: flex;
-	// 		justify-content: center;
-	// 		align-items: center;
-	// 		background: $main-color;
-	// 		position: relative;
-	// 		&:after {
-	// 			position: absolute;
-	// 			content: "";
-	// 			top: 4px;
-	// 			bottom: 4px;
-	// 			right: 4px;
-	// 			left: 4px;
-	// 			border: 1px solid #fff;
-	// 		}
-	// 		@include pc {
-	// 			width: auto;
-	// 		}
-
-	// 		.btn-link {
-	// 			display: block;
-	// 			color: #fff;
-	// 			position: relative;
-
-	// 			> p {
-	// 				font-size: 6vw;
-	// 				@include pc {
-	// 					font-size: 30px;
-	// 				}
-	// 			}
-	// 			span {
-	// 				width: 65%;
-	// 				margin: 4vw auto 0;
-	// 				@include pc {
-	// 					margin: 0px 0px 0px 0px;
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-	// }
-	// .group3 {
-	// 	p {
-	// 		text-align: center;
-	// 	}
-	// 	@include pc {
-	// 		justify-content: space-between;
-
-	// 		p:nth-child(1) {
-	// 			// margin-right: 195px;
-	// 			width: calc(595 * 100% / 1500);
-	// 		}
-	// 		p:nth-child(2) {
-	// 			// margin-left: 195px;
-	// 			width: calc(579 * 100% / 1500);
-	// 		}
-	// 	}
-	// 	p:nth-child(2) {
-	// 		margin-top: -1px;
-	// 	}
-	// }
 }

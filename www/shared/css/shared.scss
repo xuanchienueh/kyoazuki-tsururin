@@ -89,10 +89,18 @@ body.nav--opened #menu_toggle * {
 .flex-pc {
 	@include pc {
 		display: flex;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
 	}
 }
 .flex {
 	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
 }
 
 .btn-link {
@@ -157,9 +165,10 @@ a[href^="tel:"]:hover {
  * header
  *=============================================*/
 #header {
-	background: url(../img/index/header_bg_top_sp.png) no-repeat top center/100% auto, url(../img/index/header_deco_sp.png) no-repeat bottom center/100% auto;
-	padding-bottom: 8vw;
+	background: url(../img/index/header_bg_top_sp.png) no-repeat top center/100% auto;
+	padding-top: 1px;
 	position: relative;
+
 	@include pc {
 		padding: 55px 0px 0px 0px;
 		background: unset;
@@ -183,7 +192,7 @@ a[href^="tel:"]:hover {
 	}
 	.logo {
 		width: 50%;
-		margin: 12vw auto 0;
+		margin: 7vw auto 0;
 		@include pc {
 			width: 100%;
 			margin: -4px 0px 0px 0px;
@@ -391,7 +400,15 @@ main#index {
 	line-height: 25px;
 	padding-top: 8px;
 	box-sizing: border-box;
-
+	&:after {
+		position: absolute;
+		content: "";
+		left: 0;
+		right: 0;
+		top: -10px;
+		height: 10px;
+		background: $main-color;
+	}
 	.wrap {
 		height: 100%;
 		display: flex;
@@ -472,8 +489,8 @@ hr {
 	height: 100%;
 	overflow-y: auto;
 	z-index: 999;
-	padding: 46px 4% 150px;
-	background: url(../img/shared/bg_menu_toggle.jpg);
+	padding: 26px 4% 150px;
+	background: url(../img/index/header_bg_top_sp.png) no-repeat top center/100% 130px, url(../img/shared/bg_menu_toggle.jpg);
 	border: 5px solid $main-color;
 	transition: all 0.5s ease 0s;
 	-moz-transition: all 0.5s ease 0s;
@@ -597,7 +614,7 @@ hr {
  *=============================================*/
 footer {
 	position: relative;
-	padding: 13vw 0 25vw;
+	padding: 13vw 0 12vw;
 	// background: url("../img/shared/footer_bg_sp.jpg") no-repeat top center / 100% auto, url("../img/shared/bg2_sp.jpg") repeat-y top center / 100% auto;
 	#info {
 		margin: 12vw 0;
@@ -771,6 +788,10 @@ footer .cookie-link a:hover:before {
 .footer-nav {
 	display: none;
 }
+footer .bg-footer-bottom {
+	background: url(../img/shared/footer_bg.jpg);
+	padding: 5vw 0;
+}
 @media only screen and (min-width: 768px) {
 	footer {
 		padding: 179px 0 0px;
@@ -783,7 +804,6 @@ footer .cookie-link a:hover:before {
 			padding-bottom: 54px;
 			padding-top: 30px;
 			margin-top: 107px;
-			background: url(../img/shared/footer_bg.jpg);
 		}
 	}
 
@@ -854,6 +874,7 @@ iframe {
 	visibility: hidden;
 	transition: 0.2s;
 	z-index: 999;
+	background: $main-color;
 }
 @media only screen and (max-width: 767px) {
 	#ft_fixed {
@@ -862,6 +883,21 @@ iframe {
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		height: 50px;
+		&:after {
+			position: absolute;
+			content: "";
+			left: 50%;
+			top: 0;
+			bottom: 0;
+			width: 1px;
+			background: #fff;
+		}
+		li {
+			width: 40%;
+		}
 	}
 }
 @media only screen and (min-width: 768px) {
