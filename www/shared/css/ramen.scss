@@ -1,0 +1,504 @@
+@import "global";
+.color-main {
+	color: $main-color;
+	font-weight: 500;
+}
+.txt-h2 {
+	font-size: 6vw;
+	font-weight: 500;
+	@include pc {
+		font-size: 30px;
+		line-height: 60px;
+		letter-spacing: 9px;
+	}
+}
+.txt-h3 {
+	font-size: 4.5vw;
+	@include pc {
+		letter-spacing: 4px;
+		font-size: 20px;
+		font-weight: 500;
+	}
+}
+.box-color {
+	border: 1px solid $main-color;
+	background: rgba(#fdf9f5, 0.9);
+}
+#sec1 {
+	padding: 12vw 0 6vw;
+	@include pc {
+		padding: 87px 0;
+	}
+	img {
+		height: 100%;
+		width: 100%;
+		@include pc {
+			height: auto;
+		}
+	}
+	.group {
+		.sec1-bg {
+			margin: 0 -5%;
+			height: 45vw;
+			@include pc {
+				margin: 0px 0px 0px 0px;
+				height: auto;
+			}
+		}
+		.sec1-img1 {
+			position: absolute;
+			left: 50%;
+			top: 2vw;
+			transform: translateX(-50%);
+			width: 80%;
+			@include pc {
+				width: 57%;
+				top: -18px;
+				img {
+					// transform: scale(1.1);
+				}
+			}
+		}
+	}
+	.wrap {
+		position: relative;
+		@include pc {
+			margin-top: 173px;
+		}
+		h2 {
+			margin: 17vw auto 7vw;
+
+			@include pc {
+				margin: -8px 0px 0px 0px;
+				font-size: 30px;
+				line-height: 60px;
+				order: 2;
+				width: 93px;
+				letter-spacing: 9px;
+			}
+		}
+		.sec1-txt {
+			@include pc {
+				order: 1;
+				width: 658px;
+				margin-left: 99px;
+				margin-right: 76px;
+			}
+		}
+	}
+}
+#sec2 {
+	padding-bottom: 6vw;
+	@include pc {
+		padding-bottom: 107px;
+	}
+	.wrap {
+		@include pc {
+			flex-direction: row-reverse;
+			padding-top: 109px;
+		}
+	}
+	.left {
+		@include pc {
+			width: 330px;
+			margin: 0 72px 0 58px;
+			padding-top: 77px;
+		}
+		h2 {
+			margin: 20vw auto 8vw;
+			@include pc {
+				margin: 10px 0px 70px 82px;
+			}
+			span {
+				position: relative;
+				top: -24px;
+				@include pc {
+					top: -32px;
+				}
+				&:after {
+					position: absolute;
+					content: "";
+					bottom: -77px;
+					height: 67px;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 1px;
+					background: #000;
+				}
+			}
+		}
+	}
+	.right {
+		@include pc {
+			margin-right: -124px;
+		}
+		.slick-dots {
+			width: 100%;
+			margin: auto;
+			display: flex !important;
+			justify-content: center;
+			z-index: 99;
+			padding: 10px 0 15px;
+			transform: unset;
+			right: 0;
+			bottom: -35px;
+			li {
+				width: 15px;
+				height: 15px;
+				margin: 0 10px;
+				border-radius: 100%;
+				padding: 0;
+				button {
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+					border: none;
+					background: rgba($main-color, 0.6);
+					text-indent: -9999px;
+					cursor: pointer;
+				}
+				&.slick-active button {
+					background: $main-color;
+				}
+			}
+		}
+
+		// .slick-arrow {
+		// 	position: absolute;
+		// 	top: 0;
+		// 	width: calc(50% - 500px);
+		// 	height: 100%;
+		// 	background: rgba(255, 255, 255, 0.3) url(../img/shared/next.png) no-repeat center left 40px;
+		// 	border: none !important;
+		// 	text-indent: -9999px;
+		// 	z-index: 99;
+		// 	cursor: pointer;
+		// 	&.slick-prev {
+		// 		left: 0%;
+		// 		background: rgba(255, 255, 255, 0.3) url(../img/shared/prev.png) no-repeat center right 40px;
+		// 	}
+		// 	&.slick-next {
+		// 		right: 0%;
+		// 	}
+		// }
+	}
+}
+#sec3 {
+	padding: 8vw 0;
+	@include pc {
+		padding-bottom: 86px;
+	}
+	.group1 {
+		position: relative;
+		width: 80%;
+		margin-bottom: 12vw;
+		margin-left: -4%;
+		@include pc {
+			width: auto;
+			margin-bottom: 50px;
+			margin-left: -102px;
+		}
+		h2 {
+			font-size: 4.5vw;
+			background: url(../img/ramen/sec3_h2_bg.jpg) no-repeat top center/100% 100%;
+			position: absolute;
+			left: 109%;
+			top: 0;
+			width: 55px;
+			height: 100%;
+			@include pc {
+				font-size: 40px;
+				line-height: 60px;
+				width: 172px;
+				left: 81%;
+			}
+		}
+		.slick-dots {
+			width: 100%;
+			margin: auto;
+			display: flex;
+			justify-content: center;
+			z-index: 99;
+			padding: 10px 0 15px;
+			transform: unset;
+			right: 0;
+			bottom: -35px;
+			@include pc {
+				bottom: -30px;
+				right: -88px;
+				justify-content: flex-start;
+			}
+			li {
+				width: 20px;
+				height: 3px;
+				margin: 0 10px;
+				padding: 0;
+				@include pc {
+					width: 39px;
+					height: 5px;
+					margin-right: 19px;
+				}
+				button {
+					width: 100%;
+					height: 100%;
+					border: none;
+					background: rgba($main-color, 0.6);
+					text-indent: -9999px;
+					cursor: pointer;
+				}
+				&.slick-active button {
+					background: $main-color;
+				}
+			}
+		}
+	}
+	.group2 {
+		justify-content: space-between;
+		.left {
+			margin-bottom: 6vw;
+			position: relative;
+			&:after {
+				position: absolute;
+				content: "";
+				bottom: -12px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 70%;
+				height: 1px;
+				background: #f1ddb4;
+			}
+			@include pc {
+				margin: 0px 0px 0px 0px;
+				letter-spacing: 4px;
+				&:after {
+					right: -63px;
+					top: 0;
+					height: 100%;
+					width: 2px;
+					left: auto;
+					transform: unset;
+				}
+			}
+			h3 {
+				font-size: 5vw;
+				font-weight: 500;
+				margin-bottom: 2vw;
+				@include pc {
+					font-size: 30px;
+					margin: 5px 0px 27px 0px;
+				}
+			}
+			p {
+				@include pc {
+					font-size: 20px;
+				}
+			}
+			.p3 {
+				display: inline-block;
+				margin: 3vw 0 0vw;
+				@include pc {
+					margin-top: 21px;
+					letter-spacing: 1.5px;
+				}
+			}
+		}
+		.right {
+			@include pc {
+				width: 490px;
+			}
+		}
+	}
+	.group3 {
+		margin-top: 11vw;
+		@include pc {
+			margin: 104px 0px 0px 0px;
+			justify-content: space-between;
+		}
+		.sec3-img1 {
+			@include pc {
+				margin-top: -52px;
+				margin-right: -23px;
+			}
+		}
+		.sec3-img2 {
+			margin-top: 40px;
+			@include pc {
+				margin-top: 48px;
+				margin-left: -30px;
+			}
+		}
+		h3 {
+			font-weight: 500;
+			font-size: 4vw;
+			@include pc {
+				font-size: 28px;
+				line-height: 60px;
+				margin: 0px 0px 0px 6px;
+			}
+			span:nth-child(1) {
+				display: inline-block;
+				margin-top: -20px;
+				@include pc {
+					margin-top: -38px;
+				}
+			}
+		}
+	}
+}
+#sec4 {
+	@include pc {
+		position: relative;
+		margin-top: 2px;
+	}
+	img {
+		height: 100%;
+		width: 100%;
+	}
+	.sec4-bg {
+		height: 55vw;
+		width: 100%;
+		@include pc {
+			height: auto;
+		}
+	}
+	.box-color {
+		margin: -25px 4% 0;
+		position: relative;
+		z-index: 1;
+		padding: 5vw 5% 13vw;
+		@include pc {
+			padding: 63px 51px 98px 45px;
+			margin: 0px 0px 0px 0px;
+			width: 490px;
+			height: 487px;
+			position: absolute;
+			top: 72px;
+			left: -2px;
+			.txt-h2 {
+				margin-bottom: 14px;
+			}
+		}
+		.sec4-txt {
+			margin-top: 6vw;
+			@include pc {
+				margin: 38px 0px 0px 0px;
+				padding: 0 3px;
+			}
+		}
+	}
+	.sec4-img {
+		position: relative;
+		z-index: 1;
+		@include pc {
+			left: 189px;
+			bottom: 122px;
+		}
+		p {
+			width: 80%;
+			margin: -35px auto 0;
+			@include pc {
+				width: 860px;
+				margin: 0px 0px 0px 0px;
+			}
+		}
+		.sub-txt {
+			position: absolute;
+			bottom: 12vw;
+			right: 10%;
+			font-size: 3.3vw;
+			@include pc {
+				left: 595px;
+				top: 169px;
+				bottom: auto;
+				right: auto;
+				font-size: 25px;
+				line-height: 38px;
+				letter-spacing: 5px;
+			}
+		}
+	}
+}
+#sec5 {
+	margin-top: 12vw;
+	@include pc {
+		margin: -75px 0px 0px -169px;
+	}
+	.wrap {
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			right: 0;
+			height: 100px;
+			width: 100px;
+			top: -76px;
+			background: url(../img/ramen/sec5_deco2.png) no-repeat top center/100% 100%;
+			z-index: -1;
+		}
+		@include pc {
+			&:after {
+				display: none;
+			}
+			&::before {
+				content: url(../img/ramen/sec5_deco2.png);
+				position: absolute;
+				top: -104px;
+				right: -278px;
+				z-index: -1;
+			}
+		}
+	}
+	.sec5-img {
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			left: -10%;
+			bottom: -5vw;
+			width: 50%;
+			height: 64%;
+			background: url(../img/ramen/sec5_deco1.jpg) no-repeat bottom left;
+			z-index: -1;
+			@include pc {
+				left: -48px;
+				bottom: -46px;
+				height: 400px;
+			}
+		}
+	}
+	.box-color {
+		position: relative;
+		z-index: 1;
+		margin-top: -30px;
+		padding: 5vw 6%;
+		@include pc {
+			margin: 0px 0px 0px 0px;
+			padding: 57px 67px 0px 72px;
+			width: 490px;
+			height: 476px;
+			position: absolute;
+			top: 85px;
+			right: -168px;
+			h2 {
+				letter-spacing: 4px;
+				margin-bottom: 17px;
+			}
+			h3 {
+				margin-bottom: 38px;
+			}
+		}
+		.sec5-txt {
+			margin-top: 4vw;
+			@include pc {
+				margin: 0px 0px 0px 0px;
+				padding-right: 10px;
+			}
+		}
+	}
+}
+#sec6 {
+	border: 47px solid transparent;
+	border-image: url(../img/ramen/sec6_border.png) 46 5% round;
+	height: 900px;
+	margin: 100px;
+}
