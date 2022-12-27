@@ -503,9 +503,73 @@
 	}
 }
 #sec6 {
-	border: 47px solid transparent;
-	border-image: url(../img/ramen/sec6_border.png) 46 5% round;
-	height: 900px;
-	margin: 300px;
-	display: flex;
+	padding: 8vw 0;
+	@include pc {
+		padding: 0px 0px 0px 0px;
+		margin: 145px 0px 0px 0px;
+	}
+	.border {
+		border: 28px solid transparent;
+		border-image: url(../img/ramen/sec6_border.png) 46 5% round;
+		@include pc {
+			margin: 0 5px;
+			border: 47px solid transparent;
+			border-image: url(../img/ramen/sec6_border.png) 46 5% round;
+			padding-bottom: 74px;
+		}
+	}
+	.sec6-img {
+		margin: 6vw -5%;
+		@include pc {
+			margin: 43px 0px 0px 0px;
+		}
+	}
+	.group {
+		@include pc {
+			justify-content: flex-end;
+			padding-right: 42px;
+		}
+
+		h2 {
+			&.sp {
+				width: 70%;
+			}
+			&.pc {
+				margin-top: 27px;
+			}
+		}
+		.col {
+			@include pc {
+				width: 561px;
+				margin: 51px 11px 0 58px;
+			}
+		}
+		.sec6-txt {
+			margin: 3vw 0;
+			@include pc {
+				margin: 16px 0px 0px 0px;
+			}
+		}
+		.sec6-btn {
+			font-weight: 500;
+			margin-top: 6vw;
+			align-items: center;
+			@include pc {
+				margin: 50px 0px 0px 0px;
+			}
+			p {
+				font-size: 4.5vw;
+				@include pc {
+					font-size: 25px;
+				}
+			}
+			a {
+				width: 28%;
+				margin-left: 12px;
+				@include pc {
+					margin-left: 33px;
+				}
+			}
+		}
+	}
 }
