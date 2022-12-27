@@ -154,12 +154,6 @@ a[href^="tel:"]:hover {
 	padding: 0 4%;
 	position: relative;
 }
-.wrap {
-	@include pc {
-		border-left: 1px solid red;
-		border-right: 1px solid red;
-	}
-}
 
 /*=============================================
  * header
@@ -502,7 +496,7 @@ hr {
 		}
 	}
 	.gnav {
-		margin: 8vw 6% 0;
+		margin: 12vw 6% 0;
 		justify-content: space-between;
 		li a {
 			padding: 2vw 2.5%;

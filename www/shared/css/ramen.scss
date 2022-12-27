@@ -1,4 +1,10 @@
 @import "global";
+.wrap {
+	@include pc {
+		border-left: 1px solid red;
+		border-right: 1px solid red;
+	}
+}
 .color-main {
 	color: $main-color;
 	font-weight: 500;
@@ -500,5 +506,6 @@
 	border: 47px solid transparent;
 	border-image: url(../img/ramen/sec6_border.png) 46 5% round;
 	height: 900px;
-	margin: 100px;
+	margin: 300px;
+	display: flex;
 }

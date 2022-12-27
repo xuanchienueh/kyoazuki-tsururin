@@ -74,8 +74,8 @@ main#index {
 		height: 100%;
 		&:after {
 			position: absolute;
-			content: url(../img/index/headerr_bg.png);
-			bottom: 0;
+			content: url(../img/index/header_bg.png);
+			bottom: -11px;
 			left: 0;
 			right: 0;
 			z-index: -1;
@@ -602,26 +602,35 @@ main#index {
 			}
 		}
 		.group3 {
-			background: url(../img/index/sec4_deco_sp.png) no-repeat top center/100% 100%;
+			border: 28px solid transparent;
+			border-image: url(../img/shared/border.png) 46 5% round;
 			position: relative;
 			padding: 44vw 0 0 0;
 			@include pc {
-				padding: 0px 0px 0px 0px;
+				border: 47px solid transparent;
+				border-image: url(../img/shared/border.png) 46 5% round;
+				padding: 0px 0px 200px 0px;
 				height: 286px;
-				margin-top: 88px;
-				background: url(../img/index/sec4_deco.png) no-repeat top center;
+				margin: 88px 9px 0 8px;
 			}
 			.sec4-img3 {
 				position: absolute;
-				top: -75px;
-				left: 54%;
+				top: -22vw;
+				left: 50%;
 				transform: translateX(-50%);
-				width: 90%;
+				width: calc(90% + 56px);
+				text-align: center;
+				padding-left: 3%;
 				@include pc {
+					top: -75px;
+					position: relative;
 					width: auto;
-					top: -61px;
-					left: 0px;
+					top: -106px;
+					left: -59px;
 					transform: unset;
+					width: 90%;
+					text-align: left;
+					padding-left: 0;
 				}
 			}
 			h3 {
@@ -629,28 +638,27 @@ main#index {
 				line-height: 3;
 				letter-spacing: 3px;
 				margin: 0 4%;
-				background: url(../img/index/sec4_h3_bg.png) no-repeat top center/100% auto;
+				background: url(../img/index/sec4_h3_bg.png) no-repeat top center/100% 100%;
 				@include pc {
 					font-size: 30px;
-					line-height: 60px;
-					line-height: 1.3;
+					line-height: 72px;
 					margin: 0px 0px 0px 0px;
-					width: 335px;
+					width: 471px;
 					position: absolute;
-					top: 79px;
-					right: 117px;
-					background: unset;
+					top: 20px;
+					right: -10px;
 					letter-spacing: 7px;
 				}
 			}
 			.sec4-btn {
-				padding: 18px 0 40px;
 				text-align: center;
+				padding: 6vw 0 2vw;
 				@include pc {
 					width: 317px;
 					position: absolute;
-					top: 143px;
-					right: 107px;
+					padding: 18px 0 40px;
+					top: 102px;
+					right: 51px;
 				}
 				a {
 					font-size: 5.2vw;

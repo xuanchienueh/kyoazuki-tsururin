@@ -165,13 +165,6 @@ a[href^="tel:"]:hover {
   position: relative;
 }
 
-@media only screen and (min-width: 768px) {
-  .wrap {
-    border-left: 1px solid red;
-    border-right: 1px solid red;
-  }
-}
-
 /*=============================================
  * header
  *=============================================*/
@@ -519,7 +512,7 @@ hr {
   margin: 0 auto;
 }
 #menu_toggle .gnav {
-  margin: 8vw 6% 0;
+  margin: 12vw 6% 0;
   justify-content: space-between;
 }
 #menu_toggle .gnav li a {

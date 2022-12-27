@@ -1,3 +1,10 @@
+@media only screen and (min-width: 768px) {
+  .wrap {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+  }
+}
+
 .color-main {
   color: #b5003c;
   font-weight: 500;
@@ -550,5 +557,6 @@
   -o-border-image: url(../img/ramen/sec6_border.png) 46 5% round;
      border-image: url(../img/ramen/sec6_border.png) 46 5% round;
   height: 900px;
-  margin: 100px;
+  margin: 300px;
+  display: flex;
 }/*# sourceMappingURL=ramen.css.map */
