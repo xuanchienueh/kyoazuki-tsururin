@@ -1,10 +1,5 @@
 @import "global";
-.wrap {
-	@include pc {
-		border-left: 1px solid red;
-		border-right: 1px solid red;
-	}
-}
+
 #key {
 	// @include pc(){
 	//   .slide-img1{
@@ -322,9 +317,18 @@ main#index {
 	background: url(../img/index/set2_bg_sp.png) no-repeat top center/100% auto;
 	padding: 12vw 0 12vw;
 	position: relative;
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 24vw;
+		background: url(../img/index/sec2_bg_deco.jpg) repeat-x bottom center/30%;
+		z-index: -1;
+	}
 	@include pc {
 		padding: 118px 0px 78px 0px;
-		// z-index: -2;\
 		background: url(../img/index/sec2_deco_top.png) no-repeat top center, url(../img/index/set2_bg_top.png) no-repeat top center/100% auto, url(../img/index/sec2_bg_bottom.jpg) no-repeat bottom center;
 		&:after {
 			content: "";
@@ -413,19 +417,19 @@ main#index {
 		&:after {
 			content: "";
 			position: absolute;
-			left: -13px;
+			left: -6px;
 			width: 1px;
-			top: -14px;
-			height: 126px;
+			top: -6px;
+			height: 70px;
 			background: $main-color;
 		}
 		&::before {
 			position: absolute;
 			content: "";
-			top: -14px;
-			left: -13px;
+			top: -6px;
+			left: -6px;
 			height: 1px;
-			width: 126px;
+			width: 70px;
 			background: $main-color;
 		}
 		@include pc {
@@ -453,7 +457,7 @@ main#index {
 				}
 			}
 			.p2 {
-				font-size: 5.5vw;
+				font-size: 6.4vw;
 				line-height: 1.5;
 				font-weight: 500;
 				@include pc {
