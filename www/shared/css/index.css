@@ -252,12 +252,17 @@ a:hover {
   padding: 0 6% 0 0%;
   width: 23%;
   margin-left: 5%;
+  font-size: 5.3vw;
+  letter-spacing: 5px;
 }
 @media only screen and (min-width: 768px) {
   #sec1 .wrap .left h2 {
-    padding: 0px 0px 0px 203px;
-    margin: 0px 0px 59px 0px;
+    padding: 0px 259px 0px 140px;
+    margin: 0px 0px 47px 0px;
     width: 100%;
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: 9px;
   }
 }
 #sec1 .wrap .left .sec1-img {
