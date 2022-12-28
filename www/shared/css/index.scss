@@ -254,9 +254,6 @@ main#index {
 				font-size: 5.3vw;
 				letter-spacing: 5px;
 				@include pc {
-				
-
-
 					padding: 0px 259px 0px 140px;
 					margin: 0px 0px 47px 0px;
 					width: 100%;
@@ -309,7 +306,7 @@ main#index {
 					}
 				}
 			}
-		
+
 			p:nth-child(3) {
 				letter-spacing: 0.4px;
 				@include pc {
