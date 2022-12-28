@@ -325,7 +325,7 @@ a:hover {
 @media only screen and (min-width: 768px) {
   #sec2 {
     padding: 118px 0px 78px 0px;
-    background: url(../img/index/set2_bg_top.png) no-repeat top center/100% auto, url(../img/index/sec2_bg_bottom.png) no-repeat bottom center;
+    background: url(../img/index/sec2_deco_top.png) no-repeat top center, url(../img/index/set2_bg_top.png) no-repeat top center/100% auto, url(../img/index/sec2_bg_bottom.jpg) no-repeat bottom center;
   }
   #sec2:after {
     content: "";
@@ -401,6 +401,7 @@ a:hover {
   #sec3 {
     padding: 108px 0px 120px 0px;
     background: unset;
+    background: url(../img/index/sec3_deco1.png) no-repeat top right;
   }
 }
 #sec3 .sec3-slide {
