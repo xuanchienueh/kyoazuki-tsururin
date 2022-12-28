@@ -1,3 +1,10 @@
+@media only screen and (min-width: 768px) {
+  .wrap {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+  }
+}
+
 .popup-link {
   padding: 7vw 4% 0;
 }
@@ -62,11 +69,13 @@ a:hover {
   }
   #header:after {
     position: absolute;
-    content: url(../img/index/header_bg.png);
+    content: "";
     bottom: -11px;
+    height: 400px;
     left: 0;
     right: 0;
     z-index: -1;
+    background: url(../img/index/header_bg.png) repeat-x bottom center;
   }
   #header::before {
     position: absolute;
@@ -333,8 +342,8 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 145px;
-    background: url(../img/index/sec2_bg_deco.jpg) repeat-x top center;
+    height: 180px;
+    background: url(../img/index/sec2_bg_deco.jpg) repeat-x bottom center;
     z-index: -1;
   }
 }
@@ -402,6 +411,18 @@ a:hover {
     padding: 108px 0px 120px 0px;
     background: unset;
     background: url(../img/index/sec3_deco1.png) no-repeat top right;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec3 .wrap {
+    position: relative;
+  }
+  #sec3 .wrap:after {
+    position: absolute;
+    content: url(../img/index/sec3_deco2.png);
+    left: -84px;
+    bottom: -93px;
+    z-index: -1;
   }
 }
 #sec3 .sec3-slide {
@@ -523,7 +544,7 @@ a:hover {
     width: 100%;
     top: 334px;
     height: 100%;
-    background: url(../img/index/sec4_bg.png) no-repeat top center;
+    background: url(../img/index/sec4_bg.jpg) no-repeat top center;
     z-index: -4;
   }
 }

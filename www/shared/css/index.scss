@@ -1,4 +1,10 @@
 @import "global";
+.wrap {
+	@include pc {
+		border-left: 1px solid red;
+		border-right: 1px solid red;
+	}
+}
 #key {
 	// @include pc(){
 	//   .slide-img1{
@@ -74,11 +80,14 @@ main#index {
 		height: 100%;
 		&:after {
 			position: absolute;
-			content: url(../img/index/header_bg.png);
+			// content: url(../img/index/header_bg.png);
+			content: "";
 			bottom: -11px;
+			height: 400px;
 			left: 0;
 			right: 0;
 			z-index: -1;
+			background: url(../img/index/header_bg.png) repeat-x bottom center;
 		}
 		&::before {
 			position: absolute;
@@ -323,8 +332,8 @@ main#index {
 			left: 0;
 			right: 0;
 			bottom: 0;
-			height: 145px;
-			background: url(../img/index/sec2_bg_deco.jpg) repeat-x top center;
+			height: 180px;
+			background: url(../img/index/sec2_bg_deco.jpg) repeat-x bottom center;
 			z-index: -1;
 		}
 	}
@@ -384,6 +393,18 @@ main#index {
 		padding: 108px 0px 120px 0px;
 		background: unset;
 		background: url(../img/index/sec3_deco1.png) no-repeat top right;
+	}
+	.wrap {
+		@include pc {
+			position: relative;
+			&:after {
+				position: absolute;
+				content: url(../img/index/sec3_deco2.png);
+				left: -84px;
+				bottom: -93px;
+				z-index: -1;
+			}
+		}
 	}
 	.sec3-slide {
 		width: 75%;
@@ -491,7 +512,7 @@ main#index {
 			width: 100%;
 			top: 334px;
 			height: 100%;
-			background: url(../img/index/sec4_bg.png) no-repeat top center;
+			background: url(../img/index/sec4_bg.jpg) no-repeat top center;
 			z-index: -4;
 		}
 	}
