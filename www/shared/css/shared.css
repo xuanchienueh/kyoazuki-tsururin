@@ -177,7 +177,6 @@ a[href^="tel:"]:hover {
   #header {
     padding: 55px 0px 0px 0px;
     background: unset;
-    height: 100%;
     margin-top: 40px;
   }
   #header::before {

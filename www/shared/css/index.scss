@@ -276,7 +276,7 @@ main#index {
 					text-align: left;
 				}
 			}
-			.p1 {
+			p:nth-child(1) {
 				padding-top: 6vw;
 				position: relative;
 				margin: 8vw 0 0 0;
@@ -301,9 +301,8 @@ main#index {
 					}
 				}
 			}
-			.p2 {
-			}
-			.p3 {
+		
+			p:nth-child(3) {
 				letter-spacing: 0.4px;
 				@include pc {
 					letter-spacing: normal;
@@ -329,7 +328,8 @@ main#index {
 	}
 	@include pc {
 		padding: 118px 0px 78px 0px;
-		background: url(../img/index/sec2_deco_top.png) no-repeat top center, url(../img/index/set2_bg_top.png) no-repeat top center/100% auto, url(../img/index/sec2_bg_bottom.jpg) no-repeat bottom center;
+		background: url(../img/index/sec2_deco_top.png) no-repeat top center, url(../img/index/set2_bg_top.png) no-repeat top center/100% auto;
+		// background: url(../img/index/sec2_deco_top.png) no-repeat top center, url(../img/index/set2_bg_top.png) no-repeat top center/100% auto, url(../img/index/sec2_bg_bottom.jpg) no-repeat bottom center;
 		&:after {
 			content: "";
 			position: absolute;
@@ -338,7 +338,7 @@ main#index {
 			bottom: 0;
 			height: 180px;
 			background: url(../img/index/sec2_bg_deco.jpg) repeat-x bottom center;
-			z-index: -1;
+			z-index: -2;
 		}
 	}
 	.wrap {
@@ -387,6 +387,32 @@ main#index {
 			margin: 0 auto 26px;
 			width: 575px;
 			text-align: center;
+			position: relative;
+			&:after {
+				content: "";
+				position: absolute;
+				left: -59px;
+				width: 673px;
+				top: -226px;
+				height: 675px;
+				border: 1px solid $main-color;
+				border-radius: 100%;
+				z-index: -1;
+			}
+			&::before {
+				content: url(../img/index/sec2_deco2.jpg);
+				position: absolute;
+				left: -204px;
+				// width: 100%;\
+				bottom: 89px;
+				z-index: -1;
+			}
+		}
+	}
+	.sec2-btn {
+		@include pc {
+			width: 350px;
+			margin: 0 auto;
 		}
 	}
 }
@@ -422,6 +448,9 @@ main#index {
 			top: -6px;
 			height: 70px;
 			background: $main-color;
+			@include pc {
+				height: 100px;
+			}
 		}
 		&::before {
 			position: absolute;
@@ -431,6 +460,9 @@ main#index {
 			height: 1px;
 			width: 70px;
 			background: $main-color;
+			@include pc {
+				width: 100px;
+			}
 		}
 		@include pc {
 			width: 540px;
@@ -753,6 +785,7 @@ main#index {
 		background: $main-color;
 		position: relative;
 		margin-bottom: 5px;
+		transition: 0.3s;
 		&:after {
 			position: absolute;
 			content: "";
@@ -765,22 +798,24 @@ main#index {
 		@include pc {
 			width: 23%;
 			margin-bottom: 0;
+			flex-direction: column;
 			order: 1;
+			&:hover {
+				opacity: 0.8;
+			}
 		}
-		a {
+		p {
+			margin-bottom: 8px;
 			color: #fff;
 			text-align: center;
 			@include pc {
 				font-size: 30px;
 			}
-			p {
-				margin-bottom: 8px;
-			}
-			img {
-				width: 50%;
-				@include pc {
-					width: auto;
-				}
+		}
+		img {
+			width: 50%;
+			@include pc {
+				width: auto;
 			}
 		}
 	}

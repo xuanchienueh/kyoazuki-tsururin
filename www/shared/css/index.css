@@ -283,12 +283,12 @@ a:hover {
     text-align: left;
   }
 }
-#sec1 .wrap .right .p1 {
+#sec1 .wrap .right p:nth-child(1) {
   padding-top: 6vw;
   position: relative;
   margin: 8vw 0 0 0;
 }
-#sec1 .wrap .right .p1:after {
+#sec1 .wrap .right p:nth-child(1):after {
   content: "";
   position: absolute;
   width: 24%;
@@ -299,22 +299,22 @@ a:hover {
   background-color: #b6003d;
 }
 @media only screen and (min-width: 768px) {
-  #sec1 .wrap .right .p1 {
+  #sec1 .wrap .right p:nth-child(1) {
     padding-top: 39px;
     margin: 131px 0px 0px 0px;
   }
-  #sec1 .wrap .right .p1:after {
+  #sec1 .wrap .right p:nth-child(1):after {
     width: 89px;
     left: 0;
     top: 4px;
     transform: translateX(0%);
   }
 }
-#sec1 .wrap .right .p3 {
+#sec1 .wrap .right p:nth-child(3) {
   letter-spacing: 0.4px;
 }
 @media only screen and (min-width: 768px) {
-  #sec1 .wrap .right .p3 {
+  #sec1 .wrap .right p:nth-child(3) {
     letter-spacing: normal;
   }
 }
@@ -337,7 +337,7 @@ a:hover {
 @media only screen and (min-width: 768px) {
   #sec2 {
     padding: 118px 0px 78px 0px;
-    background: url(../img/index/sec2_deco_top.png) no-repeat top center, url(../img/index/set2_bg_top.png) no-repeat top center/100% auto, url(../img/index/sec2_bg_bottom.jpg) no-repeat bottom center;
+    background: url(../img/index/sec2_deco_top.png) no-repeat top center, url(../img/index/set2_bg_top.png) no-repeat top center/100% auto;
   }
   #sec2:after {
     content: "";
@@ -347,7 +347,7 @@ a:hover {
     bottom: 0;
     height: 180px;
     background: url(../img/index/sec2_bg_deco.jpg) repeat-x bottom center;
-    z-index: -1;
+    z-index: -2;
   }
 }
 #sec2 h2 {
@@ -402,6 +402,31 @@ a:hover {
     margin: 0 auto 26px;
     width: 575px;
     text-align: center;
+    position: relative;
+  }
+  #sec2 .sec2-txt:after {
+    content: "";
+    position: absolute;
+    left: -59px;
+    width: 673px;
+    top: -226px;
+    height: 675px;
+    border: 1px solid #b5003c;
+    border-radius: 100%;
+    z-index: -1;
+  }
+  #sec2 .sec2-txt::before {
+    content: url(../img/index/sec2_deco2.jpg);
+    position: absolute;
+    left: -204px;
+    bottom: 89px;
+    z-index: -1;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec2 .sec2-btn {
+    width: 350px;
+    margin: 0 auto;
   }
 }
 
@@ -442,6 +467,11 @@ a:hover {
   height: 70px;
   background: #b5003c;
 }
+@media only screen and (min-width: 768px) {
+  #sec3 .sec3-slide:after {
+    height: 100px;
+  }
+}
 #sec3 .sec3-slide::before {
   position: absolute;
   content: "";
@@ -450,6 +480,11 @@ a:hover {
   height: 1px;
   width: 70px;
   background: #b5003c;
+}
+@media only screen and (min-width: 768px) {
+  #sec3 .sec3-slide::before {
+    width: 100px;
+  }
 }
 @media only screen and (min-width: 768px) {
   #sec3 .sec3-slide {
@@ -817,6 +852,7 @@ a:hover {
   background: #b5003c;
   position: relative;
   margin-bottom: 5px;
+  transition: 0.3s;
 }
 #sec5 .sec5-btn:after {
   position: absolute;
@@ -831,26 +867,28 @@ a:hover {
   #sec5 .sec5-btn {
     width: 23%;
     margin-bottom: 0;
+    flex-direction: column;
     order: 1;
   }
+  #sec5 .sec5-btn:hover {
+    opacity: 0.8;
+  }
 }
-#sec5 .sec5-btn a {
+#sec5 .sec5-btn p {
+  margin-bottom: 8px;
   color: #fff;
   text-align: center;
 }
 @media only screen and (min-width: 768px) {
-  #sec5 .sec5-btn a {
+  #sec5 .sec5-btn p {
     font-size: 30px;
   }
 }
-#sec5 .sec5-btn a p {
-  margin-bottom: 8px;
-}
-#sec5 .sec5-btn a img {
+#sec5 .sec5-btn img {
   width: 50%;
 }
 @media only screen and (min-width: 768px) {
-  #sec5 .sec5-btn a img {
+  #sec5 .sec5-btn img {
     width: auto;
   }
 }
