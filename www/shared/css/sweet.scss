@@ -1,0 +1,136 @@
+@import "global";
+@font-face {
+	font-family: HannariMincho;
+	src: url(../font/HannariMincho-Regular.otf);
+	font-style: normal;
+}
+.txt-f4 {
+	letter-spacing: 9px;
+	font-size: 5.5vw;
+	font-family: HannariMincho !important;
+	@include pc {
+		font-size: 40px;
+	}
+}
+.txt-f3 {
+	font-size: 7vw;
+	letter-spacing: 9px;
+	font-family: HannariMincho !important;
+	@include pc {
+		font-size: 30px !important;
+	}
+}
+.color-main {
+	color: $main-color;
+}
+.wrap {
+	@include pc {
+		border-left: 1px solid red;
+		border-right: 1px solid red;
+	}
+}
+#sec1 {
+	.h2 {
+		display: inline-block;
+		position: relative;
+		margin: 0 auto;
+		width: 24%;
+		height: 74vw;
+		@include pc {
+			width: 86px;
+			height: 344px;
+		}
+		.sub1-h2 {
+			position: absolute;
+			right: 0;
+			top: 9vw;
+			font-size: 2.5vw;
+			@include pc {
+				font-size: 13px;
+				top: 45px;
+				right: -6px;
+			}
+		}
+		.sub2-h2 {
+			position: absolute;
+			bottom: 20vw;
+			font-size: 2.5vw;
+			left: 32%;
+			@include pc {
+				font-size: 13px;
+				bottom: 80px;
+				left: 26px;
+			}
+		}
+	}
+	h2 {
+		font-size: 6vw;
+        letter-spacing: 4px;
+		@include pc {
+			line-height: 43px;
+		}
+		p:nth-child(2) {
+			padding-top: 21vw;
+			text-align: left;
+			@include pc {
+				padding: 106px 0px 0px 0px;
+			}
+		}
+	}
+	.sec1-img {
+		margin: 6vw 0;
+		@include pc {
+			margin: 72px 0px 57px 0px;
+		}
+	}
+	.sec1-txt {
+		@include pc {
+			margin: 0 auto;
+			width: 758px;
+		}
+	}
+}
+#sec2 {
+	padding: 10vw 0;
+	@include pc {
+		padding: 0px 0px 210px 0px;
+        margin-top: 210px;
+	}
+	.wrap {
+		position: relative;
+		.deco {
+			position: absolute;
+			left: -5%;
+			top: -16vw;
+			width: 50%;
+			@include pc {
+                left: -177px;
+                top: -162px;
+                width: 100%;
+			}
+		}
+	}
+	h2 {
+		margin: 0 auto 6vw;
+		@include pc {
+			margin: 0px 0px 39px 0px;
+            width: 333px;
+            display: flex;
+            align-items: center;justify-content: center;
+		}
+	}
+	.sec2-img {
+		margin-bottom: 6vw;
+		@include pc {
+			margin: 0px 0px 0px 0px;
+            position: absolute;
+            right: -78px;
+            top: -10px;
+		}
+	}
+    .sec2-txt { 
+        @include pc { 
+            width: 333px;
+        }
+    }
+}

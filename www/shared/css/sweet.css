@@ -1,0 +1,163 @@
+@font-face {
+  font-family: HannariMincho;
+  src: url(../font/HannariMincho-Regular.otf);
+  font-style: normal;
+}
+.txt-f4 {
+  letter-spacing: 9px;
+  font-size: 5.5vw;
+  font-family: HannariMincho !important;
+}
+@media only screen and (min-width: 768px) {
+  .txt-f4 {
+    font-size: 40px;
+  }
+}
+
+.txt-f3 {
+  font-size: 7vw;
+  letter-spacing: 9px;
+  font-family: HannariMincho !important;
+}
+@media only screen and (min-width: 768px) {
+  .txt-f3 {
+    font-size: 30px !important;
+  }
+}
+
+.color-main {
+  color: #b5003c;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrap {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+  }
+}
+
+#sec1 .h2 {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  width: 24%;
+  height: 74vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .h2 {
+    width: 86px;
+    height: 344px;
+  }
+}
+#sec1 .h2 .sub1-h2 {
+  position: absolute;
+  right: 0;
+  top: 9vw;
+  font-size: 2.5vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .h2 .sub1-h2 {
+    font-size: 13px;
+    top: 45px;
+    right: -6px;
+  }
+}
+#sec1 .h2 .sub2-h2 {
+  position: absolute;
+  bottom: 20vw;
+  font-size: 2.5vw;
+  left: 32%;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .h2 .sub2-h2 {
+    font-size: 13px;
+    bottom: 80px;
+    left: 26px;
+  }
+}
+#sec1 h2 {
+  font-size: 6vw;
+  letter-spacing: 4px;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 h2 {
+    line-height: 43px;
+  }
+}
+#sec1 h2 p:nth-child(2) {
+  padding-top: 21vw;
+  text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 h2 p:nth-child(2) {
+    padding: 106px 0px 0px 0px;
+  }
+}
+#sec1 .sec1-img {
+  margin: 6vw 0;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .sec1-img {
+    margin: 72px 0px 57px 0px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .sec1-txt {
+    margin: 0 auto;
+    width: 758px;
+  }
+}
+
+#sec2 {
+  padding: 10vw 0;
+}
+@media only screen and (min-width: 768px) {
+  #sec2 {
+    padding: 0px 0px 210px 0px;
+    margin-top: 210px;
+  }
+}
+#sec2 .wrap {
+  position: relative;
+}
+#sec2 .wrap .deco {
+  position: absolute;
+  left: -5%;
+  top: -16vw;
+  width: 50%;
+}
+@media only screen and (min-width: 768px) {
+  #sec2 .wrap .deco {
+    left: -177px;
+    top: -162px;
+    width: 100%;
+  }
+}
+#sec2 h2 {
+  margin: 0 auto 6vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec2 h2 {
+    margin: 0px 0px 39px 0px;
+    width: 333px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+#sec2 .sec2-img {
+  margin-bottom: 6vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec2 .sec2-img {
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    right: -78px;
+    top: -10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec2 .sec2-txt {
+    width: 333px;
+  }
+}/*# sourceMappingURL=sweet.css.map */
