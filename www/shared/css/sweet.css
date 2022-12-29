@@ -33,6 +33,14 @@
   border: 1px solid #b5003c;
 }
 
+.fw500 {
+  font-weight: 500;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
 @media only screen and (min-width: 768px) {
   .wrap {
     border-left: 1px solid red;
@@ -619,6 +627,39 @@
   }
 }
 
+#sec7 {
+  padding-bottom: 12vw;
+  position: relative;
+  background: url(../img/sweets/sec7_deco_bottom.jpg) repeat-x bottom center/auto 30vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec7 {
+    padding-bottom: 188px;
+    background-size: auto auto;
+  }
+}
+#sec7 .content {
+  position: relative;
+}
+#sec7 .content:after {
+  content: "";
+  position: absolute;
+  top: -20vw;
+  left: -26%;
+  z-index: -1;
+  height: 30vw;
+  width: 50%;
+  background: url(../img/sweets/sec7_deco.png) no-repeat top center/100% auto;
+}
+@media only screen and (min-width: 768px) {
+  #sec7 .content:after {
+    background: unset;
+    content: url(../img/sweets/sec7_deco.png);
+    position: absolute;
+    top: -84px;
+    left: -115px;
+  }
+}
 #sec7 h2 {
   margin: 0 auto;
   width: 75%;
@@ -626,6 +667,7 @@
 @media only screen and (min-width: 768px) {
   #sec7 h2 {
     width: auto;
+    margin-right: 76px;
   }
 }
 #sec7 .sec7-img1 {
@@ -736,6 +778,320 @@
   }
 }
 
-footer {
-  margin-top: 500px;
+#sec8 .sec8-img1 {
+  position: relative;
+}
+#sec8 .sec8-img1 img {
+  height: 65vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec8 .sec8-img1 img {
+    height: auto;
+    width: 100%;
+  }
+}
+#sec8 .sec8-img1 h2 {
+  position: absolute;
+  left: 50%;
+  top: 15vw;
+  transform: translateX(-50%);
+}
+@media only screen and (min-width: 768px) {
+  #sec8 .sec8-img1 h2 {
+    bottom: -152px;
+    top: auto;
+  }
+}
+#sec8 .group1 {
+  margin-top: 19vw;
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  #sec8 .group1 {
+    margin: 0px 0px 0px 0px;
+    padding: 20px;
+  }
+}
+#sec8 .group1:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: -4%;
+  top: -27vw;
+  width: 50%;
+  height: 40vw;
+  background: url(../img/sweets/sec8_deco1.jpg) no-repeat top center/100% 100%;
+}
+@media only screen and (min-width: 768px) {
+  #sec8 .group1:after {
+    background: unset;
+    content: url(../img/sweets/sec8_deco1.jpg);
+    top: 0;
+    right: -377px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec8 .group1 .sec8-img2 {
+    margin: 191px -256px 0 236px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec8 .group1 .bg {
+    position: relative;
+  }
+  #sec8 .group1 .bg:after {
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0.9;
+    z-index: -1;
+  }
+}
+#sec8 .group1 .box-main-color {
+  padding: 5vw 5%;
+}
+@media only screen and (min-width: 768px) {
+  #sec8 .group1 .box-main-color {
+    padding: 75px 73px;
+    width: 510px;
+    height: 496px;
+    position: absolute;
+    top: 180px;
+    left: -65px;
+    background: transparent;
+    z-index: 0;
+  }
+  #sec8 .group1 .box-main-color .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/sweets/sec8_bg_txt_box.jpg);
+    z-index: -1;
+    opacity: 0.8;
+  }
+}
+#sec8 .group1 .box-main-color h3 {
+  font-size: 6vw;
+  margin-bottom: 1vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec8 .group1 .box-main-color h3 {
+    font-size: 32px;
+    margin: 0px 0px 17px 0px;
+  }
+}
+#sec8 .group1 .box-main-color h3 span {
+  font-size: 4.5vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec8 .group1 .box-main-color h3 span {
+    font-size: 23px;
+  }
+}
+#sec8 .group1 .box-main-color .price {
+  font-size: 4vw;
+  margin-bottom: 5vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec8 .group1 .box-main-color .price {
+    font-size: 22px;
+    margin: 0px 0px 40px 0px;
+  }
+}
+#sec8 .group2 {
+  margin-top: 4vw;
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  #sec8 .group2 {
+    margin: -77px 0px 0px 20px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec8 .group2 .sec8-img3 {
+    position: absolute;
+    top: -61px;
+    z-index: 1;
+    left: -67px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec8 .group2 .sec8-img5 {
+    position: absolute;
+    right: -41px;
+    top: 64px;
+    z-index: -1;
+  }
+}
+#sec8 .group2 .sec8-txt2 {
+  margin-top: 5vw;
+  padding: 0 4%;
+}
+@media only screen and (min-width: 768px) {
+  #sec8 .group2 .sec8-txt2 {
+    margin: 40px 0px 0px -20px;
+    padding: 0;
+    width: 568px;
+  }
+}
+
+#sec9 {
+  margin: 8vw 0 0;
+  padding-bottom: 13vw;
+  padding-top: 24vw;
+  background: url(../img/sweets/sec9_bg_bottom.jpg) repeat-x bottom center/auto 120px, url(../img/sweets/sec9_bg_top.jpg) repeat-x top center/auto 120px;
+}
+@media only screen and (min-width: 768px) {
+  #sec9 {
+    margin-top: 82px;
+    padding-bottom: 209px;
+    padding-top: 237px;
+    background: url(../img/sweets/sec9_bg_bottom.jpg) repeat-x bottom center/auto 198px, url(../img/sweets/sec9_bg_top.jpg) repeat-x top center/auto 240px;
+  }
+}
+#sec9 .bg-top {
+  height: 30vw;
+  background: url(../img/sweets/sec9_bg_top.jpg);
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  #sec9 .bg-top {
+    height: 235px;
+  }
+}
+#sec9 .bg-top:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10vw;
+  width: 2px;
+  transform: translateX(-50%);
+  height: 20vw;
+  background: #b5003c;
+}
+@media only screen and (min-width: 768px) {
+  #sec9 .bg-top:after {
+    height: 89px;
+    bottom: -46px;
+  }
+}
+#sec9 dl {
+  display: flex;
+  justify-content: space-between;
+  padding: 4vw 3%;
+  font-size: 4vw;
+  border-bottom: 2px solid transparent;
+  -o-border-image: url(../img/sweets/sec5_border_bottom.jpg) 20 round;
+     border-image: url(../img/sweets/sec5_border_bottom.jpg) 20 round;
+}
+@media only screen and (min-width: 768px) {
+  #sec9 dl {
+    font-size: 16px;
+    padding: 12px 11px 12px 11px;
+    line-height: 25px;
+  }
+}
+#sec9 dl dd {
+  text-align: right;
+}
+#sec9 .border-top {
+  border-top: 2px solid transparent;
+  -o-border-image: url(../img/sweets/sec5_border_bottom.jpg) 20 round;
+     border-image: url(../img/sweets/sec5_border_bottom.jpg) 20 round;
+}
+@media only screen and (min-width: 768px) {
+  #sec9 .border-top-pc {
+    border-top: 2px solid transparent;
+    -o-border-image: url(../img/sweets/sec5_border_bottom.jpg) 20 round;
+       border-image: url(../img/sweets/sec5_border_bottom.jpg) 20 round;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec9 .group1 {
+    padding: 0 15px;
+    margin-top: 71px;
+  }
+}
+#sec9 .group1 h2 {
+  margin-top: 15vw;
+  position: relative;
+}
+#sec9 .group1 h2:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -18vw;
+  width: 2px;
+  transform: translateX(-50%);
+  height: 20vw;
+  background: #b5003c;
+}
+@media only screen and (min-width: 768px) {
+  #sec9 .group1 h2:after {
+    height: 89px;
+    top: -117px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec9 .group1 h2 {
+    margin: 0px 0px 55px 0px;
+  }
+}
+#sec9 .group1 .sub-h2 {
+  font-size: 4vw;
+  margin: 6vw 0;
+}
+@media only screen and (min-width: 768px) {
+  #sec9 .group1 .sub-h2 {
+    font-size: 16px;
+    margin: 0px 0px 22px 0px;
+  }
+}
+#sec9 .group1 .flex-pc {
+  justify-content: space-between;
+}
+@media only screen and (min-width: 768px) {
+  #sec9 .group1 .flex-pc .col {
+    width: 297px;
+  }
+}
+#sec9 .sec9-deco {
+  margin: 9vw 0;
+}
+@media only screen and (min-width: 768px) {
+  #sec9 .sec9-deco {
+    margin: 74px 0 60px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec9 .group2 {
+    padding: 0 70px;
+  }
+}
+#sec9 .group2 .flex-pc {
+  justify-content: space-between;
+}
+#sec9 .group2 h2 {
+  margin: 0 -4%;
+}
+@media only screen and (min-width: 768px) {
+  #sec9 .group2 h2 {
+    margin: 0px 0px 53px 0px;
+  }
+}
+#sec9 .group2 .sub-h2 {
+  margin: 6vw 0;
+}
+@media only screen and (min-width: 768px) {
+  #sec9 .group2 .sub-h2 {
+    margin: 0px 0px 38px 0px;
+  }
+}
+#sec9 .group2 .col {
+  width: 403px;
 }/*# sourceMappingURL=sweet.css.map */

@@ -26,6 +26,12 @@
 .box-main-color {
 	border: 1px solid $main-color;
 }
+.fw500 { 
+	font-weight: 500;
+}
+.fw600	{ 
+	font-weight: 600;
+}
 .wrap {
 	@include pc {
 		border-left: 1px solid red;
@@ -557,25 +563,52 @@
 	}
 }
 #sec7 {
+	padding-bottom: 12vw;
+	position: relative;
+	background: url(../img/sweets/sec7_deco_bottom.jpg) repeat-x bottom center/auto 30vw;
+	@include pc {
+		padding-bottom: 188px;
+		background-size: auto auto;
+	}
 	.content {
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			top: -20vw;
+			left: -26%;
+			z-index: -1;
+			height: 30vw;
+			width: 50%;
+			background: url(../img/sweets/sec7_deco.png) no-repeat top center/100% auto;
+			@include pc {
+				background: unset;
+				content: url(../img/sweets/sec7_deco.png);
+				position: absolute;
+				top: -84px;
+				left: -115px;
+			}
+		}
 	}
 	h2 {
 		margin: 0 auto;
 		width: 75%;
 		@include pc {
 			width: auto;
+			margin-right: 76px;
 		}
 	}
 	.sec7-img1 {
 		margin: -18vw auto 0;
 		width: 95%;
-		@include pc { 
+		@include pc {
 			position: absolute;
 			width: auto;
-			 margin: 0px 0px 0px 0px ; 
-			 left: 52%;
-			 top: -124px;
-			 transform: translateX(-50%);z-index: 1;
+			margin: 0px 0px 0px 0px;
+			left: 52%;
+			top: -124px;
+			transform: translateX(-50%);
+			z-index: 1;
 		}
 	}
 	.sec7-txt {
@@ -588,9 +621,10 @@
 			margin: 0 -50px;
 			border-radius: 20px;
 			justify-content: space-between;
-			height: 322px;align-items: center;
+			height: 322px;
+			align-items: center;
 			flex-direction: row-reverse;
-		}	
+		}
 		.col1 {
 			margin-bottom: 12vw;
 			@include pc {
@@ -599,15 +633,15 @@
 			}
 			.title {
 				position: relative;
-				&:after { 
-					content: '';
+				&:after {
+					content: "";
 					position: absolute;
 					bottom: -2.5vw;
 					right: 0;
 					width: 100%;
 					height: 1px;
 					background: #000;
-					@include pc { 
+					@include pc {
 						bottom: -8px;
 						width: 150%;
 					}
@@ -636,7 +670,7 @@
 			}
 		}
 		.col2 {
-			@include pc { 
+			@include pc {
 				width: 297px;
 			}
 			h3 {
@@ -645,19 +679,297 @@
 				font-weight: 600;
 				@include pc {
 					font-size: 20px;
-					 margin: 0px 0px 0px 0px ; 
+					margin: 0px 0px 0px 0px;
 				}
 			}
-			.col2-txt { 
-				@include pc { 
+			.col2-txt {
+				@include pc {
 					margin-top: 21px;
 				}
-			
+			}
+		}
+	}
+}
+#sec8 {
+	.sec8-img1 {
+		position: relative;
+
+		img {
+			height: 65vw;
+			@include pc {
+				height: auto;
+				width: 100%;
+			}
+		}
+		h2 {
+			position: absolute;
+			left: 50%;
+			top: 15vw;
+			transform: translateX(-50%);
+			@include pc {
+				// top: 371px;
+				bottom: -152px;
+				top: auto;
+			}
+		}
+	}
+	.group1 {
+		margin-top: 19vw;
+		position: relative;
+		@include pc {
+			margin: 0px 0px 0px 0px;
+			padding: 20px;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			z-index: -1;
+			right: -4%;
+			top: -27vw;
+			width: 50%;
+			height: 40vw;
+			background: url(../img/sweets/sec8_deco1.jpg) no-repeat top center/100% 100%;
+			@include pc {
+				background: unset;
+				content: url(../img/sweets/sec8_deco1.jpg);
+				top: 0;
+				right: -377px;
+			}
+		}
+		.sec8-img2 {
+			@include pc {
+				margin: 191px -256px 0 236px;
+			}
+		}
+		.bg {
+			@include pc {
+				position: relative;
+				&:after {
+					content: "";
+					left: 0;
+					right: 0;
+					bottom: 0;
+					top: 0;
+					opacity: 0.9;
+					z-index: -1;
+				}
+			}
+		}
+		.box-main-color {
+			padding: 5vw 5%;
+			@include pc {
+				padding: 75px 73px;
+				width: 510px;
+				height: 496px;
+				position: absolute;
+				top: 180px;
+				left: -65px;
+				background: transparent;
+				z-index: 0;
+				.bg {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					background: url(../img/sweets/sec8_bg_txt_box.jpg);
+					z-index: -1;
+					opacity: 0.8;
+				}
+			}
+			h3 {
+				font-size: 6vw;
+				margin-bottom: 1vw;
+				@include pc {
+					font-size: 32px;
+					margin: 0px 0px 17px 0px;
+				}
+				span {
+					font-size: 4.5vw;
+					@include pc {
+						font-size: 23px;
+					}
+				}
+			}
+			.price {
+				font-size: 4vw;
+				margin-bottom: 5vw;
+				@include pc {
+					font-size: 22px;
+					margin: 0px 0px 40px 0px;
+				}
+			}
+			.sec8-txt1 {
+			}
+		}
+	}
+	.group2 {
+		margin-top: 4vw;
+		position: relative;
+		@include pc {
+			margin: -77px 0px 0px 20px;
+			text-align: center;
+		}
+		.sec8-img3 {
+			@include pc {
+				position: absolute;
+				top: -61px;
+				z-index: 1;
+				left: -67px;
+			}
+		}
+
+		.sec8-img5 {
+			@include pc {
+				position: absolute;
+				right: -41px;
+				top: 64px;
+				z-index: -1;
+			}
+		}
+		.sec8-txt2 {
+			margin-top: 5vw;
+			padding: 0 4%;
+			@include pc {
+				margin: 40px 0px 0px -20px;
+				padding: 0;
+				width: 568px;
+			}
+		}
+	}
+}
+#sec9 {
+	margin: 8vw 0 0;
+	padding-bottom: 13vw;;
+	padding-top: 24vw;
+	background: url(../img/sweets/sec9_bg_bottom.jpg) repeat-x bottom center/auto 120px, url(../img/sweets/sec9_bg_top.jpg) repeat-x top center/auto 120px;
+	@include pc {
+		margin-top: 82px;
+		padding-bottom: 209px;
+		padding-top: 237px;
+	background: url(../img/sweets/sec9_bg_bottom.jpg) repeat-x bottom center/auto 198px,url(../img/sweets/sec9_bg_top.jpg) repeat-x top center/auto 240px;
+
+	}
+	.bg-top {
+		height: 30vw;
+		background: url(../img/sweets/sec9_bg_top.jpg);
+		position: relative;
+		@include pc {
+			height: 235px;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			left: 50%;
+			bottom: -10vw;
+			width: 2px;
+			transform: translateX(-50%);
+			height: 20vw;
+			background: $main-color;
+			@include pc { 
+				height: 89px;bottom: -46px;
+			}
+		}
+	}
+	dl {
+		display: flex;
+		justify-content: space-between;
+		padding: 4vw 3%;
+		font-size: 4vw;
+		border-bottom: 2px solid transparent;
+		border-image: url(../img/sweets/sec5_border_bottom.jpg) 20 round;
+		@include pc {
+			font-size: 16px;
+			padding: 12px 11px 12px 11px;
+			line-height: 25px;
+		}
+		dd {
+			text-align: right;
+		}
+	}
+	.border-top {
+		border-top: 2px solid transparent;
+		border-image: url(../img/sweets/sec5_border_bottom.jpg) 20 round;
+	}
+	.border-top-pc {
+		@include pc {
+			border-top: 2px solid transparent;
+			border-image: url(../img/sweets/sec5_border_bottom.jpg) 20 round;
+		}
+	}
+	.group1 {
+		@include pc {
+			padding: 0 15px;
+			margin-top: 71px;
+		}
+		h2 {
+			margin-top: 15vw;
+			position: relative;
+			&:after {
+				content: "";
+				position: absolute;
+				left: 50%;
+				top: -18vw;
+				width: 2px;
+				transform: translateX(-50%);
+				height: 20vw;
+				background: $main-color;
+				@include pc { 
+					height: 89px;top: -117px;
+				}
+			}
+			@include pc {
+				margin: 0px 0px 55px 0px;
+			}
+		}
+		.sub-h2 {
+			font-size: 4vw;
+			margin: 6vw 0;
+			@include pc {
+				font-size: 16px;
+				margin: 0px 0px 22px 0px;
+			}
+		}
+		.flex-pc {
+			justify-content: space-between;
+			.col {
+				@include pc {
+					width: 297px;
+				}
+			}
+		}
+	}
+	.sec9-deco {
+		margin: 9vw 0;
+		@include pc {
+			margin: 74px 0 60px;
+		}
+	}
+	.group2 {
+		@include pc {
+			padding: 0 70px;
+		}
+		.flex-pc { 
+			justify-content: space-between;
+		}
+		h2 {
+			margin: 0 -4%;
+			@include pc {
+				margin: 0px 0px 53px 0px;
+			}
+		}
+		.sub-h2 {
+			margin: 6vw 0;
+			@include pc {
+				margin: 0px 0px 38px 0px;
+			}
+		}
+		.col {
+			width: 403px;
+			@include pc {
 			}
 		}
 	}
 }
 
-footer {
-	margin-top: 500px;
-}
+
