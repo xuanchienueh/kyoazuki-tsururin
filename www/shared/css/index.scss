@@ -235,7 +235,7 @@ main#index {
 		z-index: -1;
 	}
 	@include pc {
-		padding: 160px 0px 103px 0px;
+		padding: 160px 0px 139px 0px;
 		&:after {
 			height: 235px;
 		}
@@ -270,16 +270,9 @@ main#index {
 				}
 			}
 		}
-		.right {
-			@include pc {
-				width: 434px;
-			}
-			.sec1-txt {
-				padding-bottom: 7vw;
-				@include pc {
-					padding-bottom: 33px;
-					text-align: left;
-				}
+		.sec1-txt {
+			@include pc { 
+				text-align: left;width: 434px;
 			}
 			p:nth-child(1) {
 				padding-top: 6vw;
@@ -296,7 +289,7 @@ main#index {
 					background-color: #b6003d;
 				}
 				@include pc {
-					padding-top: 39px;
+					padding: 39px 0 32px;
 					margin: 131px 0px 0px 0px;
 					&:after {
 						width: 89px;
@@ -306,11 +299,11 @@ main#index {
 					}
 				}
 			}
-
 			p:nth-child(3) {
 				letter-spacing: 0.4px;
 				@include pc {
 					letter-spacing: normal;
+					margin-top: 31px;
 				}
 			}
 		}
@@ -559,7 +552,7 @@ main#index {
 		}
 	}
 	.sec4-slide {
-		.slider-item img {
+		> div img {
 			height: 130px;
 			width: auto;
 			@include pc {
@@ -788,6 +781,7 @@ main#index {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-direction: column;
 		background: $main-color;
 		position: relative;
 		margin-bottom: 5px;
@@ -803,6 +797,7 @@ main#index {
 		}
 		@include pc {
 			width: 23%;
+			// display: flex;
 			margin-bottom: 0;
 			flex-direction: column;
 			order: 1;
@@ -814,12 +809,14 @@ main#index {
 			margin-bottom: 8px;
 			color: #fff;
 			text-align: center;
+			font-size: 5vw;
 			@include pc {
 				font-size: 30px;
 			}
 		}
 		img {
-			width: 50%;
+			width: 68%;
+			height: auto;
 			@include pc {
 				width: auto;
 			}

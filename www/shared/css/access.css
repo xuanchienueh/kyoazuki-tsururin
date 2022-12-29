@@ -47,6 +47,7 @@
 @media only screen and (min-width: 768px) {
   #sec1 {
     margin: 0px 0px 0px 0px;
+    background: url(../img/access/sec1_deco_bottom.jpg) repeat-x bottom left/8% 209px;
   }
 }
 #sec1 .wrap {
@@ -172,7 +173,8 @@
 }
 #gmap .btn-gmap {
   padding: 6vw 8% 0;
-  background: url(../img/access/sec1_deco_bottom.jpg) repeat-x bottom left/100% 100px;
+  margin: 0 -5%;
+  background: url(../img/access/sec1_deco_bottom.jpg) repeat-x bottom left/20% 26vw;
 }
 #gmap .btn-gmap li {
   width: 98%;
@@ -216,6 +218,7 @@
   #gmap .btn-gmap {
     padding: 0px 58px 83px 0px;
     flex-wrap: wrap;
+    background: unset;
   }
   #gmap .btn-gmap li {
     width: 100%;

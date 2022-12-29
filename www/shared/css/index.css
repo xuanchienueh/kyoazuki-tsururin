@@ -233,7 +233,7 @@ a:hover {
 }
 @media only screen and (min-width: 768px) {
   #sec1 {
-    padding: 160px 0px 103px 0px;
+    padding: 160px 0px 139px 0px;
   }
   #sec1:after {
     height: 235px;
@@ -275,25 +275,17 @@ a:hover {
   }
 }
 @media only screen and (min-width: 768px) {
-  #sec1 .wrap .right {
+  #sec1 .wrap .sec1-txt {
+    text-align: left;
     width: 434px;
   }
 }
-#sec1 .wrap .right .sec1-txt {
-  padding-bottom: 7vw;
-}
-@media only screen and (min-width: 768px) {
-  #sec1 .wrap .right .sec1-txt {
-    padding-bottom: 33px;
-    text-align: left;
-  }
-}
-#sec1 .wrap .right p:nth-child(1) {
+#sec1 .wrap .sec1-txt p:nth-child(1) {
   padding-top: 6vw;
   position: relative;
   margin: 8vw 0 0 0;
 }
-#sec1 .wrap .right p:nth-child(1):after {
+#sec1 .wrap .sec1-txt p:nth-child(1):after {
   content: "";
   position: absolute;
   width: 24%;
@@ -304,23 +296,24 @@ a:hover {
   background-color: #b6003d;
 }
 @media only screen and (min-width: 768px) {
-  #sec1 .wrap .right p:nth-child(1) {
-    padding-top: 39px;
+  #sec1 .wrap .sec1-txt p:nth-child(1) {
+    padding: 39px 0 32px;
     margin: 131px 0px 0px 0px;
   }
-  #sec1 .wrap .right p:nth-child(1):after {
+  #sec1 .wrap .sec1-txt p:nth-child(1):after {
     width: 89px;
     left: 0;
     top: 4px;
     transform: translateX(0%);
   }
 }
-#sec1 .wrap .right p:nth-child(3) {
+#sec1 .wrap .sec1-txt p:nth-child(3) {
   letter-spacing: 0.4px;
 }
 @media only screen and (min-width: 768px) {
-  #sec1 .wrap .right p:nth-child(3) {
+  #sec1 .wrap .sec1-txt p:nth-child(3) {
     letter-spacing: normal;
+    margin-top: 31px;
   }
 }
 
@@ -592,12 +585,12 @@ a:hover {
     z-index: -4;
   }
 }
-#sec4 .sec4-slide .slider-item img {
+#sec4 .sec4-slide > div img {
   height: 130px;
   width: auto;
 }
 @media only screen and (min-width: 768px) {
-  #sec4 .sec4-slide .slider-item img {
+  #sec4 .sec4-slide > div img {
     height: auto;
   }
 }
@@ -855,6 +848,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background: #b5003c;
   position: relative;
   margin-bottom: 5px;
@@ -884,6 +878,7 @@ a:hover {
   margin-bottom: 8px;
   color: #fff;
   text-align: center;
+  font-size: 5vw;
 }
 @media only screen and (min-width: 768px) {
   #sec5 .sec5-btn p {
@@ -891,7 +886,8 @@ a:hover {
   }
 }
 #sec5 .sec5-btn img {
-  width: 50%;
+  width: 68%;
+  height: auto;
 }
 @media only screen and (min-width: 768px) {
   #sec5 .sec5-btn img {
