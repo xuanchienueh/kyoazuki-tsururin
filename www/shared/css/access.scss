@@ -208,6 +208,45 @@
 		}
 	}
 }
+#sec2 { 
+	margin: 73vw 0 0;
+	@include pc {  margin: 0px 0px 0px 0px ; }
+	.bg-parallax{
+		display: none !important;
+		@include pc { 
+			background-image: url(../img/access/parallax1.jpg);
+			display: block !important;
+		}
+	}
+	.parallax1 { 
+		img { 
+			height: 60vw;
+		}
+	}
+	.group1 { 
+		margin: 8vw 0 0;
+		@include pc {  margin: 0px 0px 0px 0px ; }
+		p { 
+			width: 80%;
+			margin-right: 6%;
+			@include pc { 
+				width: auto;
+				 margin: 0px 0px 0px 0px ; 
+			}
+		}
+		h2 { 
+			width: 15%;
+			margin-top: -20vw;
+			position: relative;
+			z-index: -1;
+			@include pc { 
+				width: auto;
+				 margin: 0px 0px 0px 0px ; 
+			}
+		}
+	}
+	.group2 { }
+}
 
 footer {
 	margin-top: 500px;

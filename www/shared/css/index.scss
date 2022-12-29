@@ -377,6 +377,8 @@ main#index {
 		@include pc {
 			margin: 45px auto 0px auto;
 			text-align: center;
+			position: relative;
+			z-index: 5;
 		}
 	}
 	.sec2-txt {

@@ -234,6 +234,56 @@
   }
 }
 
+#sec2 {
+  margin: 73vw 0 0;
+}
+@media only screen and (min-width: 768px) {
+  #sec2 {
+    margin: 0px 0px 0px 0px;
+  }
+}
+#sec2 .bg-parallax {
+  display: none !important;
+}
+@media only screen and (min-width: 768px) {
+  #sec2 .bg-parallax {
+    background-image: url(../img/access/parallax1.jpg);
+    display: block !important;
+  }
+}
+#sec2 .parallax1 img {
+  height: 60vw;
+}
+#sec2 .group1 {
+  margin: 8vw 0 0;
+}
+@media only screen and (min-width: 768px) {
+  #sec2 .group1 {
+    margin: 0px 0px 0px 0px;
+  }
+}
+#sec2 .group1 p {
+  width: 80%;
+  margin-right: 6%;
+}
+@media only screen and (min-width: 768px) {
+  #sec2 .group1 p {
+    width: auto;
+    margin: 0px 0px 0px 0px;
+  }
+}
+#sec2 .group1 h2 {
+  width: 15%;
+  margin-top: -20vw;
+  position: relative;
+  z-index: -1;
+}
+@media only screen and (min-width: 768px) {
+  #sec2 .group1 h2 {
+    width: auto;
+    margin: 0px 0px 0px 0px;
+  }
+}
 footer {
   margin-top: 500px;
 }/*# sourceMappingURL=access.css.map */
