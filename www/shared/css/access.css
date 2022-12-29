@@ -1,0 +1,236 @@
+@font-face {
+  font-family: HannariMincho;
+  src: url(../font/HannariMincho-Regular.otf);
+  font-style: normal;
+}
+.fnt-hannari {
+  font-family: HannariMincho !important;
+}
+
+.txt-f4 {
+  letter-spacing: 9px;
+  font-size: 5.5vw;
+  font-family: HannariMincho !important;
+}
+@media only screen and (min-width: 768px) {
+  .txt-f4 {
+    font-size: 40px;
+  }
+}
+
+.txt-f3 {
+  font-size: 7vw;
+  letter-spacing: 9px;
+  font-family: HannariMincho !important;
+}
+@media only screen and (min-width: 768px) {
+  .txt-f3 {
+    font-size: 30px !important;
+  }
+}
+
+.color-main {
+  color: #b5003c;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrap {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+  }
+}
+
+#sec1 {
+  margin: 15vw 0 0;
+  height: 100%;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 {
+    margin: 0px 0px 0px 0px;
+  }
+}
+#sec1 .wrap {
+  position: relative;
+}
+#sec1 .wrap:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: -49px;
+  height: 116px;
+  width: 60%;
+  background: url(../img/access/sec1_bg_top.jpg);
+  z-index: -1;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .wrap:after {
+    right: 419px;
+    left: auto;
+    top: -2px;
+    height: 236px;
+    width: 100%;
+  }
+}
+#sec1 .wrap .deco {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  top: 0;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .wrap .deco {
+    width: 100%;
+    left: 569px;
+    top: 156px;
+    right: auto;
+  }
+}
+#sec1 strong {
+  font-weight: 700;
+  font-size: 4.3vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 strong {
+    font-size: 20px;
+  }
+}
+#sec1 h2 {
+  margin-bottom: 6vw;
+  position: relative;
+}
+#sec1 h2:after {
+  position: absolute;
+  content: "";
+  top: -2vw;
+  left: 0;
+  width: 20%;
+  height: 2px;
+  background: #b5003c;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 h2:after {
+    top: -37px;
+    left: 0;
+    width: 69px;
+    height: 3px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec1 h2 {
+    margin: 0px 0px 33px 0px;
+  }
+}
+#sec1 dl {
+  margin-bottom: 6vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 dl {
+    margin: 0px 0px 31px 0px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .group1 {
+    padding-top: 131px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .group2 {
+    position: absolute;
+    right: 0;
+    top: 446px;
+    width: 500px;
+    padding-left: 54px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .sec1-img {
+    padding-top: 31px;
+  }
+}
+
+#gmap {
+  margin: 12vw 0 0;
+}
+@media only screen and (min-width: 768px) {
+  #gmap {
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+  }
+}
+#gmap .ifram {
+  width: 100%;
+  height: 110vw;
+  border: 0;
+}
+@media only screen and (min-width: 768px) {
+  #gmap .ifram {
+    width: 706px;
+    height: 475px;
+    margin-right: -136px;
+  }
+}
+#gmap .btn-gmap {
+  padding: 6vw 8% 0;
+  background: url(../img/access/sec1_deco_bottom.jpg) repeat-x bottom left/100% 100px;
+}
+#gmap .btn-gmap li {
+  width: 98%;
+}
+#gmap .btn-gmap li .button {
+  display: flex;
+  font-weight: 500;
+  font-size: 6vw;
+  letter-spacing: 4px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+@media only screen and (min-width: 768px) {
+  #gmap .btn-gmap li .button {
+    padding: 0;
+    justify-content: flex-start;
+  }
+}
+#gmap .btn-gmap li .button:hover {
+  opacity: 0.7;
+}
+#gmap .btn-gmap li .print {
+  color: #000000;
+  text-align: center;
+  display: block;
+  font-size: 5vw;
+}
+@media only screen and (min-width: 768px) {
+  #gmap .btn-gmap li .print {
+    text-align: left;
+  }
+}
+#gmap .btn-gmap li .copy {
+  letter-spacing: 0;
+}
+@media only screen and (min-width: 768px) {
+  #gmap .btn-gmap {
+    padding: 0px 58px 83px 0px;
+    flex-wrap: wrap;
+  }
+  #gmap .btn-gmap li {
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+  #gmap .btn-gmap li .button {
+    font-size: 25px;
+    justify-content: space-between;
+  }
+  #gmap .btn-gmap li .print {
+    font-size: 20px;
+  }
+}
+
+footer {
+  margin-top: 500px;
+}/*# sourceMappingURL=access.css.map */
