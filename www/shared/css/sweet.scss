@@ -27,9 +27,8 @@
 	border: 1px solid $main-color;
 }
 
-
 #sec1 {
-	.h2 {
+.title-h2 {
 		display: inline-block;
 		position: relative;
 		margin: 0 auto;
@@ -38,6 +37,8 @@
 		@include pc {
 			width: 86px;
 			height: 344px;
+			left: -8px;
+			top: 13px;
 		}
 		.sub1-h2 {
 			position: absolute;
@@ -46,8 +47,8 @@
 			font-size: 2.5vw;
 			@include pc {
 				font-size: 13px;
-				top: 45px;
-				right: -6px;
+				top: 19px;
+				right: -19px;
 			}
 		}
 		.sub2-h2 {
@@ -58,7 +59,7 @@
 			@include pc {
 				font-size: 13px;
 				bottom: 80px;
-				left: 26px;
+				left: 30px;
 			}
 		}
 	}
@@ -66,7 +67,14 @@
 		font-size: 6vw;
 		letter-spacing: 4px;
 		@include pc {
-			line-height: 43px;
+			line-height: 45px;
+		}
+		p:nth-child(1) { 
+			@include pc { 
+				margin-left: 12px;
+				margin-bottom: 16px;
+				letter-spacing: 10px;
+			}
 		}
 		p:nth-child(2) {
 			padding-top: 21vw;
@@ -128,8 +136,8 @@
 			right: -78px;
 			top: -10px;
 		}
-		&:after { 
-			content: '';
+		&:after {
+			content: "";
 			position: absolute;
 			right: -5%;
 			top: -5vw;
@@ -143,10 +151,8 @@
 				content: url(../img/sweets/sec2_deco.jpg);
 				right: -48px;
 				top: -47px;
-
-			 }
+			}
 		}
-		
 	}
 	.sec2-txt {
 		@include pc {
@@ -223,8 +229,6 @@
 				width: 553px;
 				height: 405px;
 				padding: 74px 89px 0px 144px;
-			// position: relative;
-			// z-index: -9999;
 				h3 {
 					margin-bottom: 17px;
 					letter-spacing: 5px;
@@ -232,6 +236,10 @@
 				.price {
 					margin-bottom: 10px;
 					font-size: 22px;
+					letter-spacing: 4px;
+					@include pc { 
+						letter-spacing: 0.25em;
+					}
 				}
 			}
 			.content {
@@ -370,7 +378,7 @@
 	}
 }
 #sec5 {
-	padding-bottom: 8vw;
+	padding-bottom: 20vw;
 	@include pc {
 		padding-top: 109px;
 		padding-bottom: 252px;
@@ -452,14 +460,15 @@
 		font-weight: 500;
 		@include pc {
 			font-size: 25px;
-			margin: 25px 6px 0px 0px;
+			margin: 25px 36px 0px 0px;
 		}
+	
 		.btn-link {
 			margin-left: 8%;
 			width: 25%;
 			@include pc {
 				width: auto;
-				margin: 0px 0px 0px 0px;
+				margin: 0px 0px 0px 30px;
 			}
 		}
 	}
@@ -713,14 +722,15 @@
 		}
 		h2 {
 			position: absolute;
-			left: 50%;
+			left: 44%;
 			top: 15vw;
-			transform: translateX(-50%);
+			width: 12%;
 			@include pc {
 				bottom: -152px;
 				top: auto;
 				transform: unset;
 				left: calc(50% - 47px);
+				width: auto;
 			}
 		}
 	}
@@ -822,14 +832,21 @@
 			text-align: center;
 		}
 		.sec8-img3 {
+			margin-bottom: 4vw;
 			@include pc {
+				margin: 0px 0px 0px 0px;
 				position: absolute;
 				top: -61px;
 				z-index: 1;
 				left: -67px;
 			}
 		}
-
+		.sec8-img4 {
+			margin-bottom: 4vw;
+			@include pc {
+				margin: 0px 0px 0px 0px;
+			}
+		}
 		.sec8-img5 {
 			@include pc {
 				position: absolute;
@@ -851,17 +868,16 @@
 }
 #sec9 {
 	margin: 8vw 0 0;
-	padding-bottom: 13vw;;
+	padding-bottom: 13vw;
 	padding-top: 24vw;
 	background: url(../img/sweets/sec9_bg_bottom.jpg) repeat-x bottom center/auto 120px, url(../img/sweets/sec9_bg_top.jpg) repeat-x top center/auto 120px;
 	@include pc {
 		margin-top: 82px;
 		padding-bottom: 209px;
 		padding-top: 237px;
-	background: url(../img/sweets/sec9_bg_bottom.jpg) repeat-x bottom center/auto 198px,url(../img/sweets/sec9_bg_top.jpg) repeat-x top center/auto 240px;
-
+		background: url(../img/sweets/sec9_bg_bottom.jpg) repeat-x bottom center/auto 198px, url(../img/sweets/sec9_bg_top.jpg) repeat-x top center/auto 240px;
 	}
-	
+
 	dl {
 		display: flex;
 		justify-content: space-between;
@@ -896,6 +912,11 @@
 		h2 {
 			margin-top: 15vw;
 			position: relative;
+			font-size: 7vw;
+			@include pc {
+				margin: 0px 0px 55px 0px;
+				font-size: 40px;
+			}
 			&:after {
 				content: "";
 				position: absolute;
@@ -905,13 +926,12 @@
 				transform: translateX(-50%);
 				height: 20vw;
 				background: $main-color;
-				@include pc { 
-					height: 89px;top: -117px;
+				@include pc {
+					height: 89px;
+					top: -117px;
 				}
 			}
-			@include pc {
-				margin: 0px 0px 55px 0px;
-			}
+		
 		}
 		.sub-h2 {
 			font-size: 4vw;
@@ -940,7 +960,7 @@
 		@include pc {
 			padding: 0 70px;
 		}
-		.flex-pc { 
+		.flex-pc {
 			justify-content: space-between;
 		}
 		h2 {
@@ -956,11 +976,9 @@
 			}
 		}
 		.col {
-			width: 403px;
 			@include pc {
+				width: 403px;
 			}
 		}
 	}
 }
-
-

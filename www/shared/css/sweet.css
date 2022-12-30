@@ -33,7 +33,7 @@
   border: 1px solid #b5003c;
 }
 
-#sec1 .h2 {
+#sec1 .title-h2 {
   display: inline-block;
   position: relative;
   margin: 0 auto;
@@ -41,35 +41,37 @@
   height: 74vw;
 }
 @media only screen and (min-width: 768px) {
-  #sec1 .h2 {
+  #sec1 .title-h2 {
     width: 86px;
     height: 344px;
+    left: -8px;
+    top: 13px;
   }
 }
-#sec1 .h2 .sub1-h2 {
+#sec1 .title-h2 .sub1-h2 {
   position: absolute;
   right: 0;
   top: 9vw;
   font-size: 2.5vw;
 }
 @media only screen and (min-width: 768px) {
-  #sec1 .h2 .sub1-h2 {
+  #sec1 .title-h2 .sub1-h2 {
     font-size: 13px;
-    top: 45px;
-    right: -6px;
+    top: 19px;
+    right: -19px;
   }
 }
-#sec1 .h2 .sub2-h2 {
+#sec1 .title-h2 .sub2-h2 {
   position: absolute;
   bottom: 20vw;
   font-size: 2.5vw;
   left: 32%;
 }
 @media only screen and (min-width: 768px) {
-  #sec1 .h2 .sub2-h2 {
+  #sec1 .title-h2 .sub2-h2 {
     font-size: 13px;
     bottom: 80px;
-    left: 26px;
+    left: 30px;
   }
 }
 #sec1 h2 {
@@ -78,7 +80,14 @@
 }
 @media only screen and (min-width: 768px) {
   #sec1 h2 {
-    line-height: 43px;
+    line-height: 45px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec1 h2 p:nth-child(1) {
+    margin-left: 12px;
+    margin-bottom: 16px;
+    letter-spacing: 10px;
   }
 }
 #sec1 h2 p:nth-child(2) {
@@ -261,6 +270,12 @@
   #sec3 .sec3-slide .slide-txt .price {
     margin-bottom: 10px;
     font-size: 22px;
+    letter-spacing: 4px;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  #sec3 .sec3-slide .slide-txt .price {
+    letter-spacing: 0.25em;
   }
 }
 #sec3 .sec3-slide .slide-txt .content {
@@ -394,7 +409,7 @@
 }
 
 #sec5 {
-  padding-bottom: 8vw;
+  padding-bottom: 20vw;
 }
 @media only screen and (min-width: 768px) {
   #sec5 {
@@ -489,7 +504,7 @@
 @media only screen and (min-width: 768px) {
   #sec5 .sec5-btn {
     font-size: 25px;
-    margin: 25px 6px 0px 0px;
+    margin: 25px 36px 0px 0px;
   }
 }
 #sec5 .sec5-btn .btn-link {
@@ -499,7 +514,7 @@
 @media only screen and (min-width: 768px) {
   #sec5 .sec5-btn .btn-link {
     width: auto;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 30px;
   }
 }
 
@@ -794,9 +809,9 @@
 }
 #sec8 .sec8-img1 h2 {
   position: absolute;
-  left: 50%;
+  left: 44%;
   top: 15vw;
-  transform: translateX(-50%);
+  width: 12%;
 }
 @media only screen and (min-width: 768px) {
   #sec8 .sec8-img1 h2 {
@@ -804,6 +819,7 @@
     top: auto;
     transform: unset;
     left: calc(50% - 47px);
+    width: auto;
   }
 }
 #sec8 .group1 {
@@ -916,12 +932,24 @@
     text-align: center;
   }
 }
+#sec8 .group2 .sec8-img3 {
+  margin-bottom: 4vw;
+}
 @media only screen and (min-width: 768px) {
   #sec8 .group2 .sec8-img3 {
+    margin: 0px 0px 0px 0px;
     position: absolute;
     top: -61px;
     z-index: 1;
     left: -67px;
+  }
+}
+#sec8 .group2 .sec8-img4 {
+  margin-bottom: 4vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec8 .group2 .sec8-img4 {
+    margin: 0px 0px 0px 0px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -998,6 +1026,13 @@
 #sec9 .group1 h2 {
   margin-top: 15vw;
   position: relative;
+  font-size: 7vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec9 .group1 h2 {
+    margin: 0px 0px 55px 0px;
+    font-size: 40px;
+  }
 }
 #sec9 .group1 h2:after {
   content: "";
@@ -1013,11 +1048,6 @@
   #sec9 .group1 h2:after {
     height: 89px;
     top: -117px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  #sec9 .group1 h2 {
-    margin: 0px 0px 55px 0px;
   }
 }
 #sec9 .group1 .sub-h2 {
@@ -1070,6 +1100,8 @@
     margin: 0px 0px 38px 0px;
   }
 }
-#sec9 .group2 .col {
-  width: 403px;
+@media only screen and (min-width: 768px) {
+  #sec9 .group2 .col {
+    width: 403px;
+  }
 }/*# sourceMappingURL=sweet.css.map */

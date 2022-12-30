@@ -44,7 +44,7 @@
 		<link rel="stylesheet" href="shared/css/animate.min.css">
 		<link rel="stylesheet" href="shared/css/common.css" />
 		<link rel="stylesheet" href="shared/css/slick.min.css" />
-		<link rel="stylesheet" href="shared/css/remodal.css" />
+		<!-- <link rel="stylesheet" href="shared/css/remodal.css" /> -->
 		<link rel="stylesheet" href="shared/css/shared.css" />
 		<link rel="stylesheet" href="./shared/css/sweet.css" />
 
@@ -129,10 +129,10 @@
 								<li><a href="">新着情報</a></li>
 								<li><a href="">和菓子販売</a></li>
 								<li><a href="access.html">お席紹介</a></li>
-								<li ><a href="sweets.html">店舗情報</a></li>
+								<li class="active" ><a href="sweets.html">店舗情報</a></li>
 								<li><a href="ramen.html">甘党お品書き</a></li>
 								<li><a href="ramen.html">白だしらーめん</a></li>
-								<li class="active"><a href="index.html">ホーム</a></li>
+								<li ><a href="index.html">ホーム</a></li>
 							</ul>
 							<ul class="gnav2">
 								<li class="location">
@@ -156,9 +156,9 @@
 			<section class="nav-target block">
 				<div id="sec1">
 					<div class="wrap txt-center">
-						<div class="h2 wow fadeIn">
-							<i class="sub1-h2 color-main txt-vertical">きょうあずき</i>
-							<span class="color-main sub2-h2 txt-vertical">あずき</span>
+						<div class="title-h2 wow fadeIn">
+							<i class="sub1-h2 color-main txt-vertical fnt-hannari">きょうあずき</i>
+							<span class="color-main sub2-h2 txt-vertical fnt-hannari">あずき</span>
 							<h2 class="txt-vertical txt-f3">
 								<p><span class="color-main">京阿月</span>の始まりは</p>
 								<p>一粒の小豆から</p>
@@ -183,13 +183,12 @@
 							<h2 class="txt-f4">定番</h2>
 							<p>※価格は全て税込みです。</p>
 						</div>
-						<div class="wow fadeInUp ">
-							<div class="sec3-slide">
+							<div class="sec3-slide wow fadeInUp ">
 								<div class="slide-item">
 									<p class="sec3-img"><img src="./shared/img/sweets/sec3_img2.jpg" alt="京阿月甘味プレート" width="845" height="546"></p>
 									<div class="slide-txt box-main-color">
 										<h3 class="txt-f3">京阿月甘味プレート</h3>
-										<p class="price color-main">1,045円</p>
+										<p class="price color-main fnt-hannari">1,045円</p>
 										<p class="content">もちどら、ミニみつまめ、抹茶わらび餅、こぼんちゃん2本のセット。つるりん限定の甘味や京阿月伝統の和菓子を一度に味わえるワンプレートスイーツです。</p>
 									</div>
 								</div>
@@ -197,12 +196,11 @@
 									<p class="sec3-img"><img src="./shared/img/sweets/sec3_img1.jpg" alt="抹茶ぜんざい" width="845" height="546"></p>
 									<div class="slide-txt box-main-color wow fadeIn">
 										<h3 class="txt-f3">抹茶ぜんざい</h3>
-										<p class="price color-main">1,100円</p>
+										<p class="price color-main fnt-hannari">1,100円</p>
 										<p class="content">小豆の風味を活かすためにザラメのみで炊いた丹波大納言のぜんざいに、おうすをかけてお召し上がりいただく一品。ほろ苦い抹茶と味わい深い小豆の調和をお楽しみください。</p>
 									</div>
 								</div>
 							</div>
-						</div>
 					</div>
 				</div>
 				<div id="sec4">
@@ -526,33 +524,7 @@
 		<script src="shared/js/shared.js"></script>
 		<script src="shared/js/jquery.rss.js"></script>
 		<script>
-			// function createSlick() {
-			// 	// carousel chỉ chạy ở sp
-			// 	$(".sec2-slide")
-			// 		.not(".slick-initialized")
-			// 		.slick({
-			// 			dots: true,
-			// 			infinite: true,
-			// 			arrows: false,
-			// 			autoplay: false,
-			// 			fade: true,
-			// 			speed: 1000,
-			// 			responsive: [
-			// 				{
-			// 					breakpoint: 9999,
-			// 					settings: "unslick",
-			// 				},
-			// 				{
-			// 					breakpoint: 767,
-			// 					settings: "getslick",
-			// 				},
-			// 			],
-			// 		});
-			// }
-			// createSlick();
-			// $(window).resize(function () {
-			// 	createSlick();
-			// });
+		
 			$(".sec3-slide").slick({
 				dots: true,
 				infinite: true,
@@ -564,18 +536,7 @@
 				pauseOnFocus: true,
 				cssEase: "linear",
 			});
-			/*  const controller = new ScrollMagic.Controller()
-			new ScrollMagic.Scene({
-			  triggerElement: ".slick-fade",
-			  triggerHook: 0.5,
-			  duration: $(".slick-fade").height(), 
-			}).addTo(controller)
-			  .on("enter", function (e) {
-			    $('.slick-fade').slick('slickPlay');
-			  })
-			  .on("leave", function (e) {
-			    $('.slick-fade').slick('slickPause');
-			  });*/
+		
 		</script>
 	</body>
 </html>
