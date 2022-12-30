@@ -162,7 +162,6 @@ a[href^="tel:"]:hover {
 	background: url(../img/index/header_bg_top_sp.png) no-repeat top center/100% auto;
 	padding-top: 1px;
 	position: relative;
-
 	@include pc {
 		padding: 55px 0px 0px 0px;
 		background: unset;

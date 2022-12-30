@@ -121,12 +121,32 @@
 	}
 	.sec2-img {
 		margin-bottom: 6vw;
+		position: relative;
 		@include pc {
 			margin: 0px 0px 0px 0px;
 			position: absolute;
 			right: -78px;
 			top: -10px;
 		}
+		&:after { 
+			content: '';
+			position: absolute;
+			right: -5%;
+			top: -5vw;
+			width: 100%;
+			height: 100%;
+			// background: red;
+			background: url(../img/sweets/sec2_deco.jpg);
+			z-index: -1;
+			@include pc {
+				background: unset;
+				content: url(../img/sweets/sec2_deco.jpg);
+				right: -48px;
+				top: -47px;
+
+			 }
+		}
+		
 	}
 	.sec2-txt {
 		@include pc {
@@ -353,7 +373,7 @@
 	padding-bottom: 8vw;
 	@include pc {
 		padding-top: 109px;
-		padding-bottom: 0;
+		padding-bottom: 252px;
 	}
 	.wrap {
 		position: relative;
@@ -365,9 +385,9 @@
 			width: 54%;
 			height: 50vw;
 			z-index: -1;
-			background: url(../img/sweets/sec5_deco.png) no-repeat bottom right/77% auto;
+			background: url(../img/sweets/sec5_deco.jpg) no-repeat bottom right/77% auto;
 			@include pc {
-				content: url(../img/sweets/sec5_deco.png);
+				content: url(../img/sweets/sec5_deco.jpg);
 				right: -425px;
 				top: 479px;
 				background: unset;
