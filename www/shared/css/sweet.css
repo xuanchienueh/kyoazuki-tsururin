@@ -41,13 +41,6 @@
   font-weight: 600;
 }
 
-@media only screen and (min-width: 768px) {
-  .wrap {
-    border-left: 1px solid red;
-    border-right: 1px solid red;
-  }
-}
-
 #sec1 .h2 {
   display: inline-block;
   position: relative;
@@ -678,10 +671,8 @@
   #sec7 .sec7-img1 {
     position: absolute;
     width: auto;
-    margin: 0px 0px 0px 0px;
-    left: 52%;
+    margin: 0px 23.4% 0px 0px;
     top: -124px;
-    transform: translateX(-50%);
     z-index: 1;
   }
 }
@@ -800,6 +791,8 @@
   #sec8 .sec8-img1 h2 {
     bottom: -152px;
     top: auto;
+    transform: unset;
+    left: calc(50% - 47px);
   }
 }
 #sec8 .group1 {
@@ -952,32 +945,6 @@
     padding-bottom: 209px;
     padding-top: 237px;
     background: url(../img/sweets/sec9_bg_bottom.jpg) repeat-x bottom center/auto 198px, url(../img/sweets/sec9_bg_top.jpg) repeat-x top center/auto 240px;
-  }
-}
-#sec9 .bg-top {
-  height: 30vw;
-  background: url(../img/sweets/sec9_bg_top.jpg);
-  position: relative;
-}
-@media only screen and (min-width: 768px) {
-  #sec9 .bg-top {
-    height: 235px;
-  }
-}
-#sec9 .bg-top:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -10vw;
-  width: 2px;
-  transform: translateX(-50%);
-  height: 20vw;
-  background: #b5003c;
-}
-@media only screen and (min-width: 768px) {
-  #sec9 .bg-top:after {
-    height: 89px;
-    bottom: -46px;
   }
 }
 #sec9 dl {

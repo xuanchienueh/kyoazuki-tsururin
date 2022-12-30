@@ -32,12 +32,7 @@
 .fw600	{ 
 	font-weight: 600;
 }
-.wrap {
-	@include pc {
-		border-left: 1px solid red;
-		border-right: 1px solid red;
-	}
-}
+
 #sec1 {
 	.h2 {
 		display: inline-block;
@@ -604,10 +599,8 @@
 		@include pc {
 			position: absolute;
 			width: auto;
-			margin: 0px 0px 0px 0px;
-			left: 52%;
+			margin: 0px 23.4% 0px 0px;
 			top: -124px;
-			transform: translateX(-50%);
 			z-index: 1;
 		}
 	}
@@ -707,9 +700,10 @@
 			top: 15vw;
 			transform: translateX(-50%);
 			@include pc {
-				// top: 371px;
 				bottom: -152px;
 				top: auto;
+				transform: unset;
+				left: calc(50% - 47px);
 			}
 		}
 	}
@@ -850,27 +844,7 @@
 	background: url(../img/sweets/sec9_bg_bottom.jpg) repeat-x bottom center/auto 198px,url(../img/sweets/sec9_bg_top.jpg) repeat-x top center/auto 240px;
 
 	}
-	.bg-top {
-		height: 30vw;
-		background: url(../img/sweets/sec9_bg_top.jpg);
-		position: relative;
-		@include pc {
-			height: 235px;
-		}
-		&:after {
-			content: "";
-			position: absolute;
-			left: 50%;
-			bottom: -10vw;
-			width: 2px;
-			transform: translateX(-50%);
-			height: 20vw;
-			background: $main-color;
-			@include pc { 
-				height: 89px;bottom: -46px;
-			}
-		}
-	}
+	
 	dl {
 		display: flex;
 		justify-content: space-between;
