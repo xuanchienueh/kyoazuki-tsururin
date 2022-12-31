@@ -4,7 +4,8 @@
 <!--[if IE 8]><html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="ja"><![endif]-->
 <!--[if IE 9]><html class="ie ie9 ie-lt10 no-js" lang="ja"><![endif]-->
 <!--[if gt IE 9]><!-->
-<html class="no-js responsive" lang="ja">
+<html class=" responsive" lang="ja">
+<!-- <html class="no-js responsive" lang="ja"> -->
 <!--<![endif]-->
 
 <head>
@@ -42,7 +43,6 @@
 	<link rel="shortcut icon" href="shared/img/shared/favicon.ico" />
 
 	<!-- Styles -->
-	<!--<link rel="stylesheet" href="shared/css/animate.min.css">-->
 	<link rel="stylesheet" href="shared/css/common.css" />
 	<link rel="stylesheet" href="shared/css/slick.min.css" />
 	<link rel="stylesheet" href="shared/css/remodal.css" />
@@ -187,6 +187,9 @@
 				</div>
 			</div> -->
 		<section class="nav-target block">
+			<h1 class="hehe">
+				jkfhsdjkfhaksdf
+			</h1>
 			<div id="sec1">
 				<div class="wrap">
 					<div class="deco"><img src="./shared/img/access/sec1_deco.png" alt="deco"></div>
@@ -356,47 +359,51 @@
 	<script src="shared/js/autoload.js"></script>
 	<script src="shared/js/jquery.min.js"></script>
 	<script src="shared/js/slick.js"></script>
+
+
 	<!--<script src="shared/js/ScrollMagic.min.js"></script> -->
 	<!-- <script type="text/javascript" src="shared/js/remodal.js"></script> -->
 	<!-- <script type="text/javascript" src="shared/js/infiniteslidev2.js"></script> -->
+
+
 	<script src="shared/js/common.js"></script>
 	<script src="shared/js/shared.js"></script>
 	<script src="shared/js/jquery.rss.js"></script>
 	<script>
-		function createSlick() {
-			// carousel chỉ chạy ở sp
-			$(".sec2-slide")
-				.not(".slick-initialized")
-				.slick({
-					dots: true,
-					infinite: true,
-					arrows: false,
-					autoplay: false,
-					fade: true,
-					speed: 1000,
-					responsive: [
-						{
-							breakpoint: 9999,
-							settings: "unslick",
-						},
-						{
-							breakpoint: 767,
-							settings: "getslick",
-						},
-					],
-				});
-		}
-		createSlick();
-		$(window).resize(function () {
-			createSlick();
-		});
-		$(".sec3-slide").slick({
-			dots: true,
-			infinite: true,
-			speed: 500,
-			fade: true,
-			cssEase: "linear",
-		});
+		// function createSlick() {
+		// 	// carousel chỉ chạy ở sp
+		// 	$(".sec2-slide")
+		// 		.not(".slick-initialized")
+		// 		.slick({
+		// 			dots: true,
+		// 			infinite: true,
+		// 			arrows: false,
+		// 			autoplay: false,
+		// 			fade: true,
+		// 			speed: 1000,
+		// 			responsive: [
+		// 				{
+		// 					breakpoint: 9999,
+		// 					settings: "unslick",
+		// 				},
+		// 				{
+		// 					breakpoint: 767,
+		// 					settings: "getslick",
+		// 				},
+		// 			],
+		// 		});
+		// }
+		// createSlick();
+		// $(window).resize(function () {
+		// 	createSlick();
+		// });
+		// $(".sec3-slide").slick({
+		// 	dots: true,
+		// 	infinite: true,
+		// 	speed: 500,
+		// 	fade: true,
+		// 	cssEase: "linear",
+		// });
 			/*  const controller = new ScrollMagic.Controller()
 		new ScrollMagic.Scene({
 		  triggerElement: ".slick-fade",
