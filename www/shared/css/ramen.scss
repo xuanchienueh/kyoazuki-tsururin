@@ -7,7 +7,6 @@
 }
 .color-main {
 	color: $main-color;
-	font-weight: 500;
 }
 .txt-h2 {
 	font-size: 6vw;
@@ -60,7 +59,6 @@
 			@include pc {
 				width: 57%;
 				top: -18px;
-				
 			}
 		}
 	}
@@ -103,6 +101,23 @@
 		}
 	}
 	.left {
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			right: 25%;
+			width: 100%;
+			top: -12vw;
+			height: 27vw;
+			background: url(../img/ramen/sec2_bg_top.jpg);
+			z-index: -1;
+			@include pc {
+				right: -268px;
+				width: 1000%;
+				top: -68px;
+				height: 250px;
+			}
+		}
 		@include pc {
 			width: 330px;
 			margin: 0 72px 0 58px;
@@ -147,8 +162,8 @@
 			right: 0;
 			bottom: -35px;
 			li {
-				width: 15px;
-				height: 15px;
+				width: 10px;
+				height: 10px;
 				margin: 0 10px;
 				border-radius: 100%;
 				padding: 0;
@@ -362,7 +377,7 @@
 		height: 55vw;
 		width: 100%;
 		@include pc {
-			height: auto;
+			height: 655px;
 		}
 	}
 	.box-color {
@@ -568,6 +583,210 @@
 					margin-left: 33px;
 				}
 			}
+		}
+	}
+}
+
+#sec7 {
+	margin-top: 6vw;
+	@include pc {
+		margin: 96px 0px 0px 0px;
+	}
+	.wrap {
+		position: relative;
+		.group1 {
+			@include pc {
+				position: absolute;
+				width: 355px;
+				right: 62px;
+				top: 56px;
+				letter-spacing: 0.25em;
+			}
+			h2 {
+				margin-bottom: 6vw;
+				@include pc {
+					margin: 0px 0px 42px 0px;
+				}
+				p:nth-child(1) {
+					font-size: 4.5vw;
+					@include pc {
+						font-size: 25px;
+						margin-bottom: 11px;
+					}
+				}
+				p:nth-child(2) {
+					font-size: 7vw;
+					line-height: 1.5;
+					font-weight: 500;
+					@include pc {
+						font-size: 40px;
+						line-height: 55px;
+					}
+				}
+			}
+			.sec7-txt {
+				padding: 0 4%;
+				@include pc {
+					padding: 0px 0px 0px 0px;
+					letter-spacing: 0.1em;
+					text-align: justify;
+				}
+			}
+		}
+		.group2 {
+			.sec7-img {
+				margin-bottom: 6vw;
+				margin-top: 6vw;
+				@include pc {
+					margin: 0px 0px 0px -44px;
+				}
+			}
+			.box-color {
+				padding: 6vw 5%;
+				@include pc {
+					margin: 516px 0px 0px 85px;
+					width: 340px;
+					border: 0px;
+					padding: 0px 0px 0px 0px;
+					background: transparent;
+					position: relative;
+					&:after {
+						content: "";
+						position: absolute;
+						left: -180px;
+						right: -77px;
+						top: -26px;
+						bottom: 57px;
+						border: 1px solid #b5003c;
+						z-index: -1;
+					}
+				}
+			}
+
+			ul {
+				margin: 4vw 0;
+				@include pc {
+					margin: 16px 0px 7px 0px;
+				}
+			}
+			p {
+				@include pc {
+					font-size: 20px;
+				}
+				.price {
+					@include pc {
+						letter-spacing: 3.9px;
+					}
+				}
+			}
+		}
+	}
+}
+#sec8 {
+	margin: 11vw 0;
+	@include pc {
+		margin: 205px 0px 0px 0px;
+	}
+	.wrap {
+		position: relative;
+		.deco {
+			width: 50%;
+			position: absolute;
+			left: -9%;
+			top: -5vw;
+			@include pc { 
+				width: auto;
+				left: -212px;
+				top: -65px;
+			}
+		}
+
+		.slick-list {
+			@include pc {
+				overflow: unset;
+			}
+		}
+	}
+	h2 {
+		font-size: 7vw;
+		text-align: center;
+		@include pc {
+			font-size: 40px;
+			text-align: left;
+			letter-spacing: 0.2em;
+			line-height: 55px;
+			margin-bottom: 21px;
+		}
+	}
+	.slide-item {
+		.sec8-img {
+			padding-left: 8%;
+			margin-bottom: 12vw;
+			@include pc {
+				padding: 0px 0px 0px 0px;
+				margin: 0px 0px 0px 0px;
+				position: absolute;
+				right: -68px;
+				top: -158px;
+			}
+			img {
+			}
+		}
+		.content {
+			@include pc {
+				width: 530px;
+				height: 358px;
+			}
+			h3 {
+				margin-bottom: 4vw;
+				@include pc {
+					margin: 0px 0px 11px -12px;
+				}
+			}
+			.sub-h3 {
+				margin-top: -5vw;
+				@include pc {
+					margin: -22px 0px 29px 0px;
+					letter-spacing: 4.8px;
+					font-size: 20px;
+				}
+			}
+			.color-main {
+				margin: 3vw 0;
+				@include pc {
+					margin: 0px 0px 32px 0px;
+					font-size: 20px;
+				}
+				span {
+					@include pc {
+						letter-spacing: 4.3px;
+					}
+				}
+			}
+			.sec8-txt {
+				@include pc { width: 350px;}
+			}
+		}
+	}
+	.slick-dots {
+		font-size: 0;
+		line-height: 0;
+		text-align: center;
+		margin-top: 10px;
+		position: absolute;
+		right: 50%;
+		bottom: auto;
+		top: 81vw;
+		transform: rotate(0deg) translateX(50%);
+		@include pc {
+			top: auto;
+			bottom: 0;
+		}
+		li {
+			display: inline-block;
+			line-height: 0;
+			padding: 0 5px;
+			cursor: pointer;
 		}
 	}
 }
