@@ -1,10 +1,10 @@
 @import "global";
-.wrap {
-	@include pc {
-		border-left: 1px solid red;
-		border-right: 1px solid red;
-	}
-}
+// .wrap {
+// 	@include pc {
+// 		border-left: 1px solid red;
+// 		border-right: 1px solid red;
+// 	}
+// }
 .color-main {
 	color: $main-color;
 }
@@ -39,6 +39,7 @@
 		width: 100%;
 		@include pc {
 			height: auto;
+			width: auto;
 		}
 	}
 	.group {
@@ -47,18 +48,25 @@
 			height: 45vw;
 			@include pc {
 				margin: 0px 0px 0px 0px;
-				height: auto;
+				height: 500px;
+			}
+			img {
+				@include pc {
+					width: 100%;
+					height: 100%;
+				}
 			}
 		}
 		.sec1-img1 {
 			position: absolute;
-			left: 50%;
-			top: 2vw;
-			transform: translateX(-50%);
+			top: -4vw;
+			left: 11%;
 			width: 80%;
 			@include pc {
-				width: 57%;
+				left: 50%;
+				margin-left: -416px;
 				top: -71px;
+				width: 832px;
 			}
 		}
 	}
@@ -69,7 +77,6 @@
 		}
 		h2 {
 			margin: 17vw auto 7vw;
-
 			@include pc {
 				margin: -8px 0px 0px 0px;
 				font-size: 30px;
@@ -544,7 +551,7 @@
 		}
 
 		h2 {
-				width: 70%;
+			width: 70%;
 			@include pc {
 				margin-top: 27px;
 				width: auto;
@@ -848,7 +855,7 @@
 }
 @include pc {
 	#sec9 {
-		margin-top: 33px;
+		margin-top: 90px;
 		margin-bottom: 75px;
 		.wrap {
 			.group1 {
@@ -913,9 +920,9 @@
 		padding: 311px 0 250px 0;
 		background-size: auto 230px;
 	}
-	
+
 	.wrap {
-		@include pc { 
+		@include pc {
 			padding: 0 75px;
 		}
 		h2 {
@@ -924,17 +931,18 @@
 			margin-bottom: 6vw;
 			margin-top: 10vw;
 			position: relative;
-			&:after { 
+			&:after {
 				position: absolute;
-				content: '';
+				content: "";
 				left: 50%;
 				top: -17vw;
 				width: 1px;
 				background: $main-color;
 				height: 13vw;
-				@include pc { 
+				@include pc {
 					top: -136px;
 					height: 100px;
+					width: 2px;
 				}
 			}
 			@include pc {
@@ -945,11 +953,13 @@
 		}
 		.sub-h2 {
 			margin-bottom: 4vw;
-			@include pc {  margin: 0px 0px 20px 0px ; }
+			@include pc {
+				margin: 0px 0px 20px 0px;
+			}
 		}
 	}
 	.row {
-		@include pc { 
+		@include pc {
 			justify-content: space-between;
 		}
 		.border-top {
@@ -974,6 +984,7 @@
 			@include pc {
 				font-size: 20px;
 				margin-bottom: 20px;
+				margin-left: 12px;
 			}
 		}
 		dl {
