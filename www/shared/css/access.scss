@@ -166,7 +166,6 @@
 					height: 30vw;
 					background: url(../img/access/sec2_deco_right.png) no-repeat top center/100% 100%;
 				}
-
 				.sec2-slide {
 					position: relative;
 					&::after {
@@ -195,11 +194,65 @@
 		}
 	}
 }
-footer {
-	margin-top: 500px;
+#sec3 {
+	margin-top: 24vw;
+	.wrap {
+		.border {
+			border: 22px solid transparent;
+			border-image: url(../img/shared/border.png) 46 5% round;
+			padding: 5vw 0;
+			h2 {
+				width: 90%;
+				margin: 0 auto 8vw;
+			}
+			.sec3-img1 {
+				margin-bottom: 6vw;
+			}
+			.group1 {
+				margin-bottom: 6vw;
+			}
+			.group2 {
+				padding-bottom: 14vw;
+			}
+			.sec3-btn {
+				align-items: center;
+				justify-content: center;
+			}
+			img {
+				width: 100%;
+			}
+			.sec3-txt {
+				text-align: left;
+				width: 58%;
+				margin-right: 2%;
+			}
+			.sec3-img2 {
+				width: 40%;
+			}
+			span {
+				font-size: 4vw;
+			}
+			.btn-link {
+				width: 30%;
+				margin-left: 5%;
+			}
+		}
+	}
+	.slick-dots {
+		font-size: 0;
+		line-height: 0;
+		text-align: center;
+		margin-top: 10px;
+		position: absolute;
+		right: 33%;
+		bottom: -6vw;
+		transform: unset;
+	}
 }
 @media only screen and (min-width: 768px) {
 	#sec2 {
+		margin: 0px 0px 0px 0px;
+		padding-bottom: 212px;
 		.wrap {
 			.group2 {
 				margin: 97px 0px 0px 0px;
@@ -237,7 +290,7 @@ footer {
 					&::after {
 						display: none;
 					}
-					&::before { 
+					&::before {
 						position: absolute;
 						content: url(../img/access/sec2_deco_left.jpg);
 						left: -304px;
@@ -254,7 +307,7 @@ footer {
 						}
 						.sec2-txt {
 							margin: 0px 0px 0px 0px;
-							width: 376px;
+							width: 371px;
 						}
 					}
 				}
@@ -269,7 +322,6 @@ footer {
 				}
 			}
 		}
-		margin: 0px 0px 0px 0px;
 		.bg-parallax {
 			background-image: url(../img/access/parallax1.jpg);
 			display: block !important;
@@ -293,10 +345,7 @@ footer {
 	.txt-f3 {
 		font-size: 30px !important;
 	}
-	.wrap {
-		border-left: 1px solid #0c7ff2;
-		border-right: 1px solid red;
-	}
+
 	#sec1 {
 		margin: 0px 0px 0px 0px;
 		background: url(../img/access/sec1_deco_bottom.jpg) repeat-x bottom left/8% 209px;
@@ -376,6 +425,52 @@ footer {
 			}
 			.first {
 				margin-bottom: 69px;
+			}
+		}
+	}
+	#sec3 {
+		margin: 0px 0px 0px 0px;
+		.wrap {
+			.border {
+				padding: 0px 0px 38px 0px;
+				border: 56px solid transparent;
+				border-image: url(../img/shared/border.png) 46 5% round;
+				h2 {
+					width: 64%;
+					margin: 0 auto 46px;
+					padding-left: 21px;
+				}
+				.sec3-img1 {
+					margin: 0px 0px 33px 0px;
+				}
+				.group1 {
+					margin: 0px 0px 55px 0px;
+					justify-content: flex-end;
+				}
+				.group2 {
+					padding-bottom: 0;
+					margin: 0px -18px 89px -18px;
+				}
+				img {
+					width: auto;
+				}
+				.sec3-txt {
+					margin: 0px 0px 0px 0px;
+					width: 457px;
+					padding-top: 45px;
+				}
+				.sec3-slide-sp {
+					justify-content: space-between;
+				}
+				span {
+					font-size: 25px;
+					line-height: 40px;
+					letter-spacing: 3px; 
+				}
+				.btn-link {
+					width: auto;
+					margin: 0px 0px 0px 30px;
+				}
 			}
 		}
 	}
