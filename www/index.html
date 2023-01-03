@@ -150,25 +150,16 @@
 		<section class="nav-target block">
 			<!-- <p class="popup-link fnt-mincho bg2"><a href="#popup1" class="unsmooth">新型コロナウイルス感染予防対策　&gt;</a></p> -->
 			<div id="rss" class="txt-center">
-				<div class="wrap dis-flex-pc">
-					<h2 class="fnt-mincho">新着情報</h2>
-					<div id="feed">
-						<!--<p class="news-row dis-flex-pc"><span>0000.00.00</span><a href="#" target="_blank">タイトルが入ります。タイトルが入ります...</a></p>-->
-					</div>
-					<p class="news-link"><a href="https://www.kyoazuki-tsururin.jp/fcblog/" target="_blank" class="text-link">記事一覧</a></p>
-				</div>
-
-
-				<!-- <div class="wrap">
+				<div class="wrap">
 					<h2 class="wow fadeIn">新着情報</h2>
 					<div id="rssi">
-						<a href="#" target="_blank" class="flex item-rss">
+						<!-- <a href="#" target="_blank" class="flex item-rss">
 							<p class="p1 wow fadeIn">0000.00.00</p>
 							<p class="p2 wow fadeIn">タイトルが入ります。タイトルが入ります...</p>
-						</a>
+						</a> -->
 					</div>
 					<p class="p3 wow fadeIn"><a class="link" href="https://www.kyoazuki-tsururin.jp/fcblog/" target="_blank">記事一覧</a></p>
-				</div> -->
+				</div>
 			</div>
 			<div id="sec1">
 				<div class="wrap flex-pc">
@@ -347,16 +338,15 @@
 	<script src="shared/js/common.js"></script>
 	<script src="shared/js/shared.js"></script>
 	<script src="shared/js/jquery.rss.js"></script>
-	<script>
+	<!-- <script>
 		var rssTpl = "";
 		rssTpl += '<p class="news-row dis-flex-pc"><span>{YEARS}.{MONTH}.{DAY}</span><a href="{URL}" target="_blank">{TITLE}</a></p>';
-		// <div class="wrap dis-flex-pc">
-		// 	<h2 class="fnt-mincho">新着情報</h2>
-		// 	<div id="feed">
-		// 				<!--<p class="news-row dis-flex-pc"><span>0000.00.00</span><a href="#" target="_blank">タイトルが入ります。タイトルが入ります...</a></p>-->
-		// 	</div>
-		// 	<p class="news-link"><a href="https://www.kyoazuki-tsururin.jp/fcblog/" target="_blank" class="text-link">記事一覧</a></p>
-		// </div>
+		<div class="wrap dis-flex-pc">
+			<h2 class="fnt-mincho">新着情報</h2>
+			<div id="feed">
+			</div>
+			<p class="news-link"><a href="https://www.kyoazuki-tsururin.jp/fcblog/" target="_blank" class="text-link">記事一覧</a></p>
+		</div>
 		FCBase.rss.data = [
 			{
 				selector: "#feed",
@@ -371,7 +361,7 @@
 				}
 			}
 		];
-	</script>
+	</script> -->
 	<script>
 		$(".sec3-slide").slick({
 			dots: true,
@@ -389,38 +379,26 @@
 			});
 		});
 
-		// var rssTpl = "";
+		var rssTpl = "";
 		// rssTpl += '<li><a href="{URL}" target="_blank" class="dis-flex"><span class="row-date">{YEARS}/{MONTH}/{DAY}</span><span class="row-txt">{TITLE}</span></a></li>';
 
-		// rssTpl += '<a href="{URL}" target="_blank" class="flex item-rss"><p class="p1 wow fadeIn">{YEARS}.{MONTH}.{DAY}</p><p class="p2 wow fadeIn">{TITLE}</p></a>';
+		rssTpl += '<a href="{URL}" target="_blank" class="flex item-rss"><p class="p1 wow fadeIn">{YEARS}.{MONTH}.{DAY}</p><p class="p2 wow fadeIn">{TITLE}</p></a>';
 
-		// <div id="rss" class="txt-center">
-		// 		<div class="wrap">
-		// 			<h2 class="wow fadeIn">新着情報</h2>
-		// 			<div id="rssi">
-		// 				<!-- <a href="#" target="_blank" class="flex item-rss">
-		// 					<p class="p1 wow fadeIn">0000.00.00</p>
-		// 					<p class="p2 wow fadeIn">タイトルが入ります。タイトルが入ります...</p>
-		// 				</a> -->
-		// 			</div>
-		// 			<p class="p3 wow fadeIn"><a class="link" href="https://www.kyoazuki-tsururin.jp/fcblog/" target="_blank">記事一覧</a></p>
-		// 		</div>
-		// 	</div>
-		// FCBase.rss.data = [
-		// 	/* 複数設置の場合、ここからコピー */
-		// 	{
-		// 		selector: "#rssi",
-		// 		url: 1,
-		// 		page: 1,
-		// 		total: 1,
-		// 		maxTitle: 16,
-		// 		maxDesc: 19,
-		// 		endText: "...",
-		// 		template: rssTpl,
-		// 		callback: function () {
-		// 		}
-		// 	}
-		// ];
+	
+		FCBase.rss.data = [
+			{
+				selector: "#rssi",
+				url: 1,
+				page: 1,
+				total: 1,
+				maxTitle: 16,
+				maxDesc: 19,
+				endText: "...",
+				template: rssTpl,
+				callback: function () {
+				}
+			}
+		];
 
 		/*  const controller = new ScrollMagic.Controller()
 new ScrollMagic.Scene({
