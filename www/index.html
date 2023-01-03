@@ -153,10 +153,10 @@
 				<div class="wrap">
 					<h2 class="wow fadeIn">新着情報</h2>
 					<div id="rssi">
-						<!-- <a href="#" target="_blank" class="flex item-rss">
+						<a href="#" target="_blank" class="flex item-rss">
 							<p class="p1 wow fadeIn">0000.00.00</p>
 							<p class="p2 wow fadeIn">タイトルが入ります。タイトルが入ります...</p>
-						</a> -->
+						</a>
 					</div>
 					<p class="p3 wow fadeIn"><a class="link" href="https://www.kyoazuki-tsururin.jp/fcblog/" target="_blank">記事一覧</a></p>
 				</div>
@@ -358,9 +358,12 @@
 		var rssTpl = "";
 		// rssTpl += '<li><a href="{URL}" target="_blank" class="dis-flex"><span class="row-date">{YEARS}/{MONTH}/{DAY}</span><span class="row-txt">{TITLE}</span></a></li>';
 
-		rssTpl += '<a href="{URL}" target="_blank" class="flex item-rss"><p class="p1 wow fadeIn">{YEARS}.{MONTH}.{DAY}</p><p class="p2 wow fadeIn">{TITLE}</p></a>';
+		rssTpl += `<a href="{URL}" target="_blank" class="flex item-rss">
+			<p class="p1 wow fadeIn">{YEARS}.{MONTH}.{DAY}</p>
+			<p class="p2 wow fadeIn">{TITLE}</p>
+			</a>`;
 
-	
+
 		FCBase.rss.data = [
 			{
 				selector: "#rssi",

@@ -1,4 +1,3 @@
-@import "global";
 @font-face {
 	font-family: HannariMincho;
 	src: url(../font/HannariMincho-Regular.otf);
@@ -11,36 +10,18 @@
 	letter-spacing: 9px;
 	font-size: 5.5vw;
 	font-family: HannariMincho !important;
-	@include pc {
-		font-size: 40px;
-	}
 }
 .txt-f3 {
 	font-size: 7vw;
 	letter-spacing: 9px;
 	font-family: HannariMincho !important;
-	@include pc {
-		font-size: 30px !important;
-	}
 }
 .color-main {
-	color: $main-color;
+	color: #b5003c;
 }
-.wrap {
-	@include pc {
-		border-left: 1px solid red;
-		border-right: 1px solid red;
-	}
-}
-
 #sec1 {
 	margin: 15vw 0 0;
-    height: 100%;
-	@include pc {
-		margin: 0px 0px 0px 0px;
-        background: url(../img/access/sec1_deco_bottom.jpg) repeat-x bottom left/8% 209px;
-
-	}
+	height: 100%;
 	.wrap {
 		position: relative;
 		&:after {
@@ -52,33 +33,17 @@
 			width: 60%;
 			background: url(../img/access/sec1_bg_top.jpg);
 			z-index: -1;
-			@include pc {
-				right: 419px;
-				left: auto;
-				top: -2px;
-				height: 236px;
-				width: 100%;
-			}
 		}
 		.deco {
 			position: absolute;
 			width: 50%;
 			right: 0;
 			top: 0;
-			@include pc {
-				width: 100%;
-				left: 569px;
-				top: 156px;
-				right: auto;
-			}
 		}
 	}
 	strong {
 		font-weight: 700;
 		font-size: 4.3vw;
-		@include pc {
-			font-size: 20px;
-		}
 	}
 	h2 {
 		margin-bottom: 6vw;
@@ -90,67 +55,24 @@
 			left: 0;
 			width: 20%;
 			height: 2px;
-			background: $main-color;
-			@include pc {
-				top: -37px;
-				left: 0;
-				width: 69px;
-				height: 3px;
-			}
-		}
-		@include pc {
-			margin: 0px 0px 33px 0px;
+			background: #b5003c;
 		}
 	}
 	dl {
 		margin-bottom: 6vw;
-		@include pc {
-			margin: 0px 0px 31px 0px;
-		}
-	}
-	.group1 {
-		@include pc {
-			padding-top: 131px;
-		}
-	}
-	.group2 {
-		@include pc {
-			position: absolute;
-			right: 0;
-			top: 446px;
-			width: 500px;
-			padding-left: 54px;
-		}
-	}
-	.sec1-img {
-		@include pc {
-			padding-top: 31px;
-		}
 	}
 }
 #gmap {
-    margin: 12vw 0 0;
-   
-	@include pc {
-		flex-direction: row-reverse;
-		align-items: center;
-         margin: 0px 0px 0px 0px ; 
-	}
+	margin: 12vw 0 0;
 	.ifram {
 		width: 100%;
 		height: 110vw;
 		border: 0;
-		@include pc {
-			width: 706px;
-			height: 475px;
-			margin-right: -136px;
-		}
 	}
 	.btn-gmap {
-		padding: 6vw 8% 0;
-        margin: 0 -5%;
-        background: url(../img/access/sec1_deco_bottom.jpg) repeat-x bottom left/20% 26vw;
-
+		padding: 6vw 8% 13vw;
+		margin: 0 -5% 0vw;
+		background: url(../img/access/sec1_deco_bottom.jpg) repeat-x bottom left/20% 26vw;
 		li {
 			width: 98%;
 			.button {
@@ -159,98 +81,302 @@
 				font-size: 6vw;
 				letter-spacing: 4px;
 				align-items: center;
-                justify-content: space-between;
-				padding: 10px;
+				justify-content: space-between;
+				padding: 10px 10px 0 10px;
 				text-decoration: none;
 				cursor: pointer;
 				transition: all 0.4s ease;
-				@include pc {
-					padding: 0;
-                    justify-content: flex-start;
-				}
 				&:hover {
 					opacity: 0.7;
 				}
 			}
 			.print {
 				color: #000000;
-				text-align: center;
+				text-align: left;
 				display: block;
-				font-size: 5vw;
-                @include pc { 
-                    text-align: left;
-                }
+				font-size: 4vw;
+				padding-left: 4%;
+				margin-top: -2vw;
 			}
 			.copy {
 				letter-spacing: 0;
 			}
 		}
 	}
-
-	@include pc {
-		.btn-gmap {
-			padding: 0px 58px 83px 0px ; 
-			flex-wrap: wrap;
-          background: unset;
-			li {
-				width: 100%;
-				margin-bottom: 25px;
-				font-size: 30px;
-				.button {
-					font-size: 25px;
-                    justify-content: space-between;
-				}
-				.print {
-					// display: none;
-					font-size: 20px;
-				}
-			}
-		}
-	}
 }
-#sec2 { 
-	margin: 73vw 0 0;
-	@include pc {  margin: 0px 0px 0px 0px ; }
-	.bg-parallax{
+#sec2 {
+	margin: 76vw 0 0;
+	.bg-parallax {
 		display: none !important;
-		@include pc { 
-			background-image: url(../img/access/parallax1.jpg);
-			display: block !important;
-		}
 	}
-	.parallax1 { 
-		img { 
+	.parallax1 {
+		img {
 			height: 60vw;
 		}
 	}
-	.group1 { 
+	.group1 {
 		margin: 8vw 0 0;
-		@include pc {  margin: 0px 0px 0px 0px ; }
-		p { 
+		p {
 			width: 80%;
 			margin-right: 6%;
-			@include pc { 
-				width: auto;
-				 margin: 0px 0px 0px 0px ; 
-			}
 		}
-		h2 { 
+		h2 {
 			width: 15%;
 			margin-top: -20vw;
 			position: relative;
 			z-index: -1;
-			@include pc { 
-				width: auto;
-				 margin: 0px 0px 0px 0px ; 
+		}
+	}
+	.wrap {
+		.group2 {
+			margin-top: 6vw;
+			.col-left {
+				margin-top: 10vw;
+				position: relative;
+				&::after {
+					position: absolute;
+					content: "";
+					left: -6%;
+					bottom: -12vw;
+					width: 30%;
+					height: 30vw;
+					background: url(../img/access/sec2_deco_left.jpg) no-repeat bottom center/100% 100%;
+					z-index: -1;
+				}
+				.sec2-content {
+					dl {
+						font-size: 5vw;
+						justify-content: space-between;
+						padding: 0 10%;
+					}
+					.sec2-txt {
+						margin-top: 5vw;
+					}
+				}
+			}
+			.col-right {
+				position: relative;
+				&::after {
+					position: absolute;
+					content: "";
+					right: -8%;
+					bottom: -18vw;
+					width: 32%;
+					z-index: -1;
+					height: 30vw;
+					background: url(../img/access/sec2_deco_right.png) no-repeat top center/100% 100%;
+				}
+
+				.sec2-slide {
+					position: relative;
+					&::after {
+						position: absolute;
+						content: "";
+						left: -2%;
+						top: -2vw;
+						width: 18%;
+						height: 17vw;
+						border-top: 1px solid #b5003c;
+						border-left: 1px solid #b5003c;
+					}
+				}
+				.slick-dots {
+					font-size: 0;
+					line-height: 0;
+					text-align: center;
+					margin-top: 10px;
+					position: absolute;
+					right: 35%;
+					left: auto;
+					bottom: -5vw;
+					transform: unset;
+				}
 			}
 		}
 	}
-	.group2 { }
 }
-
 footer {
 	margin-top: 500px;
 }
-.hehe { 
-	color: red; 
+@media only screen and (min-width: 768px) {
+	#sec2 {
+		.wrap {
+			.group2 {
+				margin: 97px 0px 0px 0px;
+				flex-direction: row-reverse;
+				justify-content: space-between;
+				.col-right {
+					width: 624px;
+					margin-right: -121px;
+					&::after {
+						display: none;
+					}
+					&::before {
+						position: absolute;
+						content: url(../img/access/sec2_deco_right.png);
+						right: -50px;
+						bottom: -156px;
+						width: auto;
+						height: auto;
+					}
+					.sec2-slide {
+						&::after {
+							width: 125px;
+							height: 121px;
+							top: -12px;
+						}
+					}
+					.slick-dots {
+						right: auto;
+						left: -6px;
+						bottom: -26px;
+					}
+				}
+				.col-left {
+					margin: 0px 0px 0px 0px;
+					&::after {
+						display: none;
+					}
+					&::before { 
+						position: absolute;
+						content: url(../img/access/sec2_deco_left.jpg);
+						left: -304px;
+						bottom: -174px;
+						width: auto;
+						height: auto;
+						z-index: -1;
+					}
+					.sec2-content {
+						dl {
+							font-size: 30px;
+							line-height: 50px;
+							padding: 44px 5px 23px 0px;
+						}
+						.sec2-txt {
+							margin: 0px 0px 0px 0px;
+							width: 376px;
+						}
+					}
+				}
+			}
+		}
+		.col-left {
+			.sec2-content {
+				dl {
+					dd {
+						letter-spacing: 0.25em;
+					}
+				}
+			}
+		}
+		margin: 0px 0px 0px 0px;
+		.bg-parallax {
+			background-image: url(../img/access/parallax1.jpg);
+			display: block !important;
+			height: 620px;
+		}
+		.group1 {
+			margin: 0px 0px 0px 0px;
+			p {
+				width: auto;
+				margin: 97px 0px 0px 9px;
+			}
+			h2 {
+				width: auto;
+				margin: 7px 0px 0px 78px;
+			}
+		}
+	}
+	.txt-f4 {
+		font-size: 40px;
+	}
+	.txt-f3 {
+		font-size: 30px !important;
+	}
+	.wrap {
+		border-left: 1px solid #0c7ff2;
+		border-right: 1px solid red;
+	}
+	#sec1 {
+		margin: 0px 0px 0px 0px;
+		background: url(../img/access/sec1_deco_bottom.jpg) repeat-x bottom left/8% 209px;
+		.wrap {
+			&:after {
+				right: 419px;
+				left: auto;
+				top: -2px;
+				height: 236px;
+				width: 100%;
+			}
+			.deco {
+				width: 100%;
+				left: 569px;
+				top: 156px;
+				right: auto;
+			}
+		}
+		strong {
+			font-size: 20px;
+		}
+		h2 {
+			margin: 0px 0px 33px 0px;
+			&:after {
+				top: -37px;
+				left: 0;
+				width: 69px;
+				height: 3px;
+			}
+		}
+		dl {
+			margin: 0px 0px 31px 0px;
+		}
+		.group1 {
+			padding-top: 131px;
+		}
+		.group2 {
+			position: absolute;
+			right: 0;
+			top: 446px;
+			width: 500px;
+			padding-left: 54px;
+		}
+		.sec1-img {
+			padding-top: 31px;
+		}
+	}
+	#gmap {
+		flex-direction: row-reverse;
+		align-items: center;
+		margin: 0px 0px 0px 0px;
+		.ifram {
+			width: 706px;
+			height: 475px;
+			margin-right: -136px;
+		}
+		.btn-gmap {
+			padding: 0px 58px 83px 0px;
+			flex-wrap: wrap;
+			background: unset;
+			margin-right: 0px;
+			li {
+				width: 100%;
+				font-size: 30px;
+				.button {
+					padding: 0;
+					justify-content: flex-start;
+					font-size: 25px;
+					justify-content: space-between;
+				}
+				.print {
+					text-align: left;
+					font-size: 16px;
+					padding-left: 0;
+					margin-top: 0;
+				}
+			}
+			.first {
+				margin-bottom: 69px;
+			}
+		}
+	}
 }

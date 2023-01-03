@@ -54,6 +54,7 @@
 
 a:hover {
 	text-decoration: none;
+	opacity: 0.8; 
 }
 
 main#index {
@@ -204,6 +205,9 @@ main#index {
 			.item-rss { 
 				align-items: center;
 				justify-content: space-between;
+				&:hover { 
+					opacity: 0.8;
+				}
 				p { 
 					margin-left: 30px;
 				}

@@ -37,6 +37,7 @@
 
 a:hover {
   text-decoration: none;
+  opacity: 0.8;
 }
 
 @media only screen and (min-width: 768px) {
@@ -202,6 +203,9 @@ a:hover {
   #rss .wrap .item-rss {
     align-items: center;
     justify-content: space-between;
+  }
+  #rss .wrap .item-rss:hover {
+    opacity: 0.8;
   }
   #rss .wrap .item-rss p {
     margin-left: 30px;
