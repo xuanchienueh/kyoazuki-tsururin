@@ -195,13 +195,10 @@
   transform: unset;
 }
 
-footer {
-  margin-top: 500px;
-}
-
 @media only screen and (min-width: 768px) {
   #sec2 {
     margin: 0px 0px 0px 0px;
+    padding-bottom: 212px;
   }
   #sec2 .wrap .group2 {
     margin: 97px 0px 0px 0px;
@@ -436,30 +433,41 @@ footer {
   }
 #sec3 .wrap {}
 #sec3 .wrap .border {
-  padding: 0px 0px 0px 0px ;
+  padding: 0px 0px 38px 0px;
+  border: 56px solid transparent;
+  border-image: url(../img/shared/border.png) 46 5% round;
 }
 #sec3 .wrap .border h2 {
-  width: auto;
-  margin: 0px 0px 0px 0px 
+  width: 64%;
+  margin: 0 auto 46px;
+  padding-left: 21px;
 }
 #sec3 .wrap .border .sec3-img1 {
-  margin: 0px 0px 0px 0px 
+  margin: 0px 0px 33px 0px;
 }
 #sec3 .wrap .border .group1 {
-  margin: 0px 0px 0px 0px 
+  margin: 0px 0px 55px 0px;
+  justify-content: flex-end;
 }
 #sec3 .wrap .border .group2 {
   padding-bottom: 0;
+  margin: 0px -18px 89px -18px;
 }
 #sec3 .wrap .border .sec3-btn {}
-#sec3 .wrap .border img {}
+#sec3 .wrap .border img {
+    width: auto;
+}
 #sec3 .wrap .border .sec3-txt {
-  margin: 0px 0px 0px 0px 
+  margin: 0px 0px 0px 0px;
+  width: 457px;
+  padding-top: 45px;
 }
 #sec3 .wrap .border .sec3-txt .color-main {}
 #sec3 .wrap .border .sec3-img2 {}
 #sec3 .wrap .border .sec3-img2 img {}
-#sec3 .wrap .border .sec3-slide-sp {}
+#sec3 .wrap .border .sec3-slide-sp {
+    justify-content: space-between;
+}
 #sec3 .wrap .border .sec3-slide-sp div {}
 #sec3 .wrap .border .sec3-slide-sp img {}
 #sec3 .wrap .border span {
@@ -469,7 +477,7 @@ footer {
 }
 #sec3 .wrap .border .btn-link {
   width: auto;
-  margin: 0px 0px 0px 0px ;
+  margin: 0px 0px 0px 30px;
 }
 #sec3 .wrap .border .btn-link:hover {}
 #sec3 .wrap .border .btn-link img {}

@@ -217,22 +217,16 @@
 				<div class="wrap">
 					<div class="group1 flex">
 						<p class="wow fadeInUp "><img src="./shared/img/access/sec2_floor_map.png" alt="map" width="761" height="378"></p>
-						<h2 class="wow fadeIn "><img src="./shared/img/access/sec2_h2.png" alt="店内のご案内" width="98" height="495"></h2>
+						<h2 class="wow fadeIn fnt-hannari"><img src="./shared/img/access/sec2_h2.png" alt="店内のご案内" width="98" height="495"></h2>
 					</div>
 				</div>
 				<div class="wrap">
 					<div class="group2 flex-pc">
 						<div class="col-right">
 							<div class="sec2-slide wow fadeInUp">
-								<div>
-									<p><img src="./shared/img/access/sec2_slide1.jpg" alt="カウンター席" width="609" height="450"></p>
-								</div>
-								<div>
-									<p><img src="./shared/img/access/sec2_slide2.jpg" alt="テーブル席" width="609" height="450"></p>
-								</div>
-								<div>
-									<p><img src="./shared/img/access/sec2_slide3.jpg" alt="食事シーン" width="609" height="450"></p>
-								</div>
+								<div><p><img src="./shared/img/access/sec2_slide1.jpg" alt="カウンター席" width="609" height="450"></p></div>
+								<div><p><img src="./shared/img/access/sec2_slide2.jpg" alt="テーブル席" width="609" height="450"></p></div>
+								<div><p><img src="./shared/img/access/sec2_slide3.jpg" alt="食事シーン" width="609" height="450"></p></div>
 							</div>
 
 						</div>
@@ -258,7 +252,7 @@
 							<p class="sec3-img2"><img src="./shared/img/access/sec3_img2.jpg" alt="焼き場" width="262" height="325"></p>
 						</div>
 						<div class="group2">
-							<div class="sec3-slide-sp">
+							<div class="sec3-slide-sp flex-pc">
 								<div><img src="./shared/img/access/sec3_img3.jpg" alt="阿月・栗阿月" width="290" height="243"></div>
 								<div><img src="./shared/img/access/sec3_img4.jpg" alt="持ち帰りみつまめ" width="290" height="243"></div>
 								<div><img src="./shared/img/access/sec3_img5.jpg" alt="MOCHIDORAもちどら" width="290" height="243"></div>
@@ -384,7 +378,7 @@
 	<script>
 		function createSlick() {
 			// carousel chỉ chạy ở sp
-			$(".sec3-slide")
+			$(".sec3-slide-sp")
 				.not(".slick-initialized")
 				.slick({
 					dots: true,
@@ -409,7 +403,7 @@
 		$(window).resize(function () {
 			createSlick();
 		});
-		$(".sec3-slide-sp").slick({
+		$(".sec2-slide").slick({
 			dots: true,
 			infinite: true,
 			speed: 500,
