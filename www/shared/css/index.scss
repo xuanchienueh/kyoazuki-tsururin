@@ -199,9 +199,15 @@ main#index {
 		@include pc {
 			display: flex;
 			align-items: center;
-			justify-content: space-between;
 			padding: 0 133px;
 			height: 100%;
+			.item-rss { 
+				align-items: center;
+				justify-content: space-between;
+				p { 
+					margin-left: 30px;
+				}
+			}
 		}
 	}
 	h2 {
@@ -215,8 +221,11 @@ main#index {
 		}
 	}
 	.p3 {
-		a {
+		.link {
 			border-bottom: 1px solid #000;
+			@include pc { 
+				margin-left: 40px;
+			}
 		}
 	}
 }
