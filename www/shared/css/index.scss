@@ -339,11 +339,11 @@ main#index {
 	}
 	@include pc {
 		padding: 118px 0px 78px 0px;
-		background: url(../img/index/sec2_deco_top.png) no-repeat top center, url(../img/index/set2_bg_top.png) no-repeat top center/auto auto;
+		background: url(../img/index/sec2_deco_top.png) no-repeat top center, url(../img/index/set2_bg_top.jpg) no-repeat top center/auto auto;
 		// background: url(../img/index/sec2_deco_top.png) no-repeat top center, url(../img/index/set2_bg_top.png) no-repeat top center/100% auto, url(../img/index/sec2_bg_bottom.jpg) no-repeat bottom center;
 		&:after {
 			content: "";
-			position: absolute;
+			position: absolute; 
 			left: 0;
 			right: 0;
 			bottom: 0;
