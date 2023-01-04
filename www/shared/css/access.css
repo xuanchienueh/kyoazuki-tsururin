@@ -195,13 +195,65 @@
   transform: unset;
 }
 
-footer {
-  margin-top: 500px;
+#sec3 {
+  margin-top: 24vw;
+}
+#sec3 .wrap .border {
+  border: 22px solid transparent;
+  -o-border-image: url(../img/shared/border.png) 46 5% round;
+     border-image: url(../img/shared/border.png) 46 5% round;
+  padding: 5vw 0;
+}
+#sec3 .wrap .border h2 {
+  width: 90%;
+  margin: 0 auto 8vw;
+}
+#sec3 .wrap .border .sec3-img1 {
+  margin-bottom: 6vw;
+}
+#sec3 .wrap .border .group1 {
+  margin-bottom: 6vw;
+}
+#sec3 .wrap .border .group2 {
+  padding-bottom: 14vw;
+}
+#sec3 .wrap .border .sec3-btn {
+  align-items: center;
+  justify-content: center;
+}
+#sec3 .wrap .border img {
+  width: 100%;
+}
+#sec3 .wrap .border .sec3-txt {
+  text-align: left;
+  width: 58%;
+  margin-right: 2%;
+}
+#sec3 .wrap .border .sec3-img2 {
+  width: 40%;
+}
+#sec3 .wrap .border span {
+  font-size: 4vw;
+}
+#sec3 .wrap .border .btn-link {
+  width: 30%;
+  margin-left: 5%;
+}
+#sec3 .slick-dots {
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  right: 33%;
+  bottom: -6vw;
+  transform: unset;
 }
 
 @media only screen and (min-width: 768px) {
   #sec2 {
     margin: 0px 0px 0px 0px;
+    padding-bottom: 212px;
   }
   #sec2 .wrap .group2 {
     margin: 97px 0px 0px 0px;
@@ -255,7 +307,7 @@ footer {
   }
   #sec2 .wrap .group2 .col-left .sec2-content .sec2-txt {
     margin: 0px 0px 0px 0px;
-    width: 376px;
+    width: 371px;
   }
   #sec2 .col-left .sec2-content dl dd {
     letter-spacing: 0.25em;
@@ -362,4 +414,111 @@ footer {
   #gmap .btn-gmap .first {
     margin-bottom: 69px;
   }
-}/*# sourceMappingURL=access.css.map */
+}
+#sec3 {
+    margin-top: 24vw;
+}
+#sec3 .wrap {}
+#sec3 .wrap .border {
+  border: 22px solid transparent;
+  border-image: url(../img/shared/border.png) 46 5% round;
+  padding: 5vw 0;
+}
+#sec3 .wrap .border h2 {
+    width: 90%;
+    margin: 0 auto 8vw;
+}
+#sec3 .wrap .border .sec3-img1 {
+    margin-bottom: 6vw;
+}
+#sec3 .wrap .border .group1 {
+    margin-bottom: 6vw;
+}
+#sec3 .wrap .border .group2 {
+    padding-bottom: 14vw;
+}
+#sec3 .wrap .border .sec3-btn {
+    align-items: center;
+    justify-content: center;
+}
+#sec3 .wrap .border img {
+    width: 100%;
+}
+#sec3 .wrap .border .sec3-txt {
+    text-align: left;
+    /* margin-bottom: 6vw; */
+    width: 58%;
+    margin-right: 2%;
+}
+#sec3 .wrap .border .sec3-txt .color-main {}
+#sec3 .wrap .border .sec3-img2 {
+    width: 40%;
+}
+#sec3 .wrap .border .sec3-img2 img {}
+#sec3 .wrap .border .sec3-slide-sp {}
+#sec3 .wrap .border .sec3-slide-sp div {}
+#sec3 .wrap .border .sec3-slide-sp img {}
+#sec3 .wrap .border span {
+    font-size: 4vw;
+}
+#sec3 .wrap .border .btn-link {
+    width: 30%;
+    margin-left: 5%;
+}
+#sec3 .wrap .border .btn-link:hover {}
+#sec3 .wrap .border .btn-link img {}
+#sec3 .slick-dots {
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  right: 33%;
+  bottom: -6vw;
+  transform: unset;
+}
+
+@media only screen and (min-width: 768px) { 
+  #sec3 {
+    margin: 0px 0px 0px 0px 
+  }
+#sec3 .wrap {}
+#sec3 .wrap .border {
+  padding: 0px 0px 0px 0px ;
+}
+#sec3 .wrap .border h2 {
+  width: auto;
+  margin: 0px 0px 0px 0px 
+}
+#sec3 .wrap .border .sec3-img1 {
+  margin: 0px 0px 0px 0px 
+}
+#sec3 .wrap .border .group1 {
+  margin: 0px 0px 0px 0px 
+}
+#sec3 .wrap .border .group2 {
+  padding-bottom: 0;
+}
+#sec3 .wrap .border .sec3-btn {}
+#sec3 .wrap .border img {}
+#sec3 .wrap .border .sec3-txt {
+  margin: 0px 0px 0px 0px 
+}
+#sec3 .wrap .border .sec3-txt .color-main {}
+#sec3 .wrap .border .sec3-img2 {}
+#sec3 .wrap .border .sec3-img2 img {}
+#sec3 .wrap .border .sec3-slide-sp {}
+#sec3 .wrap .border .sec3-slide-sp div {}
+#sec3 .wrap .border .sec3-slide-sp img {}
+#sec3 .wrap .border span {
+  font-size: 25px;
+  line-height: 40px;
+  letter-spacing: 3px;
+}
+#sec3 .wrap .border .btn-link {
+  width: auto;
+  margin: 0px 0px 0px 0px ;
+}
+#sec3 .wrap .border .btn-link:hover {}
+#sec3 .wrap .border .btn-link img {}
+}
